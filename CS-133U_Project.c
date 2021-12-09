@@ -1,7 +1,7 @@
 /****************************************************************/
-/*Author(s): Henry Sanders, Kenneth Sutter		                */
-/*Date: 12/01/21					                            */
-/*Assignment: Group Project				                        */
+/*Author(s): Henry Sanders, Kenneth Sutter		        */
+/*Date: 12/01/21					        */
+/*Assignment: Group Project				        */
 /*Description: This program is to be an interactive trivia game */
 /* with a scorekeeping system, a timer, and user profiles.      */
 /****************************************************************/
@@ -24,11 +24,11 @@ void default_func();
 // Main program function
 int main (void)
 {
-	char a;
-	char b;
-	char cat_func(char a, char b);
+    char a;
+    char b;
+    char cat_func(char a, char b);
 		
-		menu_func();
+    menu_func();
 };
 
 
@@ -155,7 +155,7 @@ void about_func()
 int about_r;
 
 // Printing about section
-	system("clear");
+    system("clear");
     printf("___________________________________________\n");
     printf("___________________________________________\n\n");
     printf("\t About Trivia Night!\n");
@@ -191,7 +191,7 @@ int score_func()
 // Exit menu choice function
 int exit_func()
 {
-	system("clear");
+    system("clear");
     printf("You chose to exit the game.");
     printf("\n\nSee you next time!");
     exit(0);
@@ -201,7 +201,7 @@ int exit_func()
 // Default menu choice function
 void default_func()
 {
-	system("clear");
+    system("clear");
     printf("   You did not choose a valid menu option!\n");
     printf("\tPlease choose a valid menu option!\n");
     menu_func();
