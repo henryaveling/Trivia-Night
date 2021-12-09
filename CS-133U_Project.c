@@ -24,14 +24,15 @@ void default_func();
 // Main program function
 int main (void)
 {
-char a;
-char b;
-char cat_func(char a, char b);
+	char a;
+	char b;
+	char cat_func(char a, char b);
+		
+		menu_func();
 };
 
-// Functions to execute in main function
-    menu_func();
-}
+
+
 
 
 // Main menu function
@@ -211,8 +212,9 @@ void default_func()
 char cat_func(char a, char b)
 {
 
-// Sports Category
-char sport_arr[15][100] = {
+	// Sports Category
+	char sport_arr[15][100] = 
+	{
 /*q1*/	"In which sport might you come across an Albatross?",
 /*q2*/	"Which sport takes place in a circle 4.55m in diameter?",
 /*q3*/	"Which football team has won the european cup the most times?",
@@ -228,9 +230,10 @@ char sport_arr[15][100] = {
 /*q13*/	"What distance is covered in one circuit of a modern outdoor running track (in meters)?",
 /*q14*/	"In which sport is the Canadian, Wayne Gretzky, an all time great?",
 /*q15*/	"What trophy is awarded to the winner of the NHL playoffs?"
-};
+	};
 
-char sport_ans_arr[60][50] = {
+	char sport_ans_arr[60][50] = 
+	{
 /*a1*/  "Golf", 
 	"Baseball",
 	"Cricket",
@@ -291,10 +294,11 @@ char sport_ans_arr[60][50] = {
 	"Heisman Trophy",
 	"Stanley cup Trophy",
 	"Vince Lombardi Trophy"
-};
+	};
 
 // Math Category
-char math_arr[15][100] = {
+	char math_arr[15][100] = 
+	{
 /*q1*/	"What is the only even prime number?",
 /*q2*/	"What is the smallest perfect number?",
 /*q3*/	"What is the only number that does not have its Roman numeral?",
@@ -310,9 +314,10 @@ char math_arr[15][100] = {
 /*q13*/	"What number does giga stand for?",
 /*q14*/	"What is a straight line that touches a circle at a single point?",
 /*q15*/	"How many equal sides does an icosahedron have?"
-};
+	};
 
-char math_ans_arr[60][50] = {
+	char math_ans_arr[60][50] = 
+	{
 /*a1*/  "Two", 
 	"Four",
 	"Six",
@@ -373,10 +378,11 @@ char math_ans_arr[60][50] = {
 	"15",
 	"16",
 	"20"
-};
+	};
 
 // Pop Culture Category
-char pop_cult_arr[15][100] = {
+	char pop_cult_arr[15][100] = 
+	{
 /*q1*/	"Who was originally cast as the voice of Shrek before Mike Meyers?",
 /*q2*/	"What is the name of the family dog on Full House?",
 /*q3*/	"How many Harry Potter films have been made?",
@@ -392,9 +398,10 @@ char pop_cult_arr[15][100] = {
 /*q13*/	"What name is the Academy Awards best known by?",
 /*q14*/	"When was the Mickey Mouse character first invented?",
 /*q15*/	"When was the first Grammy Awards held?"
-};
+	};
 
-char pop_cult_ans_arr[60][50] = {
+	char pop_cult_ans_arr[60][50] = 
+	{
 /*a1*/  "Chris Farley", 
 	"Chris Rock",
 	"Dave Chappelle",
@@ -455,10 +462,11 @@ char pop_cult_ans_arr[60][50] = {
 	"1939",
 	"1949",
 	"1959"
-};
+	};
 
 // Literature Category
-char lit_arr[15][100] = {
+	char lit_arr[15][100] = 
+	{
 /*q1*/	"Who was the author of 'Lord of The Rings'?",
 /*q2*/	"Who was the author of 'Game Of Thrones'?",
 /*q3*/	"Who was the author of the sci-fi series 'The Expanse'?",
@@ -474,9 +482,10 @@ char lit_arr[15][100] = {
 /*q13*/	"How many books are in 'The Girl With The Dragon Tattoo' series written by Stieg Larsson?",
 /*q14*/	"In George Orwell’s 'Animal Farm', what type of animal is Boxer?",
 /*q15*/	"What is used as the portal to Narnia in C. S. Lewis’ children’s fantasy series?"
-};
+	};
 
-char lit_ans_arr[60][50] = {
+	char lit_ans_arr[60][50] = 
+	{
 /*a1*/  "George Lucus", 
 	"J. K. Rowling",
 	"J. R. R. Tolkien",
@@ -537,10 +546,11 @@ char lit_ans_arr[60][50] = {
 	"Wardrobe",
 	"Couch",
 	"Fridge"
-};
+	};
 
 // General Knowledge Category
-char gen_know_arr[15][100] = {
+	char gen_know_arr[15][100] = 
+	{
 /*q1*/	"Burning to stop the flow of blood is?",
 /*q2*/	"What is raku?",
 /*q3*/	"Of which fruit is 'pearmain' a variety?",
@@ -556,9 +566,10 @@ char gen_know_arr[15][100] = {
 /*q13*/	"What is the most common metallic ore in the Earth's crust?",
 /*q14*/	"What color is Mary Poppins' umbrella?",
 /*q15*/	"What is the leaf of a fern called?"
-};
+	};
 
-char gen_know_ans_arr[60][50] = {
+	char gen_know_ans_arr[60][50] = 
+	{
 /*a1*/  "Cauterize", 
 	"Third Degree",
 	"Superficial",
@@ -619,10 +630,11 @@ char gen_know_ans_arr[60][50] = {
 	"Frond",
 	"Leaf",
 	"Berry"
-};
+	};
 
 // Science Category
-char sci_arr[15][100] = {
+	char sci_arr[15][100] = 
+	{
 /*q1*/	"What is the nearest planet to the sun?",
 /*q2*/	"What is the boiling point of water in Celsius?",
 /*q3*/	"How many elements are there in the periodic table?",
@@ -638,9 +650,10 @@ char sci_arr[15][100] = {
 /*q13*/	"Which animal was the first to be launched into space?",
 /*q14*/	"What is a geiger counter used to measure?",
 /*q15*/	"Which of Newton’s Laws states that ‘for every action, there is an equal and opposite reaction?"
-};
+	};
 
-char sci_ans_arr[60][50] = {
+	char sci_ans_arr[60][50] = 
+	{
 /*a1*/  "Earth", 
 	"Mars",
 	"Mercury",
@@ -701,10 +714,11 @@ char sci_ans_arr[60][50] = {
 	"The second law of motion",
 	"The third law of motion",
 	"The fourth law of motion"
-};
+	};
 
 // Geography Category
-char geo_arr[15][100] = {
+	char geo_arr[15][100] = 
+	{
 /*q1*/	"What is the longest river in the world?",
 /*q2*/	"What is the capital of Canada?",
 /*q3*/	"How many time zones does Russia have?",
@@ -720,9 +734,10 @@ char geo_arr[15][100] = {
 /*q13*/	"What are the two main branches of geography?",
 /*q14*/	"Which of these cities is NOT in England?",
 /*q15*/	"What river runs through Baghdad?"
-};
+	};
 
-char geo_ans_arr[60][50] = {
+	char geo_ans_arr[60][50] = 
+	{
 /*a1*/  "Nile", 
 	"Amazon",
 	"Yangtze",
@@ -783,10 +798,11 @@ char geo_ans_arr[60][50] = {
 	"Jordan",
 	"Tigris",
 	"Euphrates"
-};
+	};
 
 // History Category
-char hist_arr[15][100] = {
+	char hist_arr[15][100] = 
+	{
 /*q1*/	"How many years did the 100 years war last?",
 /*q2*/	"In which year was John F. Kennedy assassinated?",
 /*q3*/	"Which Greek historian is known as the 'Father of History'?",
@@ -802,9 +818,10 @@ char hist_arr[15][100] = {
 /*q13*/	"Which U.S. President was inducted into the National Wrestling Hall of Fame in 1992?",
 /*q14*/	"Where was Adolf Hitler born?",
 /*q15*/	"When was Pearl Harbor bombed?"
-};
+	};
 
-char hist_ans_arr[60][50] = {
+	char hist_ans_arr[60][50] = 
+	{
 /*a1*/  "96 years", 
 	"100 years",
 	"116 years",
@@ -865,10 +882,11 @@ char hist_ans_arr[60][50] = {
 	"December 7th, 1941",
 	"December 11th, 1942",
 	"December 13th, 1943"
-};
+	};
 
 // Music Category
-char music_arr[15][100] = {
+	char music_arr[15][200] = 
+	{
 /*q1*/	"Rock band AC/DC originates from which country?",
 /*q2*/	"What was Elvis Presley’s first hit in 1956?",
 /*q3*/	"What decade is the hit single “Love Shack” by the B-52s from?",
@@ -884,9 +902,10 @@ char music_arr[15][100] = {
 /*q13*/	"What US festival hosted over 350,000 music fans in 1969?",
 /*q14*/	"Who is the lead singer of famous heavy metal band, Metallica?",
 /*q15*/	"What artist released the song “Video Games” in 2012?"
-};
+	};
 
-char music_ans_arr[60][50] = {
+	char music_ans_arr[60][50] = 
+	{
 /*a1*/  "England", 
 	"Scotland",
 	"USA",
@@ -947,10 +966,11 @@ char music_ans_arr[60][50] = {
 	"Kelly Clarkson",
 	"Lana Del Ray",
 	"Taylor Swift"
-};
+	};
 
 // Film Category
-char film_arr[15][100] = {
+	char film_arr[15][100] = 
+	{
 /*q1*/	"Who is regarded as 'The Queen of Sci-Fi'?",
 /*q2*/	"What was the first feature-length animated movie ever released?",
 /*q3*/	"What flavor of Pop Tarts does Buddy the Elf use in his spaghetti in Elf?",
@@ -966,9 +986,10 @@ char film_arr[15][100] = {
 /*q13*/	"What is the highest-grossing foreign-language film to date?",
 /*q14*/	"In what year were three of Jim Carrey’s blockbuster hits released?",
 /*q15*/	"What was the first movie to ever be rated PG-13?"
-};
+	};
 
-char film_ans_arr[60][50] = {
+	char film_ans_arr[60][50] = 
+	{
 /*a1*/  "Sigourney Weaver", 
 	"Carrie Fisher",
 	"Linda Hamilton",
@@ -1029,4 +1050,6 @@ char film_ans_arr[60][50] = {
 	"Ghostbusters",
 	"Dune",
 	"2010"
-};
+	};
+	
+}
