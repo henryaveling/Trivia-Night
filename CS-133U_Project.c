@@ -41,6 +41,7 @@ int menu_func()
     int choice_1;
 
 // Printing main menu
+    system("clear");
     printf("_____________________________________________\n");
     printf("_____________________________________________\n\n");
     printf("\tWelcome to Trivia Night!\n");
@@ -113,7 +114,8 @@ void rules_func()
     int rules_r;
 
 // Printing rules
-    printf("\n\n\n\n_______________________________________________\n");
+    system("clear");
+    printf("_______________________________________________\n");
     printf("_______________________________________________\n\n");
     printf("\t  Trivia Night Rules!\n");
     printf("_______________________________________________\n");
@@ -152,7 +154,8 @@ void about_func()
 int about_r;
 
 // Printing about section
-    printf("\n\n\n\n___________________________________________\n");
+	system("clear");
+    printf("___________________________________________\n");
     printf("___________________________________________\n\n");
     printf("\t About Trivia Night!\n");
     printf("___________________________________________\n");
@@ -187,7 +190,8 @@ int score_func()
 // Exit menu choice function
 int exit_func()
 {
-    printf("\n\n\nYou chose to exit the game.");
+	system("clear");
+    printf("You chose to exit the game.");
     printf("\n\nSee you next time!");
     exit(0);
     return(0);
@@ -196,7 +200,8 @@ int exit_func()
 // Default menu choice function
 void default_func()
 {
-    printf("\n\n\n   You did not choose a valid menu option!\n");
+	system("clear");
+    printf("   You did not choose a valid menu option!\n");
     printf("\tPlease choose a valid menu option!\n");
     menu_func();
     return;
