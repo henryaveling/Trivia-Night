@@ -29,7 +29,7 @@ int score_func();
 int exit_func();
 void default_func();
 char cat_func(char a, char b);
-
+int cat_choice_func();
 
 
 
@@ -124,11 +124,23 @@ int menu_func()
 
 // New game menu choice function
 int newg_func()
+{	
+    cat_choice_func();
+	
+	
+    return(0);
+}
+
+
+
+
+
+
+int cat_choice_func()
 {
+    int cat_choice;
 	
-	int cat_choice;
-	
-	// Printing category menu
+    // Printing category menu
     printf("_____________________________________________\n");
     printf("_____________________________________________\n\n");
     printf("\tTo Begin Trivia Night!\n");
@@ -150,14 +162,17 @@ int newg_func()
     printf("_____________________________________________\n");
     printf("_____________________________________________\n\n");
     
-	// User input for category menu choice
+    // User input for category menu choice
     scanf("%d", &cat_choice);
-	
-	
-	return(0);
+    
+    if (cat_choice>10 || cat_choice <1)
+    {
+    system("clear");	
+    printf("\nPlease select a valid option\n");
+    cat_choice_func();
+    }
+return(0);	
 }
-
-
 
 
 
