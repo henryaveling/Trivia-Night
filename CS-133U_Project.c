@@ -6,11 +6,19 @@
 /* with a scorekeeping system, a timer, and user profiles.      */
 /****************************************************************/
 
+
+
+
+
 // Program directives
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
+
+
+
+
 
 // Function declarations
 int menu_func();
@@ -20,6 +28,11 @@ void about_func();
 int score_func();
 int exit_func();
 void default_func();
+char cat_func(char a, char b);
+
+
+
+
 
 // Main program function
 int main (void)
@@ -101,11 +114,18 @@ int menu_func()
 }
 
 
+
+
+
 // New game menu choice function
 int newg_func()
 {
     return(0);
 }
+
+
+
+
 
 // Rules menu choice function
 void rules_func()
@@ -147,6 +167,10 @@ scanf("%d", &rules_r);
     return;
 }
 
+
+
+
+
 // About menu choice function
 void about_func()
 {
@@ -182,11 +206,21 @@ scanf("%d", &about_r);
     return;
 }
 
+
+
+
+
+
 // Scoreboard menu choice fucntion(unsure about func type currently)
 int score_func()
 {
     return(0);
 }
+
+
+
+
+
 
 // Exit menu choice function
 int exit_func()
@@ -198,6 +232,11 @@ int exit_func()
     return(0);
 }
 
+
+
+
+
+
 // Default menu choice function
 void default_func()
 {
@@ -207,6 +246,11 @@ void default_func()
     menu_func();
     return;
 }
+
+
+
+
+
 
 // Categories
 char cat_func(char a, char b)
