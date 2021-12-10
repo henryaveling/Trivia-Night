@@ -78,41 +78,41 @@ int menu_func()
     switch(choice_1)  
     {  
         case 1 : 
-    	    {
-	    system("clear");	    
-	    newg_func();
-	    break;    
-	    }
+    	{
+	system("clear");	    
+	newg_func();
+	break;    
+	}
         case 2:
-	    {
-            system("clear");
-	    rules_func();
-	    break;
-	    }
+	{
+        system("clear");
+	rules_func();
+	break;
+	}
         case 3:
-	    {
-	    system("clear");	    
-	    about_func();
-	    break;
-	    }     
+	{
+	system("clear");	    
+	about_func();
+	break;
+	}     
         case 4:
-	    {
-	    system("clear");
-	    score_func();
-	    break;
-	    } 
+	{
+	system("clear");
+	score_func();
+	break;
+	} 
         case 5:
-	    {
-            system("clear");
-	    exit_func();
-	    break; 
-	    } 
+	{
+        system("clear");
+	exit_func();
+	break; 
+	} 
         default: 
-            {
-            system("clear");
-	    default_func();
-	    break;     
-            }
+        {
+        system("clear");
+	default_func();
+	break;     
+        }
 
     }  
     return(0);
@@ -165,13 +165,69 @@ int cat_choice_func()
     // User input for category menu choice
     scanf("%d", &cat_choice);
     
-    if (cat_choice>10 || cat_choice <1)
-    {
-    system("clear");	
-    printf("\nPlease select a valid option\n");
-    cat_choice_func();
-    }
-	
+    // Switch case for main menu
+    switch(cat_choice)  
+    {  
+        case 1 : 
+        {
+        system("clear");	        
+        break;    
+        }
+        case 2:
+        {
+        system("clear");
+        break;
+        }
+        case 3:
+        {
+        system("clear");	        
+        break;
+        }     
+        case 4:
+        {
+        system("clear"); 
+        break;
+        } 
+        case 5:
+        {
+        system("clear"); 
+        break; 
+        } 
+        case 6:
+        {
+        system("clear");	    
+        break; 
+        }  
+        case 7:
+        {
+        system("clear");	    
+        break; 
+        }
+        case 8:
+        {
+        system("clear");	    
+        break; 
+        }
+        case 9:
+        {
+        system("clear");	    
+        break; 
+        }
+        case 10:
+        {
+        system("clear");	    
+        break; 
+        }
+        default: 
+        {
+        system("clear");	
+        printf("\nPlease select a valid option\n");
+        cat_choice_func();
+        break;     
+        }
+
+    }  
+
 return(0);	
 }
 
