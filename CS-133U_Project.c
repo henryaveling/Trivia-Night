@@ -171,6 +171,7 @@ int cat_choice_func()
     printf("\nPlease select a valid option\n");
     cat_choice_func();
     }
+	
 return(0);	
 }
 
