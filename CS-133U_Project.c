@@ -55,7 +55,6 @@ int menu_func()
     int choice_1;
 
 // Printing main menu
-    system("clear");
     printf("_____________________________________________\n");
     printf("_____________________________________________\n\n");
     printf("\tWelcome to Trivia Night!\n");
@@ -80,31 +79,37 @@ int menu_func()
     {  
         case 1 : 
     	    {
+	    system("clear");	    
 	    newg_func();
 	    break;    
 	    }
         case 2:
 	    {
+            system("clear");
 	    rules_func();
 	    break;
 	    }
         case 3:
 	    {
+	    system("clear");	    
 	    about_func();
 	    break;
 	    }     
         case 4:
 	    {
+	    system("clear");
 	    score_func();
 	    break;
 	    } 
         case 5:
 	    {
+            system("clear");
 	    exit_func();
 	    break; 
 	    } 
         default: 
             {
+            system("clear");
 	    default_func();
 	    break;     
             }
@@ -124,7 +129,6 @@ int newg_func()
 	int cat_choice;
 	
 	// Printing category menu
-    system("clear");
     printf("_____________________________________________\n");
     printf("_____________________________________________\n\n");
     printf("\tTo Begin Trivia Night!\n");
@@ -165,7 +169,6 @@ void rules_func()
     int rules_r;
 
 // Printing rules
-    system("clear");
     printf("_______________________________________________\n");
     printf("_______________________________________________\n\n");
     printf("\t  Trivia Night Rules!\n");
@@ -188,15 +191,16 @@ void rules_func()
     printf("_______________________________________________\n\n");
 
 // User input to return to main menu
-scanf("%d", &rules_r);
+    scanf("%d", &rules_r);
     if (rules_r == 1)
     {
+    system("clear");
     menu_func();
     }
 	else
     {
-	system("clear");	
-    printf("\n\n\nPlease select a valid option\n");
+    system("clear");	
+    printf("\nPlease select a valid option\n");
     rules_func();
     }
     return;
@@ -214,7 +218,6 @@ void about_func()
 int about_r;
 
 // Printing about section
-    system("clear");
     printf("___________________________________________\n");
     printf("___________________________________________\n\n");
     printf("\t About Trivia Night!\n");
@@ -235,12 +238,13 @@ int about_r;
 scanf("%d", &about_r);
     if (about_r == 1)
     {
+    system("clear");
     menu_func();
     }
 	else
     {
-	system("clear");	
-    printf("\n\n\nPlease select a valid option\n");
+    system("clear");	
+    printf("\nPlease select a valid option\n");
     about_func();
     }
 	
