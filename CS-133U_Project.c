@@ -370,10 +370,10 @@ void default_func()
 
 
 // Categories
-char cat_func(char a, char b)
+char sports_func()
 {
 
-	// Sports Category
+// Sports Category
     char sport_arr[15][100] = 
     {
 /*q1*/	"In which sport might you come across an Albatross?",
@@ -395,67 +395,72 @@ char cat_func(char a, char b)
 
     char sport_ans_arr[60][50] = 
     {
-/*a1*/  "Golf", 
-	"Baseball",
-	"Cricket",
+/*a1*/  "Golf" 
+	"Baseball"
+	"Cricket"
 	"American Football",
-/*a2*/  "Basketball",
-	"Sumo Wrestling",
-	"Baseball",
+/*a2*/  "Basketball"
+	"Sumo Wrestling"
+	"Baseball"
 	"Hockey",
-/*a3*/  "AC Milan",
-	"Liverpool",
-	"Real Madrid",
+/*a3*/  "AC Milan"
+	"Liverpool"
+	"Real Madrid"
 	"Barcelona",
-/*a4*/  "American Football",
-	"Hockey",
-	"Track and Field",
+/*a4*/  "American Football"
+	"Hockey"
+	"Track and Field"
 	"Baseball",
-/*a5*/  "16",
-	"10",
-	"9",
+/*a5*/  "16"
+	"10"
+	"9"
 	"12",
-/*a6*/  "Roger Federer",
-	"Pete Sampras",
-	"Andre Agassi",
+/*a6*/  "Roger Federer"
+	"Pete Sampras"
+	"Andre Agassi"
 	"Rafael Nadal",
-/*a7*/  "12",
-	"10",
-	"8",
+/*a7*/  "12"
+	"10"
+	"8"
 	"6",
-/*a8*/  "Oakland Raiders",
-	"Chicago Bears",
-	"New England Patriots",
+/*a8*/  "Oakland Raiders"
+	"Chicago Bears"
+	"New England Patriots"
 	"The Minnesota Vikings",
-/*a9*/  "American football",
-	"Baseball",
-	"Hockey",
+/*a9*/  "American football"
+	"Baseball"
+	"Hockey"
 	"Tennis",
-/*a10*/ "28",
-	"26",
-	"24",
+/*a10*/ "28"
+	"26"
+	"24"
 	"22",
-/*a11*/ "Resign",
-	"Check",
-	"Checkmate",
+/*a11*/ "Resign"
+	"Check"
+	"Checkmate"
 	"Castle",
-/*a12*/ "Hockey",
-	"Figure Skating",
-	"Speed Skating",
+/*a12*/ "Hockey"
+	"Figure Skating"
+	"Speed Skating"
 	"Curling",
-/*a13*/ "400 Meters",
-	"800 Meters",
-	"1000 Meters",
+/*a13*/ "400 Meters"
+	"800 Meters"
+	"1000 Meters"
 	"1200 Meters",
-/*a14*/ "Tennis",
-	"Ice Hockey",
-	"American Football",
+/*a14*/ "Tennis"
+	"Ice Hockey"
+	"American Football"
 	"Baseball",
-/*a15*/ "Commissioner's Trophy",
-	"Heisman Trophy",
-	"Stanley cup Trophy",
+/*a15*/ "Commissioner's Trophy"
+	"Heisman Trophy"
+	"Stanley cup Trophy"
 	"Vince Lombardi Trophy"
     };
+}
+
+
+char math_func()
+{
 
 // Math Category
     char math_arr[15][100] = 
@@ -479,67 +484,73 @@ char cat_func(char a, char b)
 
     char math_ans_arr[60][50] = 
     {
-/*a1*/  "Two", 
-	"Four",
-	"Six",
+/*a1*/  "Two" 
+	"Four"
+	"Six"
 	"Eight",
-/*a2*/  "One",
-	"Six",
-	"Eight",
+/*a2*/  "One"
+	"Six"
+	"Eight"
 	"Five",
-/*a3*/  "One",
-	"One Million",
-	"Zero",
+/*a3*/  "One"
+	"One Million"
+	"Zero"
 	"Ten",
-/*a4*/  "Billion",
-	"Zillion",
-	"Quintillion",
+/*a4*/  "Billion"
+	"Zillion"
+	"Quintillion"
 	"Quadrillion",
-/*a5*/  "Infinite",
-	"One Million",
-	"Unknown",
+/*a5*/  "Infinite"
+	"One Million"
+	"Unknown"
 	"Zero",
-/*a6*/  "20",
-	"19",
-	"25",
+/*a6*/  "20"
+	"19"
+	"25"
 	"30",
-/*a7*/  "Square",
-	"Triangle",
-	"Circle",
+/*a7*/  "Square"
+	"Triangle"
+	"Circle"
 	"Cube",
-/*a8*/  "One Eighth",
-	"One Sixteenth",
-	"One Quarter",
+/*a8*/  "One Eighth"
+	"One Sixteenth"
+	"One Quarter"
 	"One Half",
-/*a9*/  "Hypotenuse",
-	"Vertex",
-	"Leg",
+/*a9*/  "Hypotenuse"
+	"Vertex"
+	"Leg"
 	"Base",
-/*a10*/ "33",
-	"9",
-	"6",
+/*a10*/ "33"
+	"9"
+	"6"
 	"1",
-/*a11*/ "Denominator",
-	"Nominator",
-	"Numerator",
+/*a11*/ "Denominator"
+	"Nominator"
+	"Numerator"
 	"Decimal",
-/*a12*/ "Decimal",
-	"Nominator",
-	"Numerator",
+/*a12*/ "Decimal"
+	"Nominator"
+	"Numerator"
 	"Denominator",
-/*a13*/ "One Million",
-	"One Billion",
-	"One Trillion",
+/*a13*/ "One Million"
+	"One Billion"
+	"One Trillion"
 	"One Thousand",
-/*a14*/ "Sine",
-	"Cosine",
-	"Tangent",
+/*a14*/ "Sine"
+	"Cosine"
+	"Tangent"
 	"Fractal",
-/*a15*/ "10",
-	"15",
-	"16",
+/*a15*/ "10"
+	"15"
+	"16"
 	"20"
     };
+}
+
+
+
+char pop_func()
+{
 
 // Pop Culture Category
     char pop_cult_arr[15][100] = 
@@ -561,69 +572,78 @@ char cat_func(char a, char b)
 /*q15*/	"When was the first Grammy Awards held?"
     };
 
+	
+	
+	
     char pop_cult_ans_arr[60][50] = 
     {
-/*a1*/  "Chris Farley", 
-	"Chris Rock",
-	"Dave Chappelle",
+/*a1*/  "Chris Farley"
+	"Chris Rock"
+	"Dave Chappelle"
 	"Larry The Cable Guy",
-/*a2*/  "Skip",
-	"Comet",
-	"Sally",
+/*a2*/  "Skip"
+	"Comet"
+	"Sally"
 	"Lassie",
-/*a3*/  "4",
-	"3",
-	"8",
+/*a3*/  "4"
+	"3"
+	"8"
 	"9",
-/*a4*/  "Ten Thousand",
-	"Five Million",
-	"One Million",
+/*a4*/  "Ten Thousand"
+	"Five Million"
+	"One Million"
 	"Six Million",
-/*a5*/  "Tiger King",
-	"American Sniper",
-	"Spiderman",
+/*a5*/  "Tiger King"
+	"American Sniper"
+	"Spiderman"
 	"The Avengers",
-/*a6*/  "Jeopardy",
-	"Price Is Right",
-	"Wheel Of Fortune",
+/*a6*/  "Jeopardy"
+	"Price Is Right"
+	"Wheel Of Fortune"
 	"Who Wants To Be A Millionaire",
-/*a7*/  "Ice Cube",
-	"Snoop Dogg",
-	"Ice T",
+/*a7*/  "Ice Cube"
+	"Snoop Dogg"
+	"Ice T"
 	"50 Cent",
-/*a8*/  "Spiderman",
-	"Superman",
-	"Batman",
+/*a8*/  "Spiderman"
+	"Superman"
+	"Batman"
 	"Iron Man",
-/*a9*/  "5",
-	"4",
-	"3",
+/*a9*/  "5"
+	"4"
+	"3"
 	"2",
-/*a10*/ "Yellow Submarine",
-	"Thriller",
-	"Back in Black",
+/*a10*/ "Yellow Submarine"
+	"Thriller"
+	"Back in Black"
 	"Hotel California",
-/*a11*/ "Trap",
-	"Gangster",
-	"Grime",
+/*a11*/ "Trap"
+	"Gangster"
+	"Grime"
 	"Industrial",
-/*a12*/ "Pop",
-	"Hip Pop",
-	"New Pop",
+/*a12*/ "Pop"
+	"Hip Pop"
+	"New Pop"
 	"K Pop",
-/*a13*/ "Oscars",
-	"Globes",
-	"Politzer",
+/*a13*/ "Oscars"
+	"Globes"
+	"Politzer"
 	"Grammy",
-/*a14*/ "1900",
-	"1928",
-	"1942",
+/*a14*/ "1900"
+	"1928"
+	"1942"
 	"1950",
-/*a15*/ "1929",
-	"1939",
-	"1949",
+/*a15*/ "1929"
+	"1939"
+	"1949"
 	"1959"
     };
+}
+
+
+
+char lit_func()
+{
 
 // Literature Category
     char lit_arr[15][100] = 
@@ -647,68 +667,73 @@ char cat_func(char a, char b)
 
     char lit_ans_arr[60][50] = 
     {
-/*a1*/  "George Lucus", 
-	"J. K. Rowling",
-	"J. R. R. Tolkien",
+/*a1*/  "George Lucus"
+	"J. K. Rowling"
+	"J. R. R. Tolkien"
 	"George R. R. Martin",
-/*a2*/  "George Lucus",
-	"J. K. Rowling",
-	"J. R. R. Tolkien",
+/*a2*/  "George Lucus"
+	"J. K. Rowling"
+	"J. R. R. Tolkien"
 	"George R. R. Martin",
-/*a3*/  "Issac Asimov",
-	"Mark Twain",
-	"George Orwell",
+/*a3*/  "Issac Asimov"
+	"Mark Twain"
+	"George Orwell"
 	"James S. A. Corey",
-/*a4*/  "Mordor",
-	"Gondor",
-	"Helm’s Deep",
+/*a4*/  "Mordor"
+	"Gondor"
+	"Helm’s Deep"
 	"The Shire",
-/*a5*/  "English",
-	"Russian",
-	"Spanish",
+/*a5*/  "English"
+	"Russian"
+	"Spanish"
 	"Japanese",
-/*a6*/  "3",
-	"4",
-	"5",
+/*a6*/  "3"
+	"4"
+	"5"
 	"6",
-/*a7*/  "1927",
-	"1947",
-	"1937",
+/*a7*/  "1927"
+	"1947"
+	"1937"
 	"1928",
-/*a8*/  "Star Wars",
-	"Dust",
-	"Sandstorm",
+/*a8*/  "Star Wars"
+	"Dust"
+	"Sandstorm"
 	"Dune",
-/*a9*/  "3",
-	"4",
-	"5",
+/*a9*/  "3"
+	"4"
+	"5"
 	"6",
-/*a10*/ "Jupiter",
-	"Saturn",
-	"Mars",
+/*a10*/ "Jupiter"
+	"Saturn"
+	"Mars"
 	"Pluto",
-/*a11*/ "1850",
-	"1860",
-	"1870",
+/*a11*/ "1850"
+	"1860"
+	"1870"
 	"1880",
-/*a12*/ "Tiger",
-	"Panther",
-	"Lion",
+/*a12*/ "Tiger"
+	"Panther"
+	"Lion"
 	"Bear",
-/*a13*/ "3",
-	"4",
-	"5",
+/*a13*/ "3"
+	"4"
+	"5"
 	"6",
-/*a14*/ "Dog",
-	"Cat",
-	"Cow",
+/*a14*/ "Dog"
+	"Cat"
+	"Cow"
 	"Horse",
-/*a15*/ "Desk",
-	"Wardrobe",
-	"Couch",
+/*a15*/ "Desk"
+	"Wardrobe"
+	"Couch"
 	"Fridge"
     };
+}
 
+
+
+char gen_func()
+{
 // General Knowledge Category
     char gen_know_arr[15][100] = 
     {
@@ -731,67 +756,73 @@ char cat_func(char a, char b)
 
     char gen_know_ans_arr[60][50] = 
     {
-/*a1*/  "Cauterize", 
-	"Third Degree",
-	"Superficial",
+/*a1*/  "Cauterize"
+	"Third Degree"
+	"Superficial"
 	"First Degree",
-/*a2*/  "Japanese Sport",
-	"Japanese Pottery",
-	"Japanese Art",
+/*a2*/  "Japanese Sport"
+	"Japanese Pottery"
+	"Japanese Art"
 	"Japanese Painting",
-/*a3*/  "Plum",
-	"Orange",
-	"Apple",
+/*a3*/  "Plum"
+	"Orange"
+	"Apple"
 	"Cherry",
-/*a4*/  "Type C",
-	"Type B",
-	"Type A",
+/*a4*/  "Type C"
+	"Type B"
+	"Type A"
 	"Type O",
-/*a5*/  "Hover",
-	"Pad",
-	"Pool",
+/*a5*/  "Hover"
+	"Pad"
+	"Pool"
 	"Gang",
-/*a6*/  "1",
-	"2",
-	"3",
+/*a6*/  "1"
+	"2"
+	"3"
 	"4",
-/*a7*/  "Evaporation",
-	"Pressure",
-	"Rainfall",
+/*a7*/  "Evaporation"
+	"Pressure"
+	"Rainfall"
 	"Voltage",
-/*a8*/  "Nu",
-	"Mu",
-	"Gamma",
+/*a8*/  "Nu"
+	"Mu"
+	"Gamma"
 	"Kappa",
-/*a9*/  "Sudan",
-	"Algeria",
-	"DR Congo",
+/*a9*/  "Sudan"
+	"Algeria"
+	"DR Congo"
 	"Libya",
-/*a10*/ "Fusing",
-	"Fission",
-	"Fusion",
+/*a10*/ "Fusing"
+	"Fission"
+	"Fusion"
 	"Fissure",
-/*a11*/ "Garnet",
-	"Graphite",
-	"Calcite",
+/*a11*/ "Garnet"
+	"Graphite"
+	"Calcite"
 	"Quartz",
-/*a12*/ "China",
-	"France",
-	"Russia",
+/*a12*/ "China"
+	"France"
+	"Russia"
 	"Italy",
-/*a13*/ "Aluminum",
-	"Copper",
-	"Gold",
+/*a13*/ "Aluminum"
+	"Copper"
+	"Gold"
 	"Silver",
-/*a14*/ "Black",
-	"Pink",
-	"White",
+/*a14*/ "Black"
+	"Pink"
+	"White"
 	"Red",
-/*a15*/ "Pad",
-	"Frond",
-	"Leaf",
+/*a15*/ "Pad"
+	"Frond"
+	"Leaf"
 	"Berry"
     };
+}
+
+
+
+char sci_func()
+{
 
 // Science Category
     char sci_arr[15][100] = 
@@ -815,67 +846,73 @@ char cat_func(char a, char b)
 
     char sci_ans_arr[60][50] = 
     {
-/*a1*/  "Earth", 
-	"Mars",
-	"Mercury",
+/*a1*/  "Earth"
+	"Mars"
+	"Mercury"
 	"Saturn",
-/*a2*/  "0 degrees",
-	"50 degrees",
-	"100 degrees",
+/*a2*/  "0 degrees"
+	"50 degrees"
+	"100 degrees"
 	"150 degrees",
-/*a3*/  "86",
-	"102",
-	"106",
+/*a3*/  "86"
+	"102"
+	"106"
 	"118",
-/*a4*/  "Alexander Graham Bell",
-	"Benjamin Franklin",
-	"Sir Isaac Newton",
+/*a4*/  "Alexander Graham Bell"
+	"Benjamin Franklin"
+	"Sir Isaac Newton"
 	"Charles Darwin",
-/*a5*/  "203",
-	"204",
-	"205",
+/*a5*/  "203"
+	"204"
+	"205"
 	"206",
-/*a6*/  "Copper",
-	"Aluminum",
-	"Zinc",
+/*a6*/  "Copper"
+	"Aluminum"
+	"Zinc"
 	"Nickel",
-/*a7*/  "Viscosity",
-	"Buoyancy",
-	"Temperature",
+/*a7*/  "Viscosity"
+	"Buoyancy"
+	"Temperature"
 	"Acidity",
-/*a8*/  "Meter",
-	"Liter",
-	"Gram",
+/*a8*/  "Meter"
+	"Liter"
+	"Gram"
 	"Fathom",
-/*a9*/  "Uranium",
-	"Titanium",
-	"Diamond",
+/*a9*/  "Uranium"
+	"Titanium"
+	"Diamond"
 	"Tungsten",
-/*a10*/ "Venus",
-	"Mars",
-	"Mercury",
+/*a10*/ "Venus"
+	"Mars"
+	"Mercury"
 	"Uranus",
-/*a11*/ "Neptune",
-	"Saturn",
-	"Earth",
+/*a11*/ "Neptune"
+	"Saturn"
+	"Earth"
 	"Jupiter",
-/*a12*/ "Tibet",
-	"New Zealand",
-	"Oregon",
+/*a12*/ "Tibet"
+	"New Zealand"
+	"Oregon"
 	"California",
-/*a13*/ "Dog",
-	"Cat",
-	"Mouse",
+/*a13*/ "Dog"
+	"Cat"
+	"Mouse"
 	"Rabbit",
-/*a14*/ "Mass",
-	"Volume",
-	"Radiation",
+/*a14*/ "Mass"
+	"Volume"
+	"Radiation"
 	"Decay",
-/*a15*/ "The first law of motion",
-	"The second law of motion",
-	"The third law of motion",
+/*a15*/ "The first law of motion"
+	"The second law of motion"
+	"The third law of motion"
 	"The fourth law of motion"
     };
+}
+
+
+
+char geo_func()
+{
 
 // Geography Category
     char geo_arr[15][100] = 
@@ -899,67 +936,73 @@ char cat_func(char a, char b)
 
     char geo_ans_arr[60][50] = 
     {
-/*a1*/  "Nile", 
-	"Amazon",
-	"Yangtze",
+/*a1*/  "Nile"
+	"Amazon"
+	"Yangtze"
 	"Yellow",
-/*a2*/  "Montreal",
-	"Vancouver",
-	"Ottawa",
+/*a2*/  "Montreal"
+	"Vancouver"
+	"Ottawa"
 	"Victoria",
-/*a3*/  "4",
-	"7",
-	"11",
+/*a3*/  "4"
+	"7"
+	"11"
 	"13",
-/*a4*/  "13",
-	"14",
-	"9",
+/*a4*/  "13"
+	"14"
+	"9"
 	"15",
-/*a5*/  "Denmark",
-	"Ireland",
-	"Scotland",
+/*a5*/  "Denmark"
+	"Ireland"
+	"Scotland"
 	"Finland",
-/*a6*/  "Egypt",
-	"Libya",
-	"Ethiopia",
+/*a6*/  "Egypt"
+	"Libya"
+	"Ethiopia"
 	"Sudan",
-/*a7*/  "Africa",
-	"Europe",
-	"Asia",
+/*a7*/  "Africa"
+	"Europe"
+	"Asia"
 	"North America",
-/*a8*/  "Sweden",
-	"Austria",
-	"Germany",
+/*a8*/  "Sweden"
+	"Austria"
+	"Germany"
 	"Czech Republic",
-/*a9*/  "1",
-	"3",
-	"5",
+/*a9*/  "1"
+	"3"
+	"5"
 	"7",
-/*a10*/ "South America",
-	"North America",
-	"Australia",
+/*a10*/ "South America"
+	"North America"
+	"Australia"
 	"Europe",
-/*a11*/ "Pacific",
-	"Atlantic",
-	"Indian",
+/*a11*/ "Pacific"
+	"Atlantic"
+	"Indian"
 	"Arctic",
-/*a12*/ "Iquique",
-	"Puerto Montt",
-	"Valparaiso",
+/*a12*/ "Iquique"
+	"Puerto Montt"
+	"Valparaiso"
 	"Santiago",
-/*a13*/ "Environmental and Human",
-	"Human and Physical",
-	"Physical and Environmental",
+/*a13*/ "Environmental and Human"
+	"Human and Physical"
+	"Physical and Environmental"
 	"Environmental and Cartographic",
-/*a14*/ "Derry",
-	"Fakenham",
-	"Bath",
+/*a14*/ "Derry"
+	"Fakenham"
+	"Bath"
 	"Derby",
-/*a15*/ "Karun",
-	"Jordan",
-	"Tigris",
+/*a15*/ "Karun"
+	"Jordan"
+	"Tigris"
 	"Euphrates"
     };
+}
+
+
+
+char hist_func()
+{
 
 // History Category
     char hist_arr[15][100] = 
@@ -983,67 +1026,74 @@ char cat_func(char a, char b)
 
     char hist_ans_arr[60][50] = 
     {
-/*a1*/  "96 years", 
-	"100 years",
-	"116 years",
+/*a1*/  "96 years"
+	"100 years"
+	"116 years"
 	"122 years",
-/*a2*/  "1961",
-	"1963",
-	"1965",
+/*a2*/  "1961"
+	"1963"
+	"1965"
 	"1968",
-/*a3*/  "Thucydides",
-	"Aristotle",
-	"Dionysius",
+/*a3*/  "Thucydides"
+	"Aristotle"
+	"Dionysius"
 	"Herodotus",
-/*a4*/  "3",
-	"5",
-	"7",
+/*a4*/  "3"
+	"5"
+	"7"
 	"9",
-/*a5*/  "Corinth",
-	"Sparta",
-	"Rhodes",
+/*a5*/  "Corinth"
+	"Sparta"
+	"Rhodes"
 	"Syracuse",
-/*a6*/  "Mesopotamia",
-	"Babylon",
-	"Persepolis",
+/*a6*/  "Mesopotamia"
+	"Babylon"
+	"Persepolis"
 	"Carthage",
-/*a7*/  "Henry IV",
-	"Henry VI",
-	"Henry VII",
+/*a7*/  "Henry IV"
+	"Henry VI"
+	"Henry VII"
 	"Henry VIII",
-/*a8*/  "The Korean War",
-	"The Vietnam War",
-	"WWII",
+/*a8*/  "The Korean War"
+	"The Vietnam War"
+	"WWII"
 	"The Iraq War",
-/*a9*/  "The Guillotine",
-	"Crucifixion",
-	"Burned at the stake",
+/*a9*/  "The Guillotine"
+	"Crucifixion"
+	"Burned at the stake"
 	"Torture",
-/*a10*/ "1953",
-	"1961",
-	"1967",
+/*a10*/ "1953"
+	"1961"
+	"1967"
 	"1970",
-/*a11*/ "Brazil",
-	"Chile",
-	"Argentina",
+/*a11*/ "Brazil"
+	"Chile"
+	"Argentina"
 	"Peru",
-/*a12*/ "Michelangelo",
-	"Raphael",
-	"Leonardo da Vinci",
+/*a12*/ "Michelangelo"
+	"Raphael"
+	"Leonardo da Vinci"
 	"Caravaggio",
-/*a13*/ "Theodore Roosevelt",
-	"Thomas Jefferson",
-	"Abraham Lincoln",
+/*a13*/ "Theodore Roosevelt"
+	"Thomas Jefferson"
+	"Abraham Lincoln"
 	"Jimmy Carter",
-/*a14*/ "Austria",
-	"Germany",
-	"Sweden",
+/*a14*/ "Austria"
+	"Germany"
+	"Sweden"
 	"Switzerland",
-/*a15*/ "December 3rd, 1940",
-	"December 7th, 1941",
-	"December 11th, 1942",
+/*a15*/ "December 3rd, 1940"
+	"December 7th, 1941"
+	"December 11th, 1942"
 	"December 13th, 1943"
     };
+}
+
+
+
+
+char music_func()
+{
 
 // Music Category
     char music_arr[15][200] = 
@@ -1067,67 +1117,73 @@ char cat_func(char a, char b)
 
     char music_ans_arr[60][50] = 
     {
-/*a1*/  "England", 
-	"Scotland",
-	"USA",
+/*a1*/  "England"
+	"Scotland"
+	"USA"
 	"Australia",
-/*a2*/  "Jailhouse Rock",
-	"Blue Suede Shoes",
-	"Heartbreak Hotel",
+/*a2*/  "Jailhouse Rock"
+	"Blue Suede Shoes"
+	"Heartbreak Hotel"
 	"Hound Dog",
-/*a3*/  "Sixties",
-	"Seventies",
-	"Eighties",
+/*a3*/  "Sixties"
+	"Seventies"
+	"Eighties"
 	"Nineties",
-/*a4*/  "Good Kid, m.A.A.d city",
-	"To Pimp a Butterfly",
-	"Untitled Unmastered",
+/*a4*/  "Good Kid, m.A.A.d city"
+	"To Pimp a Butterfly"
+	"Untitled Unmastered"
 	"Section.80",
-/*a5*/  "Malcolm James McCormick",
-	"McGregor John Miller",
-	"Macauley Jacob Murphy",
+/*a5*/  "Malcolm James McCormick"
+	"McGregor John Miller"
+	"Macauley Jacob Murphy"
 	"Michael Joseph Martin",
-/*a6*/  "Dark Side of the Moon",
-	"Animals",
-	"Wish You Were Here",
+/*a6*/  "Dark Side of the Moon"
+	"Animals"
+	"Wish You Were Here"
 	"The Wall",
-/*a7*/  "Didgeridoo",
-	"Tambol",
-	"Bangkakaw",
+/*a7*/  "Didgeridoo"
+	"Tambol"
+	"Bangkakaw"
 	"Tibod",
-/*a8*/  "George Harrison",
-	"Ringo Starr",
-	"John Lennon",
+/*a8*/  "George Harrison"
+	"Ringo Starr"
+	"John Lennon"
 	"Paul McCartney",
-/*a9*/  "Spiceworld",
-	"Spice",
-	"One Hour of Girl Power",
+/*a9*/  "Spiceworld"
+	"Spice"
+	"One Hour of Girl Power"
 	"Forever",
-/*a10*/ "Heart attack",
-	"Vehicle accident",
-	"Plane accident",
+/*a10*/ "Heart attack"
+	"Vehicle accident"
+	"Plane accident"
 	"Pancreatic cancer",
-/*a11*/ "Softly",
-	"Loudly",
-	"Lively",
+/*a11*/ "Softly"
+	"Loudly"
+	"Lively"
 	"Slowly",
-/*a12*/ "Freddie Mercury",
-	"Brian May",
-	"John Deacon",
+/*a12*/ "Freddie Mercury"
+	"Brian May"
+	"John Deacon"
 	"Roger Taylor",
-/*a13*/ "Glastonbury",
-	"Summer Jam",
-	"Woodstock",
+/*a13*/ "Glastonbury"
+	"Summer Jam"
+	"Woodstock"
 	"Heatwave",
-/*a14*/ "Kirk Hammett",
-	"Cliff Burton",
-	"Lars Ulrich",
+/*a14*/ "Kirk Hammett"
+	"Cliff Burton"
+	"Lars Ulrich"
 	"James Hetfield",
-/*a15*/ "Carly Rae Jepsen",
-	"Kelly Clarkson",
-	"Lana Del Ray",
+/*a15*/ "Carly Rae Jepsen"
+	"Kelly Clarkson"
+	"Lana Del Ray"
 	"Taylor Swift"
     };
+}
+
+
+
+char film_func()
+{
 
 // Film Category
     char film_arr[15][100] = 
@@ -1151,66 +1207,67 @@ char cat_func(char a, char b)
 
      char film_ans_arr[60][50] = 
      {
-/*a1*/  "Sigourney Weaver", 
-	"Carrie Fisher",
-	"Linda Hamilton",
+/*a1*/  "Sigourney Weaver"
+	"Carrie Fisher"
+	"Linda Hamilton"
 	"Gillian Anderson",
-/*a2*/  "Steamboat Willie",
-	"Alice in Wonderland",
-	"Snow White and the Seven Dwarves",
+/*a2*/  "Steamboat Willie"
+	"Alice in Wonderland"
+	"Snow White and the Seven Dwarves"
 	"Gulliver’s Travels",
-/*a3*/  "Strawberry",
-	"Chocolate",
-	"Smores",
+/*a3*/  "Strawberry"
+	"Chocolate"
+	"Smores"
 	"Cherry",
-/*a4*/  "Empire State Building",
-	"Union Bank Plaza",
-	"The Ritz",
+/*a4*/  "Empire State Building"
+	"Union Bank Plaza"
+	"The Ritz"
 	"Nakatomi Plaza",
-/*a5*/  "Samuel L. Jackson",
-	"Jeff Goldblum",
-	"Richard Attenborough",
+/*a5*/  "Samuel L. Jackson"
+	"Jeff Goldblum"
+	"Richard Attenborough"
 	"Alan Grant",
-/*a6*/  "Elijah Wood",
-	"Sean Bean",
-	"Sean Astin",
+/*a6*/  "Elijah Wood"
+	"Sean Bean"
+	"Sean Astin"
 	"Ian McKellen",
-/*a7*/  "Pulp Fiction",
-	"Natural Born Killers",
-	"Leon",
+/*a7*/  "Pulp Fiction"
+	"Natural Born Killers"
+	"Leon"
 	"Shawshank Redemption",
-/*a8*/  "At least 84",
-	"At least 138",
-	"At least 164",
+/*a8*/  "At least 84"
+	"At least 138"
+	"At least 164"
 	"At least 208",
-/*a9*/  "Psycho",
-	"Rope",
-	"Topaz",
+/*a9*/  "Psycho"
+	"Rope"
+	"Topaz"
 	"Sabotage",
-/*a10*/ "La La Land",
-	"Moonlight",
-	"Arrival",
+/*a10*/ "La La Land"
+	"Moonlight"
+	"Arrival"
 	"Hacksaw Ridge",
-/*a11*/ "Gunpowder",
-	"Napalm",
-	"Biscuits",
+/*a11*/ "Gunpowder"
+	"Napalm"
+	"Biscuits"
 	"Rain",
-/*a12*/ "Colt Diamondback .38 Special",
-	"Colt King Cobra .357 Magnum",
-	"Smith & Wesson Model 19 .357 Magnum",
+/*a12*/ "Colt Diamondback .38 Special"
+	"Colt King Cobra .357 Magnum"
+	"Smith & Wesson Model 19 .357 Magnum"
 	"Smith & Wesson Model 29 .44 Magnum",
-/*a13*/ "Hero",
-	"Parasite",
-	"Crouching Tiger, Hidden Dragon",
+/*a13*/ "Hero"
+	"Parasite"
+	"Crouching Tiger, Hidden Dragon"
 	"Pan’s Labyrinth",
-/*a14*/ "1990",
-	"1992",
-	"1994",
+/*a14*/ "1990"
+	"1992"
+	"1994"
 	"1996",
-/*a15*/ "Red Dawn",
-	"Ghostbusters",
-	"Dune",
+/*a15*/ "Red Dawn"
+	"Ghostbusters"
+	"Dune"
 	"2010"
     };
-	
+}
+
 }
