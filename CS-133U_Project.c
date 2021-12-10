@@ -3,7 +3,7 @@
 /*Date: 12/01/21					        */
 /*Assignment: Group Project				        */
 /*Description: This program is to be an interactive trivia game */
-/* with a scorekeeping system, a timer, and user profiles.      */
+/* with a scorekeeping system, and user profiles.               */
 /****************************************************************/
 
 
