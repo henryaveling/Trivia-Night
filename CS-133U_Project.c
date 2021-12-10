@@ -374,7 +374,7 @@ char sports_func()
 {
 
 // Sports Category
-    char sport_arr[15][100] = 
+    char sport_arr[15][200] = 
     {
 /*q1*/	"In which sport might you come across an Albatross?",
 /*q2*/	"Which sport takes place in a circle 4.55m in diameter?",
@@ -393,7 +393,7 @@ char sports_func()
 /*q15*/	"What trophy is awarded to the winner of the NHL playoffs?"
     };
 
-    char sport_ans_arr[60][50] = 
+    char sport_ans_arr[15][200] = 
     {
 /*a1*/  "Golf" 
 	"Baseball"
@@ -463,7 +463,7 @@ char math_func()
 {
 
 // Math Category
-    char math_arr[15][100] = 
+    char math_arr[15][200] = 
     {
 /*q1*/	"What is the only even prime number?",
 /*q2*/	"What is the smallest perfect number?",
@@ -482,7 +482,7 @@ char math_func()
 /*q15*/	"How many equal sides does an icosahedron have?"
     };
 
-    char math_ans_arr[60][50] = 
+    char math_ans_arr[15][200] = 
     {
 /*a1*/  "Two" 
 	"Four"
@@ -553,7 +553,7 @@ char pop_func()
 {
 
 // Pop Culture Category
-    char pop_cult_arr[15][100] = 
+    char pop_cult_arr[15][200] = 
     {
 /*q1*/	"Who was originally cast as the voice of Shrek before Mike Meyers?",
 /*q2*/	"What is the name of the family dog on Full House?",
@@ -575,7 +575,7 @@ char pop_func()
 	
 	
 	
-    char pop_cult_ans_arr[60][50] = 
+    char pop_cult_ans_arr[15][200] = 
     {
 /*a1*/  "Chris Farley"
 	"Chris Rock"
@@ -646,7 +646,7 @@ char lit_func()
 {
 
 // Literature Category
-    char lit_arr[15][100] = 
+    char lit_arr[15][200] = 
     {
 /*q1*/	"Who was the author of 'Lord of The Rings'?",
 /*q2*/	"Who was the author of 'Game Of Thrones'?",
@@ -665,7 +665,7 @@ char lit_func()
 /*q15*/	"What is used as the portal to Narnia in C. S. Lewis’ children’s fantasy series?"
     };
 
-    char lit_ans_arr[60][50] = 
+    char lit_ans_arr[15][200] = 
     {
 /*a1*/  "George Lucus"
 	"J. K. Rowling"
@@ -735,7 +735,7 @@ char lit_func()
 char gen_func()
 {
 // General Knowledge Category
-    char gen_know_arr[15][100] = 
+    char gen_know_arr[15][200] = 
     {
 /*q1*/	"Burning to stop the flow of blood is?",
 /*q2*/	"What is raku?",
@@ -754,7 +754,7 @@ char gen_func()
 /*q15*/	"What is the leaf of a fern called?"
     };
 
-    char gen_know_ans_arr[60][50] = 
+    char gen_know_ans_arr[15][200] = 
     {
 /*a1*/  "Cauterize"
 	"Third Degree"
@@ -825,7 +825,7 @@ char sci_func()
 {
 
 // Science Category
-    char sci_arr[15][100] = 
+    char sci_arr[15][200] = 
     {
 /*q1*/	"What is the nearest planet to the sun?",
 /*q2*/	"What is the boiling point of water in Celsius?",
@@ -844,7 +844,7 @@ char sci_func()
 /*q15*/	"Which of Newton’s Laws states that ‘for every action, there is an equal and opposite reaction?"
     };
 
-    char sci_ans_arr[60][50] = 
+    char sci_ans_arr[15][200] = 
     {
 /*a1*/  "Earth"
 	"Mars"
@@ -915,7 +915,7 @@ char geo_func()
 {
 
 // Geography Category
-    char geo_arr[15][100] = 
+    char geo_arr[15][200] = 
     {
 /*q1*/	"What is the longest river in the world?",
 /*q2*/	"What is the capital of Canada?",
@@ -934,7 +934,7 @@ char geo_func()
 /*q15*/	"What river runs through Baghdad?"
     };
 
-    char geo_ans_arr[60][50] = 
+    char geo_ans_arr[15][200] = 
     {
 /*a1*/  "Nile"
 	"Amazon"
@@ -1005,7 +1005,7 @@ char hist_func()
 {
 
 // History Category
-    char hist_arr[15][100] = 
+    char hist_arr[15][200] = 
     {
 /*q1*/	"How many years did the 100 years war last?",
 /*q2*/	"In which year was John F. Kennedy assassinated?",
@@ -1024,7 +1024,7 @@ char hist_func()
 /*q15*/	"When was Pearl Harbor bombed?"
     };
 
-    char hist_ans_arr[60][50] = 
+    char hist_ans_arr[15][200] = 
     {
 /*a1*/  "96 years"
 	"100 years"
@@ -1115,7 +1115,7 @@ char music_func()
 /*q15*/	"What artist released the song “Video Games” in 2012?"
     };
 
-    char music_ans_arr[60][50] = 
+    char music_ans_arr[15][200] = 
     {
 /*a1*/  "England"
 	"Scotland"
@@ -1186,7 +1186,7 @@ char film_func()
 {
 
 // Film Category
-    char film_arr[15][100] = 
+    char film_arr[15][200] = 
     {
 /*q1*/	"Who is regarded as 'The Queen of Sci-Fi'?",
 /*q2*/	"What was the first feature-length animated movie ever released?",
@@ -1205,7 +1205,7 @@ char film_func()
 /*q15*/	"What was the first movie to ever be rated PG-13?"
      };
 
-     char film_ans_arr[60][50] = 
+     char film_ans_arr[15][200] = 
      {
 /*a1*/  "Sigourney Weaver"
 	"Carrie Fisher"
