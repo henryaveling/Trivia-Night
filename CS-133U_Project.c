@@ -28,7 +28,6 @@ void about_func();
 int score_func();
 int exit_func();
 void default_func();
-char cat_func(char a, char b);
 int cat_choice_func();
 
 
@@ -331,9 +330,7 @@ void about_func()
 // Scoreboard menu choice fucntion(unsure about func type currently)
 int score_func()
 {
-    int score;
-    
-    return(score);
+    return(0);
 }
 
 
@@ -397,66 +394,66 @@ char sports_func()
 
     char sport_ans_arr[15][200] = 
     {
-/*a1*/  "Golf" 
-	"Baseball"
-	"Cricket"
-	"American Football",
-/*a2*/  "Basketball"
-	"Sumo Wrestling"
-	"Baseball"
-	"Hockey",
-/*a3*/  "AC Milan"
-	"Liverpool"
-	"Real Madrid"
-	"Barcelona",
-/*a4*/  "American Football"
-	"Hockey"
-	"Track and Field"
-	"Baseball",
-/*a5*/  "16"
-	"10"
-	"9"
-	"12",
-/*a6*/  "Roger Federer"
-	"Pete Sampras"
-	"Andre Agassi"
-	"Rafael Nadal",
-/*a7*/  "12"
-	"10"
-	"8"
-	"6",
-/*a8*/  "Oakland Raiders"
-	"Chicago Bears"
-	"New England Patriots"
-	"The Minnesota Vikings",
-/*a9*/  "American football"
-	"Baseball"
-	"Hockey"
-	"Tennis",
-/*a10*/ "28"
-	"26"
-	"24"
-	"22",
-/*a11*/ "Resign"
-	"Check"
-	"Checkmate"
-	"Castle",
-/*a12*/ "Hockey"
-	"Figure Skating"
-	"Speed Skating"
-	"Curling",
-/*a13*/ "400 Meters"
-	"800 Meters"
-	"1000 Meters"
-	"1200 Meters",
-/*a14*/ "Tennis"
-	"Ice Hockey"
-	"American Football"
-	"Baseball",
-/*a15*/ "Commissioner's Trophy"
-	"Heisman Trophy"
-	"Stanley cup Trophy"
-	"Vince Lombardi Trophy"
+/*a1*/  "Golf\n" 
+	"Baseball\n"
+	"Cricket\n"
+	"American Football\n",
+/*a2*/  "Basketball\n"
+	"Sumo Wrestling\n"
+	"Baseball\n"
+	"Hockey\n",
+/*a3*/  "AC Milan\n"
+	"Liverpool\n"
+	"Real Madrid\n"
+	"Barcelona\n",
+/*a4*/  "American Football\n"
+	"Hockey\n"
+	"Track and Field\n"
+	"Baseball\n",
+/*a5*/  "16\n"
+	"10\n"
+	"9\n"
+	"12\n",
+/*a6*/  "Roger Federer\n"
+	"Pete Sampras\n"
+	"Andre Agassi\n"
+	"Rafael Nadal\n",
+/*a7*/  "12\n"
+	"10\n"
+	"8\n"
+	"6\n",
+/*a8*/  "Oakland Raiders\n"
+	"Chicago Bears\n"
+	"New England Patriots\n"
+	"The Minnesota Vikings\n",
+/*a9*/  "American football\n"
+	"Baseball\n"
+	"Hockey\n"
+	"Tennis\n",
+/*a10*/ "28\n"
+	"26\n"
+	"24\n"
+	"22\n",
+/*a11*/ "Resign\n"
+	"Check\n"
+	"Checkmate\n"
+	"Castle\n",
+/*a12*/ "Hockey\n"
+	"Figure Skating\n"
+	"Speed Skating\n"
+	"Curling\n",
+/*a13*/ "400 Meters\n"
+	"800 Meters\n"
+	"1000 Meters\n"
+	"1200 Meters\n",
+/*a14*/ "Tennis\n"
+	"Ice Hockey\n"
+	"American Football\n"
+	"Baseball\n",
+/*a15*/ "Commissioner's Trophy\n"
+	"Heisman Trophy\n"
+	"Stanley cup Trophy\n"
+	"Vince Lombardi Trophy\n"
     };
 }
 
@@ -486,66 +483,66 @@ char math_func()
 
     char math_ans_arr[15][200] = 
     {
-/*a1*/  "Two" 
-	"Four"
-	"Six"
-	"Eight",
-/*a2*/  "One"
-	"Six"
-	"Eight"
-	"Five",
-/*a3*/  "One"
-	"One Million"
-	"Zero"
-	"Ten",
-/*a4*/  "Billion"
-	"Zillion"
-	"Quintillion"
-	"Quadrillion",
-/*a5*/  "Infinite"
-	"One Million"
-	"Unknown"
-	"Zero",
-/*a6*/  "20"
-	"19"
-	"25"
-	"30",
-/*a7*/  "Square"
-	"Triangle"
-	"Circle"
-	"Cube",
-/*a8*/  "One Eighth"
-	"One Sixteenth"
-	"One Quarter"
-	"One Half",
-/*a9*/  "Hypotenuse"
-	"Vertex"
-	"Leg"
-	"Base",
-/*a10*/ "33"
-	"9"
-	"6"
-	"1",
-/*a11*/ "Denominator"
-	"Nominator"
-	"Numerator"
-	"Decimal",
-/*a12*/ "Decimal"
-	"Nominator"
-	"Numerator"
-	"Denominator",
-/*a13*/ "One Million"
-	"One Billion"
-	"One Trillion"
-	"One Thousand",
-/*a14*/ "Sine"
-	"Cosine"
-	"Tangent"
-	"Fractal",
-/*a15*/ "10"
-	"15"
-	"16"
-	"20"
+/*a1*/  "Two\n" 
+	"Four\n"
+	"Six\n"
+	"Eight\n",
+/*a2*/  "One\n"
+	"Six\n"
+	"Eight\n"
+	"Five\n",
+/*a3*/  "One\n"
+	"One Million\n"
+	"Zero\n"
+	"Ten\n",
+/*a4*/  "Billion\n"
+	"Zillion\n"
+	"Quintillion\n"
+	"Quadrillion\n",
+/*a5*/  "Infinite\n"
+	"One Million\n"
+	"Unknown\n"
+	"Zero\n",
+/*a6*/  "20\n"
+	"19\n"
+	"25\n"
+	"30\n",
+/*a7*/  "Square\n"
+	"Triangle\n"
+	"Circle\n"
+	"Cube\n",
+/*a8*/  "One Eighth\n"
+	"One Sixteenth\n"
+	"One Quarter\n"
+	"One Half\n",
+/*a9*/  "Hypotenuse\n"
+	"Vertex\n"
+	"Leg\n"
+	"Base\n",
+/*a10*/ "33\n"
+	"9\n"
+	"6\n"
+	"1\n",
+/*a11*/ "Denominator\n"
+	"Nominator\n"
+	"Numerator\n"
+	"Decimal\n",
+/*a12*/ "Decimal\n"
+	"Nominator\n"
+	"Numerator\n"
+	"Denominator\n",
+/*a13*/ "One Million\n"
+	"One Billion\n"
+	"One Trillion\n"
+	"One Thousand\n",
+/*a14*/ "Sine\n"
+	"Cosine\n"
+	"Tangent\n"
+	"Fractal\n",
+/*a15*/ "10\n"
+	"15\n"
+	"16\n"
+	"20\n"
     };
 }
 
@@ -579,66 +576,66 @@ char pop_func()
 	
     char pop_cult_ans_arr[15][200] = 
     {
-/*a1*/  "Chris Farley"
-	"Chris Rock"
-	"Dave Chappelle"
-	"Larry The Cable Guy",
-/*a2*/  "Skip"
-	"Comet"
-	"Sally"
-	"Lassie",
-/*a3*/  "4"
-	"3"
-	"8"
-	"9",
-/*a4*/  "Ten Thousand"
-	"Five Million"
-	"One Million"
-	"Six Million",
-/*a5*/  "Tiger King"
-	"American Sniper"
-	"Spiderman"
-	"The Avengers",
-/*a6*/  "Jeopardy"
-	"Price Is Right"
-	"Wheel Of Fortune"
-	"Who Wants To Be A Millionaire",
-/*a7*/  "Ice Cube"
-	"Snoop Dogg"
-	"Ice T"
-	"50 Cent",
-/*a8*/  "Spiderman"
-	"Superman"
-	"Batman"
-	"Iron Man",
-/*a9*/  "5"
-	"4"
-	"3"
-	"2",
-/*a10*/ "Yellow Submarine"
-	"Thriller"
-	"Back in Black"
-	"Hotel California",
-/*a11*/ "Trap"
-	"Gangster"
-	"Grime"
-	"Industrial",
-/*a12*/ "Pop"
-	"Hip Pop"
-	"New Pop"
-	"K Pop",
-/*a13*/ "Oscars"
-	"Globes"
-	"Politzer"
-	"Grammy",
-/*a14*/ "1900"
-	"1928"
-	"1942"
-	"1950",
-/*a15*/ "1929"
-	"1939"
-	"1949"
-	"1959"
+/*a1*/  "Chris Farley\n"
+	"Chris Rock\n"
+	"Dave Chappelle\n"
+	"Larry The Cable Guy\n",
+/*a2*/  "Skip\n"
+	"Comet\n"
+	"Sally\n"
+	"Lassie\n",
+/*a3*/  "4\n"
+	"3\n"
+	"8\n"
+	"9\n",
+/*a4*/  "Ten Thousand\n"
+	"Five Million\n"
+	"One Million\n"
+	"Six Million\n",
+/*a5*/  "Tiger King\n"
+	"American Sniper\n"
+	"Spiderman\n"
+	"The Avengers\n",
+/*a6*/  "Jeopardy\n"
+	"Price Is Right\n"
+	"Wheel Of Fortune\n"
+	"Who Wants To Be A Millionaire\n",
+/*a7*/  "Ice Cube\n"
+	"Snoop Dogg\n"
+	"Ice T\n"
+	"50 Cent\n",
+/*a8*/  "Spiderman\n"
+	"Superman\n"
+	"Batman\n"
+	"Iron Man\n",
+/*a9*/  "5\n"
+	"4\n"
+	"3\n"
+	"2\n",
+/*a10*/ "Yellow Submarine\n"
+	"Thriller\n"
+	"Back in Black\n"
+	"Hotel California\n",
+/*a11*/ "Trap\n"
+	"Gangster\n"
+	"Grime\n"
+	"Industrial\n",
+/*a12*/ "Pop\n"
+	"Hip Pop\n"
+	"New Pop\n"
+	"K Pop\n",
+/*a13*/ "Oscars\n"
+	"Globes\n"
+	"Politzer\n"
+	"Grammy\n",
+/*a14*/ "1900\n"
+	"1928\n"
+	"1942\n"
+	"1950\n",
+/*a15*/ "1929\n"
+	"1939\n"
+	"1949\n"
+	"1959\n"
     };
 }
 
@@ -669,66 +666,66 @@ char lit_func()
 
     char lit_ans_arr[15][200] = 
     {
-/*a1*/  "George Lucus"
-	"J. K. Rowling"
-	"J. R. R. Tolkien"
-	"George R. R. Martin",
-/*a2*/  "George Lucus"
-	"J. K. Rowling"
-	"J. R. R. Tolkien"
-	"George R. R. Martin",
-/*a3*/  "Issac Asimov"
-	"Mark Twain"
-	"George Orwell"
-	"James S. A. Corey",
-/*a4*/  "Mordor"
-	"Gondor"
-	"Helm’s Deep"
-	"The Shire",
-/*a5*/  "English"
-	"Russian"
-	"Spanish"
-	"Japanese",
-/*a6*/  "3"
-	"4"
-	"5"
-	"6",
-/*a7*/  "1927"
-	"1947"
-	"1937"
-	"1928",
-/*a8*/  "Star Wars"
-	"Dust"
-	"Sandstorm"
-	"Dune",
-/*a9*/  "3"
-	"4"
-	"5"
-	"6",
-/*a10*/ "Jupiter"
-	"Saturn"
-	"Mars"
-	"Pluto",
-/*a11*/ "1850"
-	"1860"
-	"1870"
-	"1880",
-/*a12*/ "Tiger"
-	"Panther"
-	"Lion"
-	"Bear",
-/*a13*/ "3"
-	"4"
-	"5"
-	"6",
-/*a14*/ "Dog"
-	"Cat"
-	"Cow"
-	"Horse",
-/*a15*/ "Desk"
-	"Wardrobe"
-	"Couch"
-	"Fridge"
+/*a1*/  "George Lucus\n"
+	"J. K. Rowling\n"
+	"J. R. R. Tolkien\n"
+	"George R. R. Martin\n",
+/*a2*/  "George Lucus\n"
+	"J. K. Rowling\n"
+	"J. R. R. Tolkien\n"
+	"George R. R. Martin\n",
+/*a3*/  "Issac Asimov\n"
+	"Mark Twain\n"
+	"George Orwell\n"
+	"James S. A. Corey\n",
+/*a4*/  "Mordor\n"
+	"Gondor\n"
+	"Helm’s Deep\n"
+	"The Shire\n",
+/*a5*/  "English\n"
+	"Russian\n"
+	"Spanish\n"
+	"Japanese\n",
+/*a6*/  "3\n"
+	"4\n"
+	"5\n"
+	"6\n",
+/*a7*/  "1927\n"
+	"1947\n"
+	"1937\n"
+	"1928\n",
+/*a8*/  "Star Wars\n"
+	"Dust\n"
+	"Sandstorm\n"
+	"Dune\n",
+/*a9*/  "3\n"
+	"4\n"
+	"5\n"
+	"6\n",
+/*a10*/ "Jupiter\n"
+	"Saturn\n"
+	"Mars\n"
+	"Pluto\n",
+/*a11*/ "1850\n"
+	"1860\n"
+	"1870\n"
+	"1880\n",
+/*a12*/ "Tiger\n"
+	"Panther\n"
+	"Lion\n"
+	"Bear\n",
+/*a13*/ "3\n"
+	"4\n"
+	"5\n"
+	"6\n",
+/*a14*/ "Dog\n"
+	"Cat\n"
+	"Cow\n"
+	"Horse\n",
+/*a15*/ "Desk\n"
+	"Wardrobe\n"
+	"Couch\n"
+	"Fridge\n"
     };
 }
 
@@ -758,66 +755,66 @@ char gen_func()
 
     char gen_know_ans_arr[15][200] = 
     {
-/*a1*/  "Cauterize"
-	"Third Degree"
-	"Superficial"
-	"First Degree",
-/*a2*/  "Japanese Sport"
-	"Japanese Pottery"
-	"Japanese Art"
-	"Japanese Painting",
-/*a3*/  "Plum"
-	"Orange"
-	"Apple"
-	"Cherry",
-/*a4*/  "Type C"
-	"Type B"
-	"Type A"
-	"Type O",
-/*a5*/  "Hover"
-	"Pad"
-	"Pool"
-	"Gang",
-/*a6*/  "1"
-	"2"
-	"3"
-	"4",
-/*a7*/  "Evaporation"
-	"Pressure"
-	"Rainfall"
-	"Voltage",
-/*a8*/  "Nu"
-	"Mu"
-	"Gamma"
-	"Kappa",
-/*a9*/  "Sudan"
-	"Algeria"
-	"DR Congo"
-	"Libya",
-/*a10*/ "Fusing"
-	"Fission"
-	"Fusion"
-	"Fissure",
-/*a11*/ "Garnet"
-	"Graphite"
-	"Calcite"
-	"Quartz",
-/*a12*/ "China"
-	"France"
-	"Russia"
-	"Italy",
-/*a13*/ "Aluminum"
-	"Copper"
-	"Gold"
-	"Silver",
-/*a14*/ "Black"
-	"Pink"
-	"White"
-	"Red",
-/*a15*/ "Pad"
-	"Frond"
-	"Leaf"
-	"Berry"
+/*a1*/  "Cauterize\n"
+	"Third Degree\n"
+	"Superficial\n"
+	"First Degree\n",
+/*a2*/  "Japanese Sport\n"
+	"Japanese Pottery\n"
+	"Japanese Art\n"
+	"Japanese Painting\n",
+/*a3*/  "Plum\n"
+	"Orange\n"
+	"Apple\n"
+	"Cherry\n",
+/*a4*/  "Type C\n"
+	"Type B\n"
+	"Type A\n"
+	"Type O\n",
+/*a5*/  "Hover\n"
+	"Pad\n"
+	"Pool\n"
+	"Gang\n",
+/*a6*/  "1\n"
+	"2\n"
+	"3\n"
+	"4\n",
+/*a7*/  "Evaporation\n"
+	"Pressure\n"
+	"Rainfall\n"
+	"Voltage\n",
+/*a8*/  "Nu\n"
+	"Mu\n"
+	"Gamma\n"
+	"Kappa\n",
+/*a9*/  "Sudan\n"
+	"Algeria\n"
+	"DR Congo\n"
+	"Libya\n",
+/*a10*/ "Fusing\n"
+	"Fission\n"
+	"Fusion\n"
+	"Fissure\n",
+/*a11*/ "Garnet\n"
+	"Graphite\n"
+	"Calcite\n"
+	"Quartz\n",
+/*a12*/ "China\n"
+	"France\n"
+	"Russia\n"
+	"Italy\n",
+/*a13*/ "Aluminum\n"
+	"Copper\n"
+	"Gold\n"
+	"Silver\n",
+/*a14*/ "Black\n"
+	"Pink\n"
+	"White\n"
+	"Red\n",
+/*a15*/ "Pad\n"
+	"Frond\n"
+	"Leaf\n"
+	"Berry\n"
     };
 }
 
