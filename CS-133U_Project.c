@@ -56,7 +56,7 @@ int menu_func()
 
 // Printing main menu
     system("clear");
-    printf("\n_____________________________________________\n");
+    printf("_____________________________________________\n");
     printf("_____________________________________________\n\n");
     printf("\tWelcome to Trivia Night!\n");
     printf("\t Fall Quarter Edition\n");
@@ -125,7 +125,7 @@ int newg_func()
 	
 	// Printing category menu
     system("clear");
-    printf("\n_____________________________________________\n");
+    printf("_____________________________________________\n");
     printf("_____________________________________________\n\n");
     printf("\tTo Begin Trivia Night!\n");
     printf("\tPlease choose a category\n");
@@ -166,7 +166,7 @@ void rules_func()
 
 // Printing rules
     system("clear");
-    printf("\n_______________________________________________\n");
+    printf("_______________________________________________\n");
     printf("_______________________________________________\n\n");
     printf("\t  Trivia Night Rules!\n");
     printf("_______________________________________________\n");
@@ -215,7 +215,7 @@ int about_r;
 
 // Printing about section
     system("clear");
-    printf("\n___________________________________________\n");
+    printf("___________________________________________\n");
     printf("___________________________________________\n\n");
     printf("\t About Trivia Night!\n");
     printf("___________________________________________\n");
