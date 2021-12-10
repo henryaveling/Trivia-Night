@@ -56,7 +56,7 @@ int menu_func()
 
 // Printing main menu
     system("clear");
-    printf("_____________________________________________\n");
+    printf("\n_____________________________________________\n");
     printf("_____________________________________________\n\n");
     printf("\tWelcome to Trivia Night!\n");
     printf("\t Fall Quarter Edition\n");
@@ -125,7 +125,7 @@ int newg_func()
 	
 	// Printing category menu
     system("clear");
-    printf("_____________________________________________\n");
+    printf("\n_____________________________________________\n");
     printf("_____________________________________________\n\n");
     printf("\tTo Begin Trivia Night!\n");
     printf("\tPlease choose a category\n");
@@ -137,11 +137,11 @@ int newg_func()
     printf("\t3. Popular Culture\n");
     printf("\t4. Literature\n");
     printf("\t5. General Knowledge\n");
-	printf("\t6. Science\n");
+    printf("\t6. Science\n");
     printf("\t7. Geography\n");
-	printf("\t8. History\n");
-	printf("\t9. Music\n");
-	printf("\t10. Film\n\n");
+    printf("\t8. History\n");
+    printf("\t9. Music\n");
+    printf("\t10. Film\n\n");
     printf("  Please select one option from the menu\n");
     printf("_____________________________________________\n");
     printf("_____________________________________________\n\n");
@@ -166,7 +166,7 @@ void rules_func()
 
 // Printing rules
     system("clear");
-    printf("_______________________________________________\n");
+    printf("\n_______________________________________________\n");
     printf("_______________________________________________\n\n");
     printf("\t  Trivia Night Rules!\n");
     printf("_______________________________________________\n");
@@ -215,7 +215,7 @@ int about_r;
 
 // Printing about section
     system("clear");
-    printf("___________________________________________\n");
+    printf("\n___________________________________________\n");
     printf("___________________________________________\n\n");
     printf("\t About Trivia Night!\n");
     printf("___________________________________________\n");
@@ -267,7 +267,7 @@ int score_func()
 int exit_func()
 {
     system("clear");
-    printf("You chose to exit the game.");
+    printf("\nYou chose to exit the game.");
     printf("\n\nSee you next time!");
     exit(0);
     return(0);
@@ -282,7 +282,7 @@ int exit_func()
 void default_func()
 {
     system("clear");
-    printf("   You did not choose a valid menu option!\n");
+    printf("\n   You did not choose a valid menu option!\n");
     printf("\tPlease choose a valid menu option!\n");
     menu_func();
     return;
