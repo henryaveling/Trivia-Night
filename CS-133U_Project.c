@@ -196,7 +196,7 @@ scanf("%d", &rules_r);
 	else
     {
 	system("clear");	
-    printf("\n\n\nPlease select a valid option");
+    printf("\n\n\nPlease select a valid option\n");
     rules_func();
     }
     return;
@@ -240,7 +240,7 @@ scanf("%d", &about_r);
 	else
     {
 	system("clear");	
-    printf("\n\n\nPlease select a valid option");
+    printf("\n\n\nPlease select a valid option\n");
     about_func();
     }
 	
