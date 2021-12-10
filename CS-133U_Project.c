@@ -331,7 +331,9 @@ void about_func()
 // Scoreboard menu choice fucntion(unsure about func type currently)
 int score_func()
 {
-    return(0);
+    int score;
+    
+    return(score);
 }
 
 
