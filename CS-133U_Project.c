@@ -120,7 +120,37 @@ int menu_func()
 // New game menu choice function
 int newg_func()
 {
-    return(0);
+	
+	int cat_choice;
+	
+	// Printing category menu
+    system("clear");
+    printf("_____________________________________________\n");
+    printf("_____________________________________________\n\n");
+    printf("\tTo Begin Trivia Night!\n");
+    printf("\tPlease choose a category\n");
+    printf("_____________________________________________\n");
+    printf("_____________________________________________\n\n");
+    printf("\tCategory Menu Options:\n\n");
+    printf("\t1. Sports\n");
+    printf("\t2. Math\n");
+    printf("\t3. Popular Culture\n");
+    printf("\t4. Literature\n");
+    printf("\t5. General Knowledge\n");
+	printf("\t6. Science\n");
+    printf("\t7. Geography\n");
+	printf("\t8. History\n");
+	printf("\t9. Music\n");
+	printf("\t10. Film\n\n");
+    printf("  Please select one option from the menu\n");
+    printf("_____________________________________________\n");
+    printf("_____________________________________________\n\n");
+    
+	// User input for category menu choice
+    scanf("%d", &cat_choice);
+	
+	
+	return(0);
 }
 
 
@@ -163,7 +193,12 @@ scanf("%d", &rules_r);
     {
     menu_func();
     }
-
+	else
+    {
+	system("clear");	
+    printf("\n\n\nPlease select a valid option");
+    rules_func();
+    }
     return;
 }
 
@@ -202,7 +237,13 @@ scanf("%d", &about_r);
     {
     menu_func();
     }
-
+	else
+    {
+	system("clear");	
+    printf("\n\n\nPlease select a valid option");
+    about_func();
+    }
+	
     return;
 }
 
