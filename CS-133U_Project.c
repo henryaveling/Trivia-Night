@@ -170,7 +170,7 @@ int cat_choice_func()
     {  
         case 1 : 
         {
-            system("clear");	        
+            system("clear");	    
             break;    
         }
         case 2:
