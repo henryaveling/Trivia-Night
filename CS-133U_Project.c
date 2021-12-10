@@ -385,7 +385,7 @@ char sports_func()
 /*q7*/	"How many lanes does an olympic standard swimming pool have?",
 /*q8*/	"Which NFL team's defensive unit was nicknamed 'The Purple People Eaters'?",
 /*q9*/	"In what sport is the Heisman trophy awarded?",
-/*q10*/	"In miles, how lonh is a marathon?",
+/*q10*/	"In miles, how long is a marathon?",
 /*q11*/	"How is the chess term 'shah mat' better known?",
 /*q12*/	"In which sport do competitors sweep the ice and throw stones at houses?",
 /*q13*/	"What distance is covered in one circuit of a modern outdoor running track (in meters)?",
