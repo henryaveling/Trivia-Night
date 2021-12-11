@@ -130,8 +130,13 @@ int menu_func()
 // New game menu choice function
 int newg_func()
 {
-   cat_choice_func();
-    return(0);
+int n = 5;
+while (n>0)
+{
+n--; 
+cat_choice_func();
+} 
+return(0);
 }
 
 
@@ -520,7 +525,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");  
     }
 }
-cat_choice_func();
+
 return 0;
 }
 
@@ -663,7 +668,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");  
     }
 }
-cat_choice_func();
+
 return 0;
 }
 
@@ -810,7 +815,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");  
     }
 }
-cat_choice_func();
+
 return 0;
 }
 
@@ -954,7 +959,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");  
     }
 }
-cat_choice_func();
+
 return 0;
 }
 
@@ -1097,7 +1102,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");  
     }
 }
-cat_choice_func();
+
 return 0;
 }
 
@@ -1241,7 +1246,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");  
     }
 }
-cat_choice_func();
+
 return 0;
 }
 
@@ -1385,7 +1390,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");  
     }
 }
-cat_choice_func();
+
 return 0;
 }
 
@@ -1529,7 +1534,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");  
     }
 }
-cat_choice_func();
+
 return 0;
 }
 
@@ -1674,7 +1679,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");  
     }
 }
-cat_choice_func();
+
 return 0;
 }
 
@@ -1819,7 +1824,7 @@ scanf(" %c", &ans_1);
     }
 
 }
-cat_choice_func();
+
 return 0;	
 }
 
