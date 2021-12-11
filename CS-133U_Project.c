@@ -1652,7 +1652,6 @@ for (i = 1; i <=5; i++)
 {
 srand(time(0));
 r_num =  l_limit + rand() % (u_limit - l_limit);
-system("clear");
 printf("__________________________________________________________\n");
 printf("__________________________________________________________\n\n");
 printf("\tQuestion:\n\n");
@@ -1675,6 +1674,7 @@ scanf(" %c", &ans_1);
     {
         printf("That is incorrect.\n");  
     }
+system("clear");
 }
 
 return 0;
@@ -1796,7 +1796,6 @@ for (i = 1; i <=5; i++)
 {
 srand(time(0));
 r_num =  l_limit + rand() % (u_limit - l_limit);
-system("clear");
 printf("__________________________________________________________\n");
 printf("__________________________________________________________\n\n");
 printf("\tQuestion:\n\n");
@@ -1819,6 +1818,7 @@ scanf(" %c", &ans_1);
     {
         printf("That is incorrect.\n");  
     }
+system("clear");
 }
 
 return 0;	
