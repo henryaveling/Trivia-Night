@@ -425,8 +425,8 @@ char sports_func()
 /*a8*/  "\ta. Oakland Raiders\n"
 	"\tb. Chicago Bears\n"
 	"\tc. New England Patriots\n"
-	"\td. The Minnesota Vikings\n",
-/*a9*/  "\ta. American football\n"
+	"\td. Minnesota Vikings\n",
+/*a9*/  "\ta. American Football\n"
 	"\tb. Baseball\n"
 	"\tc. Hockey\n"
 	"\td. Tennis\n",
@@ -531,18 +531,18 @@ char math_func()
 	"\tb. Nominator\n"
 	"\tc. Numerator\n"
 	"\td. Denominator\n",
-/*a13*/ "\ta. One Million\n"
-	"\tb. One Billion\n"
+/*a13*/ "\ta. One Billion\n"
+	"\tb. One Million\n"
 	"\tc. One Trillion\n"
 	"\td. One Thousand\n",
 /*a14*/ "\ta. Sine\n"
-	"\tb. Cosine\n"
-	"\tc. Tangent\n"
+	"\tb. Tangent\n"
+	"\tc. Cosine\n"
 	"\td. Fractal\n",
 /*a15*/ "\ta. 10\n"
 	"\tb. 15\n"
-	"\tc. 16\n"
-	"\td. 20\n"
+	"\tc. 20\n"
+	"\td. 16\n"
     };
 }
 
@@ -634,8 +634,8 @@ char pop_func()
 	"\td. 1950\n",
 /*a15*/ "\ta. 1929\n"
 	"\tb. 1939\n"
-	"\tc. 1949\n"
-	"\td. 1959\n"
+	"\tc. 1959\n"
+	"\td. 1949\n"
     };
 }
 
@@ -666,25 +666,25 @@ char lit_func()
 
     char lit_ans_arr[15][200] = 
     {
-/*a1*/  "\ta. George Lucus\n"
+/*a1*/  "\ta. J. R. R. Tolkien\n"
 	"\tb. J. K. Rowling\n"
-	"\tc. J. R. R. Tolkien\n"
+	"\tc. George Lucus\n"
 	"\td. George R. R. Martin\n",
 /*a2*/  "\ta. George Lucus\n"
-	"\tb. J. K. Rowling\n"
+	"\tb. George R. R. Martin\n"
 	"\tc. J. R. R. Tolkien\n"
-	"\td. George R. R. Martin\n",
+	"\td. J. K. Rowling\n",
 /*a3*/  "\ta. Issac Asimov\n"
 	"\tb. Mark Twain\n"
-	"\tc. George Orwell\n"
-	"\td. James S. A. Corey\n",
-/*a4*/  "\ta. Mordor\n"
+	"\tc. James S. A. Corey\n"
+	"\td. George Orwell\n",
+/*a4*/  "\ta. The Shire\n"
 	"\tb. Gondor\n"
 	"\tc. Helm’s Deep\n"
-	"The Shire\n",
-/*a5*/  "\ta. English\n"
+	"\td. Mordor\n",
+/*a5*/  "\ta. Spanish\n"
 	"\tb. Russian\n"
-	"\tc. Spanish\n"
+	"\tc. English\n"
 	"\td. Japanese\n",
 /*a6*/  "\ta. 3\n"
 	"\tb. 4\n"
@@ -703,28 +703,28 @@ char lit_func()
 	"\tc. 5\n"
 	"\td. 6\n",
 /*a10*/ "\ta. Jupiter\n"
-	"\tb. Saturn\n"
-	"\tc. Mars\n"
+	"\tb. Mars\n"
+	"\tc. Saturn\n"
 	"\td. Pluto\n",
 /*a11*/ "\ta. 1850\n"
 	"\tb. 1860\n"
 	"\tc. 1870\n"
 	"\td. 1880\n",
 /*a12*/ "\ta. Tiger\n"
-	"\tb. Panther\n"
+	"\tb. Bear\n"
 	"\tc. Lion\n"
-	"\td. Bear\n",
+	"\td. Panther\n",
 /*a13*/ "\ta. 3\n"
 	"\tb. 4\n"
 	"\tc. 5\n"
 	"\td. 6\n",
 /*a14*/ "\ta. Dog\n"
-	"\tb. Cat\n"
+	"\tb. Horse\n"
 	"\tc. Cow\n"
-	"\td. Horse\n",
+	"\td. Cat\n",
 /*a15*/ "\ta. Desk\n"
-	"\tb. Wardrobe\n"
-	"\tc. Couch\n"
+	"\tb. Couch\n"
+	"\tc. Wardrobe\n"
 	"\td. Fridge\n"
     };
 }
@@ -787,8 +787,8 @@ char gen_func()
 	"\tb. Mu\n"
 	"\tc. Gamma\n"
 	"\td. Kappa\n",
-/*a9*/  "\ta. Sudan\n"
-	"\tb. Algeria\n"
+/*a9*/  "\ta. Algeria\n"
+	"\tb. Sudan\n"
 	"\tc. D.R. Congo\n"
 	"\td. Libya\n",
 /*a10*/ "\ta. Fusing\n"
@@ -812,8 +812,8 @@ char gen_func()
 	"\tc. White\n"
 	"\td. Red\n",
 /*a15*/ "\ta. Pad\n"
-	"\tb. Frond\n"
-	"\tc. Leaf\n"
+	"\tb. Leaf\n"
+	"\tc. Frond\n"
 	"\td. Berry\n"
     };
 }
@@ -845,61 +845,61 @@ char sci_func()
 
     char sci_ans_arr[15][200] = 
     {
-/*a1*/  "\ta. Earth\n"
+/*a1*/  "\ta. Mercury\n"
 	"\tb. Mars\n"
-	"\tc. Mercury\n"
+	"\tc. Earth\n"
 	"\td. Saturn\n",
 /*a2*/  "\ta. 0 degrees\n"
-	"\tb. 50 degrees\n"
-	"\tc. 100 degrees\n"
+	"\tb. 100 degrees\n"
+	"\tc. 50 degrees\n"
 	"\td. 150 degrees\n",
 /*a3*/  "\ta. 86\n"
 	"\tb. 102\n"
-	"\tc. 106\n"
-	"\td. 118\n",
-/*a4*/  "\ta. Alexander Graham Bell\n"
+	"\tc. 118\n"
+	"\td. 106\n",
+/*a4*/  "\ta. Charles Darwin\n"
 	"\tb. Benjamin Franklin\n"
 	"\tc. Sir Isaac Newton\n"
-	"\td. Charles Darwin\n",
-/*a5*/  "\ta. 203\n"
+	"\td. Alexander Graham Bell\n",
+/*a5*/  "\ta. 206\n"
 	"\tb. 204\n"
 	"\tc. 205\n"
-	"\td. 206\n",
+	"\td. 203\n",
 /*a6*/  "\ta. Copper\n"
-	"\tb. Aluminum\n"
-	"\tc. Zinc\n"
+	"\tb. Zinc\n"
+	"\tc. Aluminumc\n"
 	"\td. Nickel\n",
 /*a7*/  "\ta. Viscosity\n"
-	"\tb. Buoyancy\n"
-	"\tc. Temperature\n"
+	"\tb. Temperature\n"
+	"\tc. Buoyancy\n"
 	"\td. Acidity\n",
 /*a8*/  "\ta. Meter\n"
 	"\tb. Liter\n"
 	"\tc. Gram\n"
 	"\td. Fathom\n",
-/*a9*/  "\ta. Uranium\n"
+/*a9*/  "\ta. Diamond\n"
 	"\tb. Titanium\n"
-	"\tc. Diamond\n"
+	"\tc. Uranium\n"
 	"\td. Tungsten\n",
-/*a10*/ "\ta. Venus\n"
-	"\tb. Mars\n"
+/*a10*/ "\ta. Mars\n"
+	"\tb. Venus\n"
 	"\tc. Mercury\n"
 	"\td. Uranus\n",
 /*a11*/ "\ta. Neptune\n"
-	"\tb. Saturn\n"
-	"\tc. Earth\n"
+	"\tb. Earth\n"
+	"\tc. Saturn\n"
 	"\td. Jupiter\n",
 /*a12*/ "\ta. Tibet\n"
 	"\tb. New Zealand\n"
-	"\tc. Oregon\n"
-	"\td. California\n",
+	"\tc. California\n"
+	"\td. Oregon\n",
 /*a13*/ "\ta. Dog\n"
 	"\tb. Cat\n"
 	"\tc. Mouse\n"
 	"\td. Rabbit\n",
 /*a14*/ "\ta. Mass\n"
-	"\tb. Volume\n"
-	"\tc. Radiation\n"
+	"\tb. Radiation\n"
+	"\tc. Volume\n"
 	"\td. Decay\n",
 /*a15*/ "\ta. The first law of motion\n"
 	"\tb. The second law of motion\n"
@@ -940,33 +940,33 @@ char geo_func()
 	"\tc. Yangtze\n"
 	"\td. Yellow\n",
 /*a2*/  "\ta. Montreal\n"
-	"\tb. Vancouver\n"
-	"\tc. Ottawa\n"
+	"\tb. Ottawa\n"
+	"\tc. Vancouver\n"
 	"\td. Victoria\n",
 /*a3*/  "\ta. 4\n"
 	"\tb. 7\n"
 	"\tc. 11\n"
 	"\td. 13\n",
-/*a4*/  "\ta. 13\n"
+/*a4*/  "\ta. 15\n"
 	"\tb. 14\n"
 	"\tc. 9\n"
-	"\td. 15\n",
-/*a5*/  "\ta. Denmark\n"
-	"\tb. Ireland\n"
+	"\td. 13\n",
+/*a5*/  "\ta. Ireland\n"
+	"\tb. Denmark\n"
 	"\tc. Scotland\n"
 	"\td. Finland\n",
 /*a6*/  "\ta. Egypt\n"
-	"\tb. Libya\n"
+	"\tb. Sudan\n"
 	"\tc. Ethiopia\n"
-	"\td. Sudan\n",
-/*a7*/  "\ta. Africa\n"
+	"\td. Libya\n",
+/*a7*/  "\ta. Asia\n"
 	"\tb. Europe\n"
-	"\tc. Asia\n"
+	"\tc. Africa\n"
 	"\td. North America\n",
 /*a8*/  "\ta. Sweden\n"
 	"\tb. Austria\n"
-	"\tc. Germany\n"
-	"\td. Czech Republic\n",
+	"\tc. Czech Republic\n"
+	"\td. Germany\n",
 /*a9*/  "\ta. 1\n"
 	"\tb. 3\n"
 	"\tc. 5\n"
@@ -983,12 +983,12 @@ char geo_func()
 	"\tb. Puerto Montt\n"
 	"\tc. Valparaiso\n"
 	"\td. Santiago\n",
-/*a13*/ "\ta. Environmental and Human\n"
-	"\tb. Human and Physical\n"
+/*a13*/ "\ta. Human and Physical\n"
+	"\tb. Environmental and Human\n"
 	"\tc. Physical and Environmental\n"
 	"\td. Environmental and Cartographic\n",
-/*a14*/ "\ta. Derry\n"
-	"\tb. Fakenham\n"
+/*a14*/ "\ta. Fakenham\n"
+	"\tb. Derry\n"
 	"\tc. Bath\n"
 	"\td. Derby\n",
 /*a15*/ "\ta. Karun\n"
@@ -1025,9 +1025,9 @@ char hist_func()
 
     char hist_ans_arr[15][200] = 
     {
-/*a1*/  "\ta. 96 years\n"
+/*a1*/  "\ta. 116 years\n"
 	"\tb. 100 years\n"
-	"\tc. 116 years\n"
+	"\tc. 96 years\n"
 	"\td. 122 years\n",
 /*a2*/  "\ta. 1961\n"
 	"\tb. 1963\n"
@@ -1035,31 +1035,31 @@ char hist_func()
 	"\td. 1968\n",
 /*a3*/  "\ta. Thucydides\n"
 	"\tb. Aristotle\n"
-	"\tc. Dionysius\n"
-	"\td. Herodotus\n",
+	"\tc. Herodotus\n"
+	"\td. Dionysius\n",
 /*a4*/  "\ta. 3\n"
 	"\tb. 5\n"
 	"\tc. 7\n"
 	"\td. 9\n",
-/*a5*/  "\ta. Corinth\n"
-	"\tb. Sparta\n"
+/*a5*/  "\ta. Sparta\n"
+	"\tb. Corinth\n"
 	"\tc. Rhodes\n"
 	"\td. Syracuse\n",
-/*a6*/  "\ta. Mesopotamia\n"
-	"\tb. Babylon\n"
+/*a6*/  "\ta. Babylon\n"
+	"\tb. Mesopotamia\n"
 	"\tc. Persepolis\n"
 	"\td. Carthage\n",
 /*a7*/  "\ta. Henry IV\n"
 	"\tb. Henry VI\n"
-	"\tc. Henry VII\n"
-	"\td. Henry VIII\n",
-/*a8*/  "\ta. The Korean War\n"
+	"\tc. Henry VIII\n"
+	"\td. Henry VII\n",
+/*a8*/  "\ta. The Iraq War\n"
 	"\tb. The Vietnam War\n"
 	"\tc. WWII\n"
-	"\td. The Iraq War\n",
-/*a9*/  "\ta. The Guillotine\n"
+	"\td. The Korean War\n",
+/*a9*/  "\ta. Burned at the stake\n"
 	"\tb. Crucifixion\n"
-	"\tc. Burned at the stake\n"
+	"\tc. The Guillotine\n"
 	"\td. Torture\n",
 /*a10*/ "\ta. 1953\n"
 	"\tb. 1961\n"
@@ -1067,23 +1067,23 @@ char hist_func()
 	"\td. 1970\n",
 /*a11*/ "\ta. Brazil\n"
 	"\tb. Chile\n"
-	"\tc. Argentina\n"
-	"\td. Peru\n",
+	"\tc. Peru\n"
+	"\td. Argentina\n",
 /*a12*/ "\ta. Michelangelo\n"
 	"\tb. Raphael\n"
-	"\tc. Leonardo da Vinci\n"
-	"\td. Caravaggio\n",
-/*a13*/ "\ta. Theodore Roosevelt\n"
+	"\tc. Caravaggio\n"
+	"\td. Leonardo da Vinci\n",
+/*a13*/ "\ta. Abraham Lincoln\n"
 	"\tb. Thomas Jefferson\n"
-	"\tc. Abraham Lincoln\n"
+	"\tc. Theodore Roosevelt\n"
 	"\td. Jimmy Carter\n",
-/*a14*/ "\ta. Austria\n"
-	"\tb. Germany\n"
-	"\tc. Swedenv"
+/*a14*/ "\ta. Germany\n"
+	"\tb. Austria\n"
+	"\tc. Sweden\n"
 	"\td. Switzerland\n",
 /*a15*/ "\ta. December 3rd, 1940\n"
-	"\tb. December 7th, 1941\n"
-	"\tc. December 11th, 1942\n"
+	"\tb. December 11th, 1942\n"
+	"\tc. December 7th, 1941\n"
 	"\td. December 13th, 1943\n"
     };
 }
@@ -1116,62 +1116,62 @@ char music_func()
 
     char music_ans_arr[15][200] = 
     {
-/*a1*/  "\ta. England\n"
+/*a1*/  "\ta. Australia\n"
 	"\tb. Scotland\n"
 	"\tc. USA\n"
-	"\td. Australia\n",
+	"\td. England\n",
 /*a2*/  "\ta. Jailhouse Rock\n"
-	"\tb. Blue Suede Shoes\n"
-	"\tc. Heartbreak Hotel\n"
+	"\tb. Heartbreak Hotel\n"
+	"\tc. Blue Suede Shoes\n"
 	"\td. Hound Dog\n",
 /*a3*/  "\ta. Sixties\n"
 	"\tb. Seventies\n"
 	"\tc. Eighties\n"
 	"\td. Nineties\n",
 /*a4*/  "\ta. Good Kid, m.A.A.d city\n"
-	"\tb. To Pimp a Butterfly\n"
+	"\tb. Section.80\n"
 	"\tc. Untitled Unmastered\n"
-	"\td. Section.80\n",
+	"\td. To Pimp a Butterfly\n",
 /*a5*/  "\ta. Malcolm James McCormick\n"
 	"\tb. McGregor John Miller\n"
 	"\tc. Macauley Jacob Murphy\n"
 	"\td. Michael Joseph Martin\n",
 /*a6*/  "\ta. Dark Side of the Moon\n"
-	"\tb. Animals\n"
+	"\tb. The Wall\n"
 	"\tc. Wish You Were Here\n"
-	"\td. The Wall\n",
-/*a7*/  "\ta. Didgeridoo\n"
+	"\td. Animals\n",
+/*a7*/  "\ta. Bangkakaw\n"
 	"\tb. Tambol\n"
-	"\tc. Bangkakaw\n"
+	"\tc. Didgeridoo\n"
 	"\td. Tibod\n",
 /*a8*/  "\ta. George Harrison\n"
 	"\tb. Ringo Star\nr"
-	"\tc. John Lennon\n"
-	"\td. Paul McCartney\n",
-/*a9*/  "\ta. Spiceworld\n"
-	"\tb. Spice\n"
+	"\tc. Paul McCartney\n"
+	"\td. John Lennon\n",
+/*a9*/  "\ta. Spice\n"
+	"\tb. Spiceworld\n"
 	"\tc. One Hour of Girl Power\n"
 	"\td. Forever\n",
 /*a10*/ "\ta. Heart attack\n"
-	"\tb. Vehicle accident\n"
-	"\tc. Plane accident\n"
+	"\tb. Plane accident\n"
+	"\tc. Vehicle accident\n"
 	"\td. Pancreatic cancer\n",
-/*a11*/ "\ta. Softly\n"
+/*a11*/ "\ta. Lively\n"
 	"\tb. Loudly\n"
-	"\tc. Lively\n"
+	"\tc. Softly\n"
 	"\td. Slowly\n",
 /*a12*/ "\ta. Freddie Mercury\n"
-	"\tb. Brian May\n"
+	"\tb. Roger Taylor\n"
 	"\tc. John Deacon\n"
-	"\td. Roger Taylor\n",
-/*a13*/ "\ta. Glastonbury\n"
+	"\td. Brian May\n",
+/*a13*/ "\ta. Woodstock\n"
 	"\tb. Summer Jam\n"
-	"\tc. Woodstock\n"
+	"\tc. Glastonbury\n"
 	"\td. Heatwave\n",
 /*a14*/ "\ta. Kirk Hammett\n"
-	"\tb. Cliff Burton\n"
+	"\tb. James Hetfield\n"
 	"\tc. Lars Ulrich\n"
-	"\td. James Hetfield\n",
+	"\td. Cliff Burton\n",
 /*a15*/ "\ta. Carly Rae Jepsen\n"
 	"\tb. Kelly Clarkson\n"
 	"\tc. Lana Del Ray\n"
@@ -1211,60 +1211,60 @@ char film_func()
 	"\tc. Linda Hamilton\n"
 	"\td. Gillian Anderson\n",
 /*a2*/  "\ta. Steamboat Willie\n"
-	"\tb. Alice in Wonderland\n"
-	"\tc. Snow White and the Seven Dwarves\n"
+	"\tb. Snow White and the Seven Dwarves\n"
+	"\tc. Alice in Wonderland\n"
 	"\td. Gulliver’s Travels\n",
 /*a3*/  "\ta. Strawberry\n"
-	"\tb. Chocolate\n"
-	"\tc. Smores\n"
+	"\tb. Smores\n"
+	"\tc. Chocolate\n"
 	"\td. Cherry\n",
 /*a4*/  "\ta. Empire State Building\n"
 	"\tb. Union Bank Plaza\n"
 	"\tc. The Ritz\n"
 	"\td. Nakatomi Plaza\n",
-/*a5*/  "\ta. Samuel L. Jackson\n"
+/*a5*/  "\ta. Richard Attenborough\n"
 	"\tb. Jeff Goldblum\n"
-	"\tc. Richard Attenborough\n"
+	"\tc. Samuel L. Jackson\n"
 	"\td. Alan Grant\n",
 /*a6*/  "\ta. Elijah Wood\n"
-	"\tb. Sean Bean\n"
+	"\tb. Ian McKellen\n"
 	"\tc. Sean Astin\n"
-	"\td. Ian McKellen\n",
-/*a7*/  "\ta. Pulp Fiction\n"
+	"\td. Sean Bean\n",
+/*a7*/  "\ta. Leon\n"
 	"\tb. Natural Born Killers\n"
-	"\tc. Leon\n"
+	"\tc. Pulp Fiction\n"
 	"\td. Shawshank Redemption\n",
 /*a8*/  "\ta. At least 84\n"
 	"\tb. At least 138\n"
-	"\tc. At least 164\n"
-	"\td. At least 208\n",
-/*a9*/  "\ta. Psycho\n"
-	"\tb. Rope\n"
+	"\tc. At least 208\n"
+	"\td. At least 164\n",
+/*a9*/  "\ta. Rope\n"
+	"\tb. Psycho\n"
 	"\tc. Topaz\n"
 	"\td. Sabotage\n",
-/*a10*/ "\ta. La La Land\n"
-	"\tb. Moonlight\n"
+/*a10*/ "\ta. Moonlight\n"
+	"\tb. La La Land\n"
 	"\tc. Arrival\n"
 	"\td. Hacksaw Ridge\n",
 /*a11*/ "\ta. Gunpowder\n"
-	"\tb. Napalm\n"
-	"\tc. Biscuits\n"
+	"\tb. Biscuits\n"
+	"\tc. Napalm\n"
 	"\td. Rain\n",
 /*a12*/ "\ta. Colt Diamondback .38 Special\n"
 	"\tb. Colt King Cobra .357 Magnum\n"
 	"\tc. Smith & Wesson Model 19 .357 Magnum\n"
 	"\td. Smith & Wesson Model 29 .44 Magnum\n",
-/*a13*/ "\ta. Hero\n"
+/*a13*/ "\ta. Crouching Tiger, Hidden Dragon\n"
 	"\tb. Parasite\n"
-	"\tc. Crouching Tiger, Hidden Dragon\n"
+	"\tc. Hero\n"
 	"\td. Pan’s Labyrinth\n",
 /*a14*/ "\ta. 1990\n"
-	"\tb. 1992\n"
-	"\tc. 1994\n"
+	"\tb. 1994\n"
+	"\tc. 1992\n"
 	"\td. 1996\n",
-/*a15*/ "\ta. Red Dawn\n"
+/*a15*/ "\ta. Dune\n"
 	"\tb. Ghostbusters\n"
-	"\tc. Dune\n"
+	"\tc. Red Dawn\n"
 	"\td. 2010\n"
     };
 }
