@@ -220,7 +220,9 @@ int newg_func(int t_score)
 {	   
     int score = cat_choice_func(t_score);
     int incorrect = 25 - score;
-    int percent = (score/25)*100;
+    int percent = (score / 25) * 100;
+    int choice;	
+
     printf("_____________________________________________\n");
     printf("_____________________________________________\n\n");
     printf("\tGame Over! Your Score is Below\n");
@@ -229,13 +231,43 @@ int newg_func(int t_score)
     printf("\tYour total score is: %d.\n", score);
     printf("\tYou answered %d correct.\n", score);
     printf("\tYou answered %d incorrect.\n", incorrect);
-    printf("\tYou answerd %d correct.\n", percent);
+    printf("\tYou answerd %d correct.\n", percent);// needs fixed
     printf("\tGood Game!\n\n");
-    printf("\tPress 1 to save your score and return to the main menu.\n");
-    printf("\tPress 2 to return to the main menu.\n");
-    printf("\tPress 3 to exit the program.\n");
+    printf("\t1. Save your score and return to the main menu.\n");
+    printf("\t2. Return to the main menu.\n");
+    printf("\t3. Exit the program.\n");
+    printf("\tPlease select an option above!.\n");
     printf("_____________________________________________\n");
     printf("_____________________________________________\n\n");
+    scanf("%d", &end_choice)
+    
+    switch(end_choice)  
+    {  
+        case 1: 
+    	{
+	    system("clear");	    
+	    //open file save score to file
+	    menu_func();
+	    break;    
+	}
+        case 2:
+	{
+            system("clear");
+	    menu_func();
+	    break;
+	}
+        case 3:
+	{
+	    system("clear");	    
+	    exit_func();
+	    break;
+        }
+        default: 
+        {
+            system("clear");
+	    // repet func
+	    break;     
+        }
 }
 
 int cat_choice_func()
