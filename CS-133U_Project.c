@@ -526,7 +526,7 @@ scanf(" %c", &ans_1);
         printf("\tThat is incorrect.\n"); 
 	printf("\tPlease wait for your next question!\n");  
     }
-    sleep(5);
+    sleep(3);
 }
 	
 return 0;
@@ -672,7 +672,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n"); 
 	printf("\tPlease wait for your next question!\n");
     }
-    sleep(5);
+    sleep(3);
 }
 
 return 0;
@@ -822,7 +822,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");  
 	printf("\tPlease wait for your next question!\n");
     }
-    sleep(5);
+    sleep(3);
 }
 
 return 0;
@@ -969,7 +969,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");
 	printf("\tPlease wait for your next question!\n");
     }
-    sleep(5);
+    sleep(3);
 }
 
 return 0;
@@ -1115,7 +1115,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");
 	printf("\tPlease wait for your next question!\n");
     }
-    sleep(5);
+    sleep(3);
 }
 
 return 0;
@@ -1262,7 +1262,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");
 	printf("\tPlease wait for your next question!\n");
     }
-    sleep(5);
+    sleep(3);
 }
 
 return 0;
@@ -1409,7 +1409,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");
 	printf("\tPlease wait for your next question!\n");
     }
-    sleep(5);
+    sleep(3);
 }
 
 return 0;
@@ -1556,7 +1556,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");
 	printf("\tPlease wait for your next question!\n");
     }
-    sleep(5);
+    sleep(3);
 }
 
 return 0;
@@ -1704,7 +1704,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");
 	printf("\tPlease wait for your next question!\n");
     }
-    sleep(5);
+    sleep(3);
 }
 
 return 0;
@@ -1851,7 +1851,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");
 	printf("\tPlease wait for your next question!\n");
     }
-    sleep(5);
+    sleep(3);
 
 }
 
