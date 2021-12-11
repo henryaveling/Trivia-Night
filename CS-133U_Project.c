@@ -29,7 +29,16 @@ int score_func();
 int exit_func();
 void default_func();
 int cat_choice_func();
-
+char sports_func();
+char math_func();
+char pop_func();
+char lit_func();
+char gen_func();
+char sci_func();
+char geo_func();
+char hist_func();
+char music_func();
+char film_func();
 
 
 
@@ -139,7 +148,6 @@ int cat_choice_func()
     // Printing category menu
     printf("_____________________________________________\n");
     printf("_____________________________________________\n\n");
-    printf("\tTo Begin Trivia Night!\n");
     printf("\tPlease choose a category\n");
     printf("_____________________________________________\n");
     printf("_____________________________________________\n\n");
@@ -166,52 +174,62 @@ int cat_choice_func()
     {  
         case 1 : 
         {
-            system("clear");	    
+            system("clear");
+	    sports_func();
             break;    
         }
         case 2:
         {
             system("clear");
+	    math_func();
             break;
         }
         case 3:
         {
-            system("clear");	        
+            system("clear");
+	    pop_func();
             break;
         }     
         case 4:
         {
-            system("clear"); 
+            system("clear");
+	    lit_func();
             break;
         } 
         case 5:
         {
-            system("clear"); 
+            system("clear");
+	    gen_func();
             break; 
         } 
         case 6:
         {
-            system("clear");	    
+            system("clear");
+	    sci_func();
             break; 
         }  
         case 7:
         {
-            system("clear");	    
+            system("clear");
+	    geo_func();
             break; 
         }
         case 8:
         {
-            system("clear");	    
+            system("clear");
+	    hist_func();
             break; 
         }
         case 9:
         {
-            system("clear");	    
+            system("clear");
+	    music_func();
             break; 
         }
         case 10:
         {
-            system("clear");	    
+            system("clear");
+	    film_func();
             break; 
         }
         default: 
@@ -480,6 +498,7 @@ for (i = 1; i <=5; i++)
 {
 srand(time(0));
 r_num =  l_limit + rand() % (u_limit - l_limit);
+system("clear");
 printf("__________________________________________________________\n");
 printf("__________________________________________________________\n\n");
 printf("\tQuestion:\n\n");
@@ -622,6 +641,7 @@ for (i = 1; i <=5; i++)
 {
 srand(time(0));
 r_num =  l_limit + rand() % (u_limit - l_limit);
+system("clear");
 printf("__________________________________________________________\n");
 printf("__________________________________________________________\n\n");
 printf("\tQuestion:\n\n");
@@ -768,6 +788,7 @@ for (i = 1; i <=5; i++)
 {
 srand(time(0));
 r_num =  l_limit + rand() % (u_limit - l_limit);
+system("clear");
 printf("__________________________________________________________\n");
 printf("__________________________________________________________\n\n");
 printf("\tQuestion:\n\n");
@@ -911,6 +932,7 @@ for (i = 1; i <=5; i++)
 {
 srand(time(0));
 r_num =  l_limit + rand() % (u_limit - l_limit);
+system("clear");
 printf("__________________________________________________________\n");
 printf("__________________________________________________________\n\n");
 printf("\tQuestion:\n\n");
@@ -1053,6 +1075,7 @@ for (i = 1; i <=5; i++)
 {
 srand(time(0));
 r_num =  l_limit + rand() % (u_limit - l_limit);
+system("clear");
 printf("__________________________________________________________\n");
 printf("__________________________________________________________\n\n");
 printf("\tQuestion:\n\n");
@@ -1196,6 +1219,7 @@ for (i = 1; i <=5; i++)
 {
 srand(time(0));
 r_num =  l_limit + rand() % (u_limit - l_limit);
+system("clear");
 printf("__________________________________________________________\n");
 printf("__________________________________________________________\n\n");
 printf("\tQuestion:\n\n");
@@ -1339,6 +1363,7 @@ for (i = 1; i <=5; i++)
 {
 srand(time(0));
 r_num =  l_limit + rand() % (u_limit - l_limit);
+system("clear");
 printf("__________________________________________________________\n");
 printf("__________________________________________________________\n\n");
 printf("\tQuestion:\n\n");
@@ -1482,6 +1507,7 @@ for (i = 1; i <=5; i++)
 {
 srand(time(0));
 r_num =  l_limit + rand() % (u_limit - l_limit);
+system("clear");
 printf("__________________________________________________________\n");
 printf("__________________________________________________________\n\n");
 printf("\tQuestion:\n\n");
@@ -1626,6 +1652,7 @@ for (i = 1; i <=5; i++)
 {
 srand(time(0));
 r_num =  l_limit + rand() % (u_limit - l_limit);
+system("clear");
 printf("__________________________________________________________\n");
 printf("__________________________________________________________\n\n");
 printf("\tQuestion:\n\n");
@@ -1769,6 +1796,7 @@ for (i = 1; i <=5; i++)
 {
 srand(time(0));
 r_num =  l_limit + rand() % (u_limit - l_limit);
+system("clear");
 printf("__________________________________________________________\n");
 printf("__________________________________________________________\n\n");
 printf("\tQuestion:\n\n");
