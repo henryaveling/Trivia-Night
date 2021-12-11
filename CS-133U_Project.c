@@ -492,7 +492,7 @@ char sports_func()
     
 int r_num, t_score = 0;
 int i = 0,l_limit = 0, u_limit = 14;
-char ans_1, ans_2;  
+char ans_1;  
 
 for (i = 1; i <=5; i++)
 {
@@ -635,7 +635,7 @@ char math_func()
 	
 int r_num, t_score = 0;
 int i = 0,l_limit = 0, u_limit = 14;
-char ans_1, ans_2;  
+char ans_1;  
 
 for (i = 1; i <=5; i++)
 {
@@ -782,7 +782,7 @@ char pop_func()
 	
 int r_num, t_score = 0;
 int i = 0,l_limit = 0, u_limit = 14;
-char ans_1, ans_2;  
+char ans_1;  
 
 for (i = 1; i <=5; i++)
 {
@@ -926,7 +926,7 @@ char lit_func()
 	
 int r_num, t_score = 0;
 int i = 0,l_limit = 0, u_limit = 14;
-char ans_1, ans_2;  
+char ans_1;  
 
 for (i = 1; i <=5; i++)
 {
@@ -1069,7 +1069,7 @@ char gen_func()
 	
 int r_num, t_score = 0;
 int i = 0,l_limit = 0, u_limit = 14;
-char ans_1, ans_2;  
+char ans_1;  
 
 for (i = 1; i <=5; i++)
 {
@@ -1213,7 +1213,7 @@ char sci_func()
 	
 int r_num, t_score = 0;
 int i = 0,l_limit = 0, u_limit = 14;
-char ans_1, ans_2;  
+char ans_1;  
 
 for (i = 1; i <=5; i++)
 {
@@ -1357,7 +1357,7 @@ char geo_func()
 	
 int r_num, t_score = 0;
 int i = 0,l_limit = 0, u_limit = 14;
-char ans_1, ans_2;  
+char ans_1;  
 
 for (i = 1; i <=5; i++)
 {
@@ -1501,7 +1501,7 @@ char hist_func()
 	
 int r_num, t_score = 0;
 int i = 0,l_limit = 0, u_limit = 14;
-char ans_1, ans_2;  
+char ans_1;  
 
 for (i = 1; i <=5; i++)
 {
@@ -1646,7 +1646,7 @@ char music_func()
 	
 int r_num, t_score = 0;
 int i = 0,l_limit = 0, u_limit = 14;
-char ans_1, ans_2;  
+char ans_1;  
 
 for (i = 1; i <=5; i++)
 {
@@ -1790,7 +1790,7 @@ char film_func()
 	
 int r_num, t_score = 0;
 int i = 0,l_limit = 0, u_limit = 14;
-char ans_1, ans_2;  
+char ans_1;  
 
 for (i = 1; i <=5; i++)
 {
