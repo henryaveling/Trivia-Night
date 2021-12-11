@@ -393,21 +393,21 @@ char sports_func()
 // Sports Category
     char sport_arr[15][200] = 
     {
-/*q1*/	"In which sport might you come across an Albatross?",
-/*q2*/	"Which sport takes place in a circle \n\t4.55m in diameter?",
-/*q3*/	"Which football team has won the european cup\n\t the most times?",
-/*q4*/	"In which sport is the Cy Young Trophy awarded?",
-/*q5*/	"How many balls are on a pool table at \n\tthe start of a game?",
-/*q6*/	"Who has won the most men's singles tennis titles?",
-/*q7*/	"How many lanes does an olympic standard \n\tswimming pool have?",
-/*q8*/	"Which NFL team's defensive unit was nicknamed \n\t'The Purple People Eaters'?",
-/*q9*/	"In what sport is the Heisman trophy awarded?",
-/*q10*/	"In miles, how long is a marathon?",
-/*q11*/	"How is the chess term 'shah mat' better known?",
-/*q12*/	"In which sport do competitors sweep the ice \n\tand throw stones at houses?",
-/*q13*/	"What distance is covered in one circuit of \n\ta modern outdoor running track (in meters)?",
-/*q14*/	"In which sport is the Canadian, Wayne Gretzky, \n\tan all time great?",
-/*q15*/	"What trophy is awarded to the winner of \n\tthe NHL playoffs?"
+/*q1*/	"\tIn which sport might you come across an Albatross?",
+/*q2*/	"\tWhich sport takes place in a circle \n\t4.55m in diameter?",
+/*q3*/	"\tWhich football team has won the european cup \n\tthe most times?",
+/*q4*/	"\tIn which sport is the Cy Young Trophy awarded?",
+/*q5*/	"\tHow many balls are on a pool table at \n\tthe start of a game?",
+/*q6*/	"\tWho has won the most men's singles tennis titles?",
+/*q7*/	"\tHow many lanes does an olympic standard \n\tswimming pool have?",
+/*q8*/	"\tWhich NFL team's defensive unit was nicknamed \n\t'The Purple People Eaters'?",
+/*q9*/	"\tIn what sport is the Heisman trophy awarded?",
+/*q10*/	"\tIn miles, how long is a marathon?",
+/*q11*/	"\tHow is the chess term 'shah mat' better known?",
+/*q12*/	"\tIn which sport do competitors sweep the ice \n\tand throw stones at houses?",
+/*q13*/	"\tWhat distance is covered in one circuit of \n\ta modern outdoor running track (in meters)?",
+/*q14*/	"\tIn which sport is the Canadian, Wayne Gretzky, \n\tan all time great?",
+/*q15*/	"\tWhat trophy is awarded to the winner of \n\tthe NHL playoffs?"
     };
 
     char sport_ans_arr[15][200] = 
@@ -539,21 +539,21 @@ char math_func()
 // Math Category
     char math_arr[15][200] = 
     {
-/*q1*/	"What is the only even prime number?",
-/*q2*/	"What is the smallest perfect number?",
-/*q3*/	"What is the only number that does not have \n\tits Roman numeral?",
-/*q4*/	"When counting what comes after a trillion?",
-/*q5*/	"How many digits does the value of Pi have?",
-/*q6*/	"How many sides does an “enneadecagon” have?",
-/*q7*/	"What geometric form does not have any vertices?",
-/*q8*/	"What is the square root of a quarter?",
-/*q9*/	"What is the name of the longest side of \n\ta right-angled triangle?",
-/*q10*/	"What does three squared equal?",
-/*q11*/	"What’s the top number of a fraction called?",
-/*q12*/	"What’s the bottom number of a fraction called?",
-/*q13*/	"What number does giga stand for?",
-/*q14*/	"What is a straight line that touches \n\ta circle at a single point?",
-/*q15*/	"How many equal sides does an icosahedron have?"
+/*q1*/	"\tWhat is the only even prime number?",
+/*q2*/	"\tWhat is the smallest perfect number?",
+/*q3*/	"\tWhat is the only number that does not have \n\tits Roman numeral?",
+/*q4*/	"\tWhen counting what comes after a trillion?",
+/*q5*/	"\tHow many digits does the value of Pi have?",
+/*q6*/	"\tHow many sides does an “enneadecagon” have?",
+/*q7*/	"\tWhat geometric form does not have any vertices?",
+/*q8*/	"\tWhat is the square root of a quarter?",
+/*q9*/	"\tWhat is the name of the longest side of \n\ta right-angled triangle?",
+/*q10*/	"\tWhat does three squared equal?",
+/*q11*/	"\tWhat’s the top number of a fraction called?",
+/*q12*/	"\tWhat’s the bottom number of a fraction called?",
+/*q13*/	"\tWhat number does giga stand for?",
+/*q14*/	"\tWhat is a straight line that touches \n\ta circle at a single point?",
+/*q15*/	"\tHow many equal sides does an icosahedron have?"
     };
 
     char math_ans_arr[15][200] = 
@@ -686,21 +686,21 @@ char pop_func()
 // Pop Culture Category
     char pop_cult_arr[15][200] = 
     {
-/*q1*/	"Who was originally cast as the voice of \n\tShrek before Mike Meyers?",
-/*q2*/	"What is the name of the family dog on Full House?",
-/*q3*/	"How many Harry Potter films have been made?",
-/*q4*/	"How many languages can C-3PO speak in Star Wars?",
-/*q5*/	"What is the name of the 2020 Netflix documentary \n\tthat featured Joe Exotic and Carole Baskin?",
-/*q6*/	"What is the longest-running game show on \n\tnetwork television?",
-/*q7*/	"What rapper-turned-actor stars on Law and Order: \n\tSpecial Victims Unit?",
-/*q8*/	"What was the first released movie that takes place in \n\tthe Marvel Cinematic Universe?",
-/*q9*/	"How many Spice Girls were there?",
-/*q10*/	"What is the one best selling album of all time?",
-/*q11*/	"What is the UK’s deep base style rap hip hop called?",
-/*q12*/	"What is the Korean hip hop that took the world \n\tby storm in 2010?",
-/*q13*/	"What name is the Academy Awards best known by?",
-/*q14*/	"When was the Mickey Mouse character first invented?",
-/*q15*/	"When was the first Grammy Awards held?"
+/*q1*/	"\tWho was originally cast as the voice of \n\tShrek before Mike Meyers?",
+/*q2*/	"\tWhat is the name of the family dog on Full House?",
+/*q3*/	"\tHow many Harry Potter films have been made?",
+/*q4*/	"\tHow many languages can C-3PO speak in Star Wars?",
+/*q5*/	"\tWhat is the name of the 2020 Netflix documentary \n\tthat featured Joe Exotic and Carole Baskin?",
+/*q6*/	"\tWhat is the longest-running game show on \n\tnetwork television?",
+/*q7*/	"\tWhat rapper-turned-actor stars on Law and Order: \n\tSpecial Victims Unit?",
+/*q8*/	"\tWhat was the first released movie that takes place in \n\tthe Marvel Cinematic Universe?",
+/*q9*/	"\tHow many Spice Girls were there?",
+/*q10*/	"\tWhat is the one best selling album of all time?",
+/*q11*/	"\tWhat is the UK’s deep base style rap hip hop called?",
+/*q12*/	"\tWhat is the Korean hip hop that took the world \n\tby storm in 2010?",
+/*q13*/	"\tWhat name is the Academy Awards best known by?",
+/*q14*/	"\tWhen was the Mickey Mouse character first invented?",
+/*q15*/	"\tWhen was the first Grammy Awards held?"
     };
 
 	
@@ -836,21 +836,21 @@ char lit_func()
 // Literature Category
     char lit_arr[15][200] = 
     {
-/*q1*/	"Who was the author of 'Lord of The Rings'?",
-/*q2*/	"Who was the author of 'Game Of Thrones'?",
-/*q3*/	"Who was the author of the sci-fi series 'The Expanse'?",
-/*q4*/	"Where did Frodo take the ring in 'Lord of The Rings'?",
-/*q5*/	"In what language was Don Quixote written?",
-/*q6*/	"In 'A Christmas Carol', how many ghosts visit Scrooge?",
-/*q7*/	"In what year was 'Of Mice and Men' published?",
-/*q8*/	"What novel is set on a desert planet inhabited by \n\tgiant sandworms?",
-/*q9*/	"How many of Ernest Hemingway’s ten novels were \n\tpublished posthumously?",
-/*q10*/	"In 'Do Androids Dream of Electric Sheep', many \n\thumans leave Earth for which planet?",
-/*q11*/	"In which year did Charles Dickens die?",
-/*q12*/	"What type of animal is Bagheera in Rudyard Kipling’s \n\tThe Jungle Book?",
-/*q13*/	"How many books are in 'The Girl With The Dragon Tattoo' \n\tseries written by Stieg Larsson?",
-/*q14*/	"In George Orwell’s 'Animal Farm', what type of \n\tanimal is Boxer?",
-/*q15*/	"What is used as the portal to Narnia in C. S. Lewis’ \n\tchildren’s fantasy series?"
+/*q1*/	"\tWho was the author of 'Lord of The Rings'?",
+/*q2*/	"\tWho was the author of 'Game Of Thrones'?",
+/*q3*/	"\tWho was the author of the sci-fi series 'The Expanse'?",
+/*q4*/	"\tWhere did Frodo take the ring in 'Lord of The Rings'?",
+/*q5*/	"\tIn what language was Don Quixote written?",
+/*q6*/	"\tIn 'A Christmas Carol', how many ghosts visit Scrooge?",
+/*q7*/	"\tIn what year was 'Of Mice and Men' published?",
+/*q8*/	"\tWhat novel is set on a desert planet inhabited by \n\tgiant sandworms?",
+/*q9*/	"\tHow many of Ernest Hemingway’s ten novels were \n\tpublished posthumously?",
+/*q10*/	"\tIn 'Do Androids Dream of Electric Sheep', many \n\thumans leave Earth for which planet?",
+/*q11*/	"\tIn which year did Charles Dickens die?",
+/*q12*/	"\tWhat type of animal is Bagheera in Rudyard Kipling’s \n\tThe Jungle Book?",
+/*q13*/	"\tHow many books are in 'The Girl With The Dragon Tattoo' \n\tseries written by Stieg Larsson?",
+/*q14*/	"\tIn George Orwell’s 'Animal Farm', what type of \n\tanimal is Boxer?",
+/*q15*/	"\tWhat is used as the portal to Narnia in C. S. Lewis’ \n\tchildren’s fantasy series?"
     };
 
     char lit_ans_arr[15][200] = 
@@ -982,21 +982,21 @@ char gen_func()
 // General Knowledge Category
     char gen_know_arr[15][200] = 
     {
-/*q1*/	"Burning to stop the flow of blood is?",
-/*q2*/	"What is raku?",
-/*q3*/	"Of which fruit is 'pearmain' a variety?",
-/*q4*/	"What is the most common blood-type group?",
-/*q5*/	"What is a group of trout referred to as?",
-/*q6*/	"How many 'Air Force One'(s) are there?",
-/*q7*/	"What is measured with an ombrometer?",
-/*q8*/	"What is the tenth letter of the Greek alphabet?",
-/*q9*/	"Which country is the largest in Africa?",
-/*q10*/	"What is the process of splitting atoms called?",
-/*q11*/	"Of what mineral is limestone composed of?",
-/*q12*/	"What country launched its first space rocket in \n\tJanuary, 1961?",
-/*q13*/	"What is the most common metallic ore in the Earth's crust?",
-/*q14*/	"What color is Mary Poppins' umbrella?",
-/*q15*/	"What is the leaf of a fern called?"
+/*q1*/	"\tBurning to stop the flow of blood is?",
+/*q2*/	"\tWhat is raku?",
+/*q3*/	"\tOf which fruit is 'pearmain' a variety?",
+/*q4*/	"\tWhat is the most common blood-type group?",
+/*q5*/	"\tWhat is a group of trout referred to as?",
+/*q6*/	"\tHow many 'Air Force One'(s) are there?",
+/*q7*/	"\tWhat is measured with an ombrometer?",
+/*q8*/	"\tWhat is the tenth letter of the Greek alphabet?",
+/*q9*/	"\tWhich country is the largest in Africa?",
+/*q10*/	"\tWhat is the process of splitting atoms called?",
+/*q11*/	"\tOf what mineral is limestone composed of?",
+/*q12*/	"\tWhat country launched its first space rocket in \n\tJanuary, 1961?",
+/*q13*/	"\tWhat is the most common metallic ore in the Earth's crust?",
+/*q14*/	"\tWhat color is Mary Poppins' umbrella?",
+/*q15*/	"\tWhat is the leaf of a fern called?"
     };
 
     char gen_know_ans_arr[15][200] = 
@@ -1129,21 +1129,21 @@ char sci_func()
 // Science Category
     char sci_arr[15][200] = 
     {
-/*q1*/	"What is the nearest planet to the sun?",
-/*q2*/	"What is the boiling point of water in Celsius?",
-/*q3*/	"How many elements are there in the periodic table?",
-/*q4*/	"Who invented the telephone?",
-/*q5*/	"How many bones are in the human body?",
-/*q6*/	"The penny consists primarily of which type of metal?",
-/*q7*/	"Which quality of water allows objects to float \n\ton top of it?",
-/*q8*/	"What measurement is most commonly used to determine \n\tthe depth of water?",
-/*q9*/	"What is the hardest known natural material?",
-/*q10*/	"What is the brightest and hottest planet in \n\tour solar system?",
-/*q11*/	"Which planet has the most moons?",
-/*q12*/	"The oldest living tree in the world can be found where?",
-/*q13*/	"Which animal was the first to be launched into space?",
-/*q14*/	"What is a geiger counter used to measure?",
-/*q15*/	"Which of Newton’s Laws states that ‘for every action, \n\tthere is an equal and opposite reaction?"
+/*q1*/	"\tWhat is the nearest planet to the sun?",
+/*q2*/	"\tWhat is the boiling point of water in Celsius?",
+/*q3*/	"\tHow many elements are there in the periodic table?",
+/*q4*/	"\tWho invented the telephone?",
+/*q5*/	"\tHow many bones are in the human body?",
+/*q6*/	"\tThe penny consists primarily of which type of metal?",
+/*q7*/	"\tWhich quality of water allows objects to float \n\ton top of it?",
+/*q8*/	"\tWhat measurement is most commonly used to determine \n\tthe depth of water?",
+/*q9*/	"\tWhat is the hardest known natural material?",
+/*q10*/	"\tWhat is the brightest and hottest planet in \n\tour solar system?",
+/*q11*/	"\tWhich planet has the most moons?",
+/*q12*/	"\tThe oldest living tree in the world can be found where?",
+/*q13*/	"\tWhich animal was the first to be launched into space?",
+/*q14*/	"\tWhat is a geiger counter used to measure?",
+/*q15*/	"\tWhich of Newton’s Laws states that ‘for every action, \n\tthere is an equal and opposite reaction?"
     };
 
     char sci_ans_arr[15][200] = 
@@ -1276,21 +1276,21 @@ char geo_func()
 // Geography Category
     char geo_arr[15][200] = 
     {
-/*q1*/	"What is the longest river in the world?",
-/*q2*/	"What is the capital of Canada?",
-/*q3*/	"How many time zones does Russia have?",
-/*q4*/	"How many US states share a border with Canada?",
-/*q5*/	"What is the only country that borders the United Kingdom?",
-/*q6*/	"Which African nation has the most pyramids?",
-/*q7*/	"What is the only continent with land in \n\tall four hemispheres?",
-/*q8*/	"Which country in the European Union has the \n\tlargest population?",
-/*q9*/	"How many time zones does China have?",
-/*q10*/	"Denali is the highest mountain in which continent?",
-/*q11*/	"Seychelles is an island nation located in which ocean?",
-/*q12*/	"What is the capital of Chile?",
-/*q13*/	"What are the two main branches of geography?",
-/*q14*/	"Which of these cities is NOT in England?",
-/*q15*/	"What river runs through Baghdad?"
+/*q1*/	"\tWhat is the longest river in the world?",
+/*q2*/	"\tWhat is the capital of Canada?",
+/*q3*/	"\tHow many time zones does Russia have?",
+/*q4*/	"\tHow many US states share a border with Canada?",
+/*q5*/	"\tWhat is the only country that borders the United Kingdom?",
+/*q6*/	"\tWhich African nation has the most pyramids?",
+/*q7*/	"\tWhat is the only continent with land in \n\tall four hemispheres?",
+/*q8*/	"\tWhich country in the European Union has the \n\tlargest population?",
+/*q9*/	"\tHow many time zones does China have?",
+/*q10*/	"\tDenali is the highest mountain in which continent?",
+/*q11*/	"\tSeychelles is an island nation located in which ocean?",
+/*q12*/	"\tWhat is the capital of Chile?",
+/*q13*/	"\tWhat are the two main branches of geography?",
+/*q14*/	"\tWhich of these cities is NOT in England?",
+/*q15*/	"\tWhat river runs through Baghdad?"
     };
 
     char geo_ans_arr[15][200] = 
@@ -1423,21 +1423,21 @@ char hist_func()
 // History Category
     char hist_arr[15][200] = 
     {
-/*q1*/	"How many years did the 100 years war last?",
-/*q2*/	"In which year was John F. Kennedy assassinated?",
-/*q3*/	"Which Greek historian is known as the 'Father of History'?",
-/*q4*/	"The ancient city of Rome was built on how many hills?",
-/*q5*/	"The Peloponnesian War was fought between Athens \n\tand which other ancient Greek state?",
-/*q6*/	"What is the name of the first known human civilization?",
-/*q7*/	"Which English King was best known for beheading his wives?",
-/*q8*/	"Which war took place between 1950 and 1953?",
-/*q9*/	"How did Joan of Arc die?",
-/*q10*/	"Construction of the Berlin Wall began in what year?",
-/*q11*/	"The Incan Empire is located in which modern-day country?",
-/*q12*/	"Who painted the mural 'The Last Supper'?",
-/*q13*/	"Which U.S. President was inducted into the \n\tNational Wrestling Hall of Fame in 1992?",
-/*q14*/	"Where was Adolf Hitler born?",
-/*q15*/	"When was Pearl Harbor bombed?"
+/*q1*/	"\tHow many years did the 100 years war last?",
+/*q2*/	"\tIn which year was John F. Kennedy assassinated?",
+/*q3*/	"\tWhich Greek historian is known as the 'Father of History'?",
+/*q4*/	"\tThe ancient city of Rome was built on how many hills?",
+/*q5*/	"\tThe Peloponnesian War was fought between Athens \n\tand which other ancient Greek state?",
+/*q6*/	"\tWhat is the name of the first known human civilization?",
+/*q7*/	"\tWhich English King was best known for beheading his wives?",
+/*q8*/	"\tWhich war took place between 1950 and 1953?",
+/*q9*/	"\tHow did Joan of Arc die?",
+/*q10*/	"\tConstruction of the Berlin Wall began in what year?",
+/*q11*/	"\tThe Incan Empire is located in which modern-day country?",
+/*q12*/	"\tWho painted the mural 'The Last Supper'?",
+/*q13*/	"\tWhich U.S. President was inducted into the \n\tNational Wrestling Hall of Fame in 1992?",
+/*q14*/	"\tWhere was Adolf Hitler born?",
+/*q15*/	"\tWhen was Pearl Harbor bombed?"
     };
 
     char hist_ans_arr[15][200] = 
@@ -1571,21 +1571,21 @@ char music_func()
 // Music Category
     char music_arr[15][200] = 
     {
-/*q1*/	"Rock band AC/DC originates from which country?",
-/*q2*/	"What was Elvis Presley’s first hit in 1956?",
-/*q3*/	"What decade is the hit single “Love Shack” \n\tby the B-52s from?",
-/*q4*/	"What is Kendrick Lamar’s most famous album according to \n\tthe greatest album chart?",
-/*q5*/	"What is late American rapper Mac Miller’s actual name?",
-/*q6*/	"Which Pink Floyd album was the inspiration for the band’s \n\tfamous psychological drama film released in 1982?",
-/*q7*/	"Which of these instruments originated from Australia?",
-/*q8*/	"Which Beatle had dyslexia?",
-/*q9*/	"What was the name of the Spice Girls debut album released in 1996?",
-/*q10*/	"How did American singer/songwriter Otis Redding die?",
-/*q11*/	"What does the Italian word ‘piano’ translate to in musical terms?",
-/*q12*/	"Who was the lead guitarist of Queen?",
-/*q13*/	"What US festival hosted over 350,000 music fans in 1969?",
-/*q14*/	"Who is the lead singer of famous heavy metal band, Metallica?",
-/*q15*/	"What artist released the song “Video Games” in 2012?"
+/*q1*/	"\tRock band AC/DC originates from which country?",
+/*q2*/	"\tWhat was Elvis Presley’s first hit in 1956?",
+/*q3*/	"\tWhat decade is the hit single “Love Shack” \n\tby the B-52s from?",
+/*q4*/	"\tWhat is Kendrick Lamar’s most famous album according to \n\tthe greatest album chart?",
+/*q5*/	"\tWhat is late American rapper Mac Miller’s actual name?",
+/*q6*/	"\tWhich Pink Floyd album was the inspiration for the band’s \n\tfamous psychological drama film released in 1982?",
+/*q7*/	"\tWhich of these instruments originated from Australia?",
+/*q8*/	"\tWhich Beatle had dyslexia?",
+/*q9*/	"\tWhat was the name of the Spice Girls debut album released in 1996?",
+/*q10*/	"\tHow did American singer/songwriter Otis Redding die?",
+/*q11*/	"\tWhat does the Italian word ‘piano’ translate to in musical terms?",
+/*q12*/	"\tWho was the lead guitarist of Queen?",
+/*q13*/	"\tWhat US festival hosted over 350,000 music fans in 1969?",
+/*q14*/	"\tWho is the lead singer of famous heavy metal band, Metallica?",
+/*q15*/	"\tWhat artist released the song “Video Games” in 2012?"
     };
 
     char music_ans_arr[15][200] = 
@@ -1718,21 +1718,21 @@ char film_func()
 // Film Category
     char film_arr[15][200] = 
     {
-/*q1*/	"Who is regarded as 'The Queen of Sci-Fi'?",
-/*q2*/	"What was the first feature-length animated movie \n\tever released?",
-/*q3*/	"What flavor of Pop Tarts does Buddy the Elf use in \n\this spaghetti in Elf?",
-/*q4*/	"What is the name of the skyscraper in Die Hard?",
-/*q5*/	"Who played park owner John Hammond in Jurassic Park?",
-/*q6*/	"Who is the only actor to receive an Oscar nomination for \n\tacting in a Lord of the Rings movie?",
-/*q7*/	"What 1994 crime film revitalized John Travolta’s career?",
-/*q8*/	"How many movies has Samuel L. Jackson starred in?",
-/*q9*/	"Which Alfred Hitchcock film starred James Stewart \n\tand was shot to look like one continuous take?",
-/*q10*/	"Which movie was incorrectly announced as the winner of \n\tBest Picture at the 2017 Academy Awards?",
-/*q11*/	"In Apocalypse Now, Robert Duvall says, \n\t'I love the smell of ____ in the morning.'",
-/*q12*/	"What is the model of revolver made famous by \n\tClint Eastwood’s “Dirty” Harry Callahan?",
-/*q13*/	"What is the highest-grossing foreign-language film to date?",
-/*q14*/	"In what year were three of Jim Carrey’s blockbuster hits released?",
-/*q15*/	"What was the first movie to ever be rated PG-13?"
+/*q1*/	"\tWho is regarded as 'The Queen of Sci-Fi'?",
+/*q2*/	"\tWhat was the first feature-length animated movie \n\tever released?",
+/*q3*/	"\tWhat flavor of Pop Tarts does Buddy the Elf use in \n\this spaghetti in Elf?",
+/*q4*/	"\tWhat is the name of the skyscraper in Die Hard?",
+/*q5*/	"\tWho played park owner John Hammond in Jurassic Park?",
+/*q6*/	"\tWho is the only actor to receive an Oscar nomination for \n\tacting in a Lord of the Rings movie?",
+/*q7*/	"\tWhat 1994 crime film revitalized John Travolta’s career?",
+/*q8*/	"\tHow many movies has Samuel L. Jackson starred in?",
+/*q9*/	"\tWhich Alfred Hitchcock film starred James Stewart \n\tand was shot to look like one continuous take?",
+/*q10*/	"\tWhich movie was incorrectly announced as the winner of \n\tBest Picture at the 2017 Academy Awards?",
+/*q11*/	"\tIn Apocalypse Now, Robert Duvall says, \n\t'I love the smell of ____ in the morning.'",
+/*q12*/	"\tWhat is the model of revolver made famous by \n\tClint Eastwood’s “Dirty” Harry Callahan?",
+/*q13*/	"\tWhat is the highest-grossing foreign-language film to date?",
+/*q14*/	"\tIn what year were three of Jim Carrey’s blockbuster hits released?",
+/*q15*/	"\tWhat was the first movie to ever be rated PG-13?"
      };
 
      char film_ans_arr[15][200] = 
