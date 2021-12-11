@@ -845,66 +845,66 @@ char sci_func()
 
     char sci_ans_arr[15][200] = 
     {
-/*a1*/  "Earth"
-	"Mars"
-	"Mercury"
-	"Saturn",
-/*a2*/  "0 degrees"
-	"50 degrees"
-	"100 degrees"
-	"150 degrees",
-/*a3*/  "86"
-	"102"
-	"106"
-	"118",
-/*a4*/  "Alexander Graham Bell"
-	"Benjamin Franklin"
-	"Sir Isaac Newton"
-	"Charles Darwin",
-/*a5*/  "203"
-	"204"
-	"205"
-	"206",
-/*a6*/  "Copper"
-	"Aluminum"
-	"Zinc"
-	"Nickel",
-/*a7*/  "Viscosity"
-	"Buoyancy"
-	"Temperature"
-	"Acidity",
-/*a8*/  "Meter"
-	"Liter"
-	"Gram"
-	"Fathom",
-/*a9*/  "Uranium"
-	"Titanium"
-	"Diamond"
-	"Tungsten",
-/*a10*/ "Venus"
-	"Mars"
-	"Mercury"
-	"Uranus",
-/*a11*/ "Neptune"
-	"Saturn"
-	"Earth"
-	"Jupiter",
-/*a12*/ "Tibet"
-	"New Zealand"
-	"Oregon"
-	"California",
-/*a13*/ "Dog"
-	"Cat"
-	"Mouse"
-	"Rabbit",
-/*a14*/ "Mass"
-	"Volume"
-	"Radiation"
-	"Decay",
-/*a15*/ "The first law of motion"
-	"The second law of motion"
-	"The third law of motion"
-	"The fourth law of motion"
+/*a1*/  "Earth\n"
+	"Mars\n"
+	"Mercury\n"
+	"Saturn\n",
+/*a2*/  "0 degrees\n"
+	"50 degrees\n"
+	"100 degrees\n"
+	"150 degrees\n",
+/*a3*/  "86\n"
+	"102\n"
+	"106\n"
+	"118\n",
+/*a4*/  "Alexander Graham Bell\n"
+	"Benjamin Franklin\n"
+	"Sir Isaac Newton\n"
+	"Charles Darwin\n",
+/*a5*/  "203\n"
+	"204\n"
+	"205\n"
+	"206\n",
+/*a6*/  "Copper\n"
+	"Aluminum\n"
+	"Zinc\n"
+	"Nickel\n",
+/*a7*/  "Viscosity\n"
+	"Buoyancy\n"
+	"Temperature\n"
+	"Acidity\n",
+/*a8*/  "Meter\n"
+	"Liter\n"
+	"Gram\n"
+	"Fathom\n",
+/*a9*/  "Uranium\n"
+	"Titanium\n"
+	"Diamond\n"
+	"Tungsten\n",
+/*a10*/ "Venus\n"
+	"Mars\n"
+	"Mercury\n"
+	"Uranus\n",
+/*a11*/ "Neptune\n"
+	"Saturn\n"
+	"Earth\n"
+	"Jupiter\n",
+/*a12*/ "Tibet\n"
+	"New Zealand\n"
+	"Oregon\n"
+	"California\n",
+/*a13*/ "Dog\n"
+	"Cat\n"
+	"Mouse\n"
+	"Rabbit\n",
+/*a14*/ "Mass\n"
+	"Volume\n"
+	"Radiation\n"
+	"Decay\n",
+/*a15*/ "The first law of motion\n"
+	"The second law of motion\n"
+	"The third law of motion\n"
+	"The fourth law of motion\n"
     };
 }
 
@@ -935,66 +935,66 @@ char geo_func()
 
     char geo_ans_arr[15][200] = 
     {
-/*a1*/  "Nile"
-	"Amazon"
-	"Yangtze"
-	"Yellow",
-/*a2*/  "Montreal"
-	"Vancouver"
-	"Ottawa"
-	"Victoria",
-/*a3*/  "4"
-	"7"
-	"11"
-	"13",
-/*a4*/  "13"
-	"14"
-	"9"
-	"15",
-/*a5*/  "Denmark"
-	"Ireland"
-	"Scotland"
-	"Finland",
-/*a6*/  "Egypt"
-	"Libya"
-	"Ethiopia"
-	"Sudan",
-/*a7*/  "Africa"
-	"Europe"
-	"Asia"
-	"North America",
-/*a8*/  "Sweden"
-	"Austria"
-	"Germany"
-	"Czech Republic",
-/*a9*/  "1"
-	"3"
-	"5"
-	"7",
-/*a10*/ "South America"
-	"North America"
-	"Australia"
-	"Europe",
-/*a11*/ "Pacific"
-	"Atlantic"
-	"Indian"
-	"Arctic",
-/*a12*/ "Iquique"
-	"Puerto Montt"
-	"Valparaiso"
-	"Santiago",
-/*a13*/ "Environmental and Human"
-	"Human and Physical"
-	"Physical and Environmental"
-	"Environmental and Cartographic",
-/*a14*/ "Derry"
-	"Fakenham"
-	"Bath"
-	"Derby",
-/*a15*/ "Karun"
-	"Jordan"
-	"Tigris"
-	"Euphrates"
+/*a1*/  "Nile\n"
+	"Amazon\n"
+	"Yangtze\n"
+	"Yellow\n",
+/*a2*/  "Montreal\n"
+	"Vancouver\n"
+	"Ottawa\n"
+	"Victoria\n",
+/*a3*/  "4\n"
+	"7\n"
+	"11\n"
+	"13\n",
+/*a4*/  "13\n"
+	"14\n"
+	"9\n"
+	"15\n",
+/*a5*/  "Denmark\n"
+	"Ireland\n"
+	"Scotland\n"
+	"Finland\n",
+/*a6*/  "Egypt\n"
+	"Libya\n"
+	"Ethiopia\n"
+	"Sudan\n",
+/*a7*/  "Africa\n"
+	"Europe\n"
+	"Asia\n"
+	"North America\n",
+/*a8*/  "Sweden\n"
+	"Austria\n"
+	"Germany\n"
+	"Czech Republic\n",
+/*a9*/  "1\n"
+	"3\n"
+	"5\n"
+	"7\n",
+/*a10*/ "South America\n"
+	"North America\n"
+	"Australia\n"
+	"Europe\n",
+/*a11*/ "Pacific\n"
+	"Atlantic\n"
+	"Indian\n"
+	"Arctic\n",
+/*a12*/ "Iquique\n"
+	"Puerto Montt\n"
+	"Valparaiso\n"
+	"Santiago\n",
+/*a13*/ "Environmental and Human\n"
+	"Human and Physical\n"
+	"Physical and Environmental\n"
+	"Environmental and Cartographic\n",
+/*a14*/ "Derry\n"
+	"Fakenham\n"
+	"Bath\n"
+	"Derby\n",
+/*a15*/ "Karun\n"
+	"Jordan\n"
+	"Tigris\n"
+	"Euphrates\n"
     };
 }
 
@@ -1025,66 +1025,66 @@ char hist_func()
 
     char hist_ans_arr[15][200] = 
     {
-/*a1*/  "96 years"
-	"100 years"
-	"116 years"
-	"122 years",
-/*a2*/  "1961"
-	"1963"
-	"1965"
-	"1968",
-/*a3*/  "Thucydides"
-	"Aristotle"
-	"Dionysius"
-	"Herodotus",
-/*a4*/  "3"
-	"5"
-	"7"
-	"9",
-/*a5*/  "Corinth"
-	"Sparta"
-	"Rhodes"
-	"Syracuse",
-/*a6*/  "Mesopotamia"
-	"Babylon"
-	"Persepolis"
-	"Carthage",
-/*a7*/  "Henry IV"
-	"Henry VI"
-	"Henry VII"
-	"Henry VIII",
-/*a8*/  "The Korean War"
-	"The Vietnam War"
-	"WWII"
-	"The Iraq War",
-/*a9*/  "The Guillotine"
-	"Crucifixion"
-	"Burned at the stake"
-	"Torture",
-/*a10*/ "1953"
-	"1961"
-	"1967"
-	"1970",
-/*a11*/ "Brazil"
-	"Chile"
-	"Argentina"
-	"Peru",
-/*a12*/ "Michelangelo"
-	"Raphael"
-	"Leonardo da Vinci"
-	"Caravaggio",
-/*a13*/ "Theodore Roosevelt"
-	"Thomas Jefferson"
-	"Abraham Lincoln"
-	"Jimmy Carter",
-/*a14*/ "Austria"
-	"Germany"
-	"Sweden"
-	"Switzerland",
-/*a15*/ "December 3rd, 1940"
-	"December 7th, 1941"
-	"December 11th, 1942"
-	"December 13th, 1943"
+/*a1*/  "96 years\n"
+	"100 years\n"
+	"116 years\n"
+	"122 years\n",
+/*a2*/  "1961\n"
+	"1963\n"
+	"1965\n"
+	"1968\n",
+/*a3*/  "Thucydides\n"
+	"Aristotle\n"
+	"Dionysius\n"
+	"Herodotus\n",
+/*a4*/  "3\n"
+	"5\n"
+	"7\n"
+	"9\n",
+/*a5*/  "Corinth\n"
+	"Sparta\n"
+	"Rhodes\n"
+	"Syracuse\n",
+/*a6*/  "Mesopotamia\n"
+	"Babylon\n"
+	"Persepolis\n"
+	"Carthage\n",
+/*a7*/  "Henry IV\n"
+	"Henry VI\n"
+	"Henry VII\n"
+	"Henry VIII\n",
+/*a8*/  "The Korean War\n"
+	"The Vietnam War\n"
+	"WWII\n"
+	"The Iraq War\n",
+/*a9*/  "The Guillotine\n"
+	"Crucifixion\n"
+	"Burned at the stake\n"
+	"Torture\n",
+/*a10*/ "1953\n"
+	"1961\n"
+	"1967\n"
+	"1970\n",
+/*a11*/ "Brazil\n"
+	"Chile\n"
+	"Argentina\n"
+	"Peru\n",
+/*a12*/ "Michelangelo\n"
+	"Raphael\n"
+	"Leonardo da Vinci\n"
+	"Caravaggio\n",
+/*a13*/ "Theodore Roosevelt\n"
+	"Thomas Jefferson\n"
+	"Abraham Lincoln\n"
+	"Jimmy Carter\n",
+/*a14*/ "Austria\n"
+	"Germany\n"
+	"Swedenv"
+	"Switzerland\n",
+/*a15*/ "December 3rd, 1940\n"
+	"December 7th, 1941\n"
+	"December 11th, 1942\n"
+	"December 13th, 1943\n"
     };
 }
 
@@ -1116,66 +1116,66 @@ char music_func()
 
     char music_ans_arr[15][200] = 
     {
-/*a1*/  "England"
-	"Scotland"
-	"USA"
-	"Australia",
-/*a2*/  "Jailhouse Rock"
-	"Blue Suede Shoes"
-	"Heartbreak Hotel"
-	"Hound Dog",
-/*a3*/  "Sixties"
-	"Seventies"
-	"Eighties"
-	"Nineties",
-/*a4*/  "Good Kid, m.A.A.d city"
-	"To Pimp a Butterfly"
-	"Untitled Unmastered"
-	"Section.80",
-/*a5*/  "Malcolm James McCormick"
-	"McGregor John Miller"
-	"Macauley Jacob Murphy"
-	"Michael Joseph Martin",
-/*a6*/  "Dark Side of the Moon"
-	"Animals"
-	"Wish You Were Here"
-	"The Wall",
-/*a7*/  "Didgeridoo"
-	"Tambol"
-	"Bangkakaw"
-	"Tibod",
-/*a8*/  "George Harrison"
-	"Ringo Starr"
-	"John Lennon"
-	"Paul McCartney",
-/*a9*/  "Spiceworld"
-	"Spice"
-	"One Hour of Girl Power"
-	"Forever",
-/*a10*/ "Heart attack"
-	"Vehicle accident"
-	"Plane accident"
-	"Pancreatic cancer",
-/*a11*/ "Softly"
-	"Loudly"
-	"Lively"
-	"Slowly",
-/*a12*/ "Freddie Mercury"
-	"Brian May"
-	"John Deacon"
-	"Roger Taylor",
-/*a13*/ "Glastonbury"
-	"Summer Jam"
-	"Woodstock"
-	"Heatwave",
-/*a14*/ "Kirk Hammett"
-	"Cliff Burton"
-	"Lars Ulrich"
-	"James Hetfield",
-/*a15*/ "Carly Rae Jepsen"
-	"Kelly Clarkson"
-	"Lana Del Ray"
-	"Taylor Swift"
+/*a1*/  "England\n"
+	"Scotland\n"
+	"USA\n"
+	"Australia\n",
+/*a2*/  "Jailhouse Rock\n"
+	"Blue Suede Shoes\n"
+	"Heartbreak Hotel\n"
+	"Hound Dog\n",
+/*a3*/  "Sixties\n"
+	"Seventies\n"
+	"Eighties\n"
+	"Nineties\n",
+/*a4*/  "Good Kid, m.A.A.d city\n"
+	"To Pimp a Butterfly\n"
+	"Untitled Unmastered\n"
+	"Section.80\n",
+/*a5*/  "Malcolm James McCormick\n"
+	"McGregor John Miller\n"
+	"Macauley Jacob Murphy\n"
+	"Michael Joseph Martin\n",
+/*a6*/  "Dark Side of the Moon\n"
+	"Animals\n"
+	"Wish You Were Here\n"
+	"The Wall\n",
+/*a7*/  "Didgeridoo\n"
+	"Tambol\n"
+	"Bangkakaw\n"
+	"Tibod\n",
+/*a8*/  "George Harrison\n"
+	"Ringo Star\nr"
+	"John Lennon\n"
+	"Paul McCartney\n",
+/*a9*/  "Spiceworld\n"
+	"Spice\n"
+	"One Hour of Girl Power\n"
+	"Forever\n",
+/*a10*/ "Heart attack\n"
+	"Vehicle accident\n"
+	"Plane accident\n"
+	"Pancreatic cancer\n",
+/*a11*/ "Softly\n"
+	"Loudly\n"
+	"Lively\n"
+	"Slowly\n",
+/*a12*/ "Freddie Mercury\n"
+	"Brian May\n"
+	"John Deacon\n"
+	"Roger Taylor\n",
+/*a13*/ "Glastonbury\n"
+	"Summer Jam\n"
+	"Woodstock\n"
+	"Heatwave\n",
+/*a14*/ "Kirk Hammett\n"
+	"Cliff Burton\n"
+	"Lars Ulrich\n"
+	"James Hetfield\n",
+/*a15*/ "Carly Rae Jepsen\n"
+	"Kelly Clarkson\n"
+	"Lana Del Ray\n"
+	"Taylor Swift\n"
     };
 }
 
@@ -1206,66 +1206,66 @@ char film_func()
 
      char film_ans_arr[15][200] = 
      {
-/*a1*/  "Sigourney Weaver"
-	"Carrie Fisher"
-	"Linda Hamilton"
-	"Gillian Anderson",
-/*a2*/  "Steamboat Willie"
-	"Alice in Wonderland"
-	"Snow White and the Seven Dwarves"
-	"Gulliver’s Travels",
-/*a3*/  "Strawberry"
-	"Chocolate"
-	"Smores"
-	"Cherry",
-/*a4*/  "Empire State Building"
-	"Union Bank Plaza"
-	"The Ritz"
-	"Nakatomi Plaza",
-/*a5*/  "Samuel L. Jackson"
-	"Jeff Goldblum"
-	"Richard Attenborough"
-	"Alan Grant",
-/*a6*/  "Elijah Wood"
-	"Sean Bean"
-	"Sean Astin"
-	"Ian McKellen",
-/*a7*/  "Pulp Fiction"
-	"Natural Born Killers"
-	"Leon"
-	"Shawshank Redemption",
-/*a8*/  "At least 84"
-	"At least 138"
-	"At least 164"
-	"At least 208",
-/*a9*/  "Psycho"
-	"Rope"
-	"Topaz"
-	"Sabotage",
-/*a10*/ "La La Land"
-	"Moonlight"
-	"Arrival"
-	"Hacksaw Ridge",
-/*a11*/ "Gunpowder"
-	"Napalm"
-	"Biscuits"
-	"Rain",
-/*a12*/ "Colt Diamondback .38 Special"
-	"Colt King Cobra .357 Magnum"
-	"Smith & Wesson Model 19 .357 Magnum"
-	"Smith & Wesson Model 29 .44 Magnum",
-/*a13*/ "Hero"
-	"Parasite"
-	"Crouching Tiger, Hidden Dragon"
-	"Pan’s Labyrinth",
-/*a14*/ "1990"
-	"1992"
-	"1994"
-	"1996",
-/*a15*/ "Red Dawn"
-	"Ghostbusters"
-	"Dune"
-	"2010"
+/*a1*/  "Sigourney Weaver\n"
+	"Carrie Fisher\n"
+	"Linda Hamilton\n"
+	"Gillian Anderson\n",
+/*a2*/  "Steamboat Willie\n"
+	"Alice in Wonderland\n"
+	"Snow White and the Seven Dwarves\n"
+	"Gulliver’s Travels\n",
+/*a3*/  "Strawberry\n"
+	"Chocolate\n"
+	"Smores\n"
+	"Cherry\n",
+/*a4*/  "Empire State Building\n"
+	"Union Bank Plaza\n"
+	"The Ritz\n"
+	"Nakatomi Plaza\n",
+/*a5*/  "Samuel L. Jackson\n"
+	"Jeff Goldblum\n"
+	"Richard Attenborough\n"
+	"Alan Grant\n",
+/*a6*/  "Elijah Wood\n"
+	"Sean Bean\n"
+	"Sean Astin\n"
+	"Ian McKellen\n",
+/*a7*/  "Pulp Fiction\n"
+	"Natural Born Killers\n"
+	"Leon\n"
+	"Shawshank Redemption\n",
+/*a8*/  "At least 84\n"
+	"At least 138\n"
+	"At least 164\n"
+	"At least 208\n",
+/*a9*/  "Psycho\n"
+	"Rope\n"
+	"Topaz\n"
+	"Sabotage\n",
+/*a10*/ "La La Land\n"
+	"Moonlight\n"
+	"Arrival\n"
+	"Hacksaw Ridge\n",
+/*a11*/ "Gunpowder\n"
+	"Napalm\n"
+	"Biscuits\n"
+	"Rain\n",
+/*a12*/ "Colt Diamondback .38 Special\n"
+	"Colt King Cobra .357 Magnum\n"
+	"Smith & Wesson Model 19 .357 Magnum\n"
+	"Smith & Wesson Model 29 .44 Magnum\n",
+/*a13*/ "Hero\n"
+	"Parasite\n"
+	"Crouching Tiger, Hidden Dragon\n"
+	"Pan’s Labyrinth\n",
+/*a14*/ "1990\n"
+	"1992\n"
+	"1994\n"
+	"1996\n",
+/*a15*/ "Red Dawn\n"
+	"Ghostbusters\n"
+	"Dune\n"
+	"2010\n"
     };
 }
 
