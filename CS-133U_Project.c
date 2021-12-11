@@ -129,10 +129,8 @@ int menu_func()
 
 // New game menu choice function
 int newg_func()
-{	
-    cat_choice_func();
-	
-	
+{
+   cat_choice_func();
     return(0);
 }
 
