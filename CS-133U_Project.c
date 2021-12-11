@@ -218,8 +218,24 @@ void default_func()
 // New game menu choice function
 int newg_func(int t_score)
 {	   
-    int score = cat_choice_func(t_score);	
-    printf("Your total score is: %d", score);
+    int score = cat_choice_func(t_score);
+    int incorrect = 25 - score;
+    int percent = (score/25)*100;
+    printf("_____________________________________________\n");
+    printf("_____________________________________________\n\n");
+    printf("\tGame Over! Your Score is Below\n");
+    printf("_____________________________________________\n");
+    printf("_____________________________________________\n\n");
+    printf("\tYour total score is: %d.\n", score);
+    printf("\tYou answered %d correct.\n", score);
+    printf("\tYou answered %d incorrect.\n", incorrect);
+    printf("\tYou answerd %d correct.\n", percent);
+    printf("\tGood Game!\n\n");
+    printf("\tPress 1 to save your score and return to the main menu.\n");
+    printf("\tPress 2 to return to the main menu.\n");
+    printf("\tPress 3 to exit the program.\n");
+    printf("_____________________________________________\n");
+    printf("_____________________________________________\n\n");
 }
 
 int cat_choice_func()
@@ -455,7 +471,7 @@ int cat_choice_func()
 /*a8*/  "\ta. Spiderman\n"
 	"\tb. Superman\n"
 	"\tc. Batman\n"
-	"Iron Man\n",
+	"\td. Iron Man\n",
 /*a9*/  "\ta. 5\n"
 	"\tb. 4\n"
 	"\tc. 3\n"
