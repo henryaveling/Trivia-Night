@@ -6,19 +6,13 @@
 /* with a scorekeeping system, and user profiles.               */
 /****************************************************************/
 
-
-
-
-
 // Program directives
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
+#include <string.h>
 #include <unistd.h>
-
-
-
 
 // Function declarations
 int menu_func();
@@ -29,33 +23,18 @@ int score_func();
 int exit_func();
 void default_func();
 int cat_choice_func();
-char sports_func();
-char math_func();
-char pop_func();
-char lit_func();
-char gen_func();
-char sci_func();
-char geo_func();
-char hist_func();
-char music_func();
-char film_func();
-
-
 
 // Main program function
 int main (void)
-{
-		
+{	
     menu_func();
+    return(0);
 };
-
-
-
-
 
 // Main menu function
 int menu_func()
 {
+
 // Initializing variables for main menu function
     int choice_1;
 
@@ -123,133 +102,6 @@ int menu_func()
     return(0);
 }
 
-
-
-
-
-// New game menu choice function
-int newg_func()
-{
-int n = 5;
-while (n>0)
-{
-n--; 
-cat_choice_func();
-} 
-return(0);
-}
-
-
-
-
-
-
-int cat_choice_func()
-{
-    int cat_choice;
-	
-    // Printing category menu
-    printf("_____________________________________________\n");
-    printf("_____________________________________________\n\n");
-    printf("\tPlease choose a category\n");
-    printf("_____________________________________________\n");
-    printf("_____________________________________________\n\n");
-    printf("\tCategory Menu Options:\n\n");
-    printf("\t1. Sports\n");
-    printf("\t2. Math\n");
-    printf("\t3. Popular Culture\n");
-    printf("\t4. Literature\n");
-    printf("\t5. General Knowledge\n");
-    printf("\t6. Science\n");
-    printf("\t7. Geography\n");
-    printf("\t8. History\n");
-    printf("\t9. Music\n");
-    printf("\t10. Film\n\n");
-    printf("  Please select one option from the menu\n");
-    printf("_____________________________________________\n");
-    printf("_____________________________________________\n\n");
-    
-    // User input for category menu choice
-    scanf("%d", &cat_choice);
-    
-    // Switch case for main menu
-    switch(cat_choice)  
-    {  
-        case 1 : 
-        {
-            system("clear");
-	    sports_func();
-            break;    
-        }
-        case 2:
-        {
-            system("clear");
-	    math_func();
-            break;
-        }
-        case 3:
-        {
-            system("clear");
-	    pop_func();
-            break;
-        }     
-        case 4:
-        {
-            system("clear");
-	    lit_func();
-            break;
-        } 
-        case 5:
-        {
-            system("clear");
-	    gen_func();
-            break; 
-        } 
-        case 6:
-        {
-            system("clear");
-	    sci_func();
-            break; 
-        }  
-        case 7:
-        {
-            system("clear");
-	    geo_func();
-            break; 
-        }
-        case 8:
-        {
-            system("clear");
-	    hist_func();
-            break; 
-        }
-        case 9:
-        {
-            system("clear");
-	    music_func();
-            break; 
-        }
-        case 10:
-        {
-            system("clear");
-	    film_func();
-            break; 
-        }
-        default: 
-        {
-            system("clear");	
-            printf("\nPlease select a valid option\n");
-            cat_choice_func();
-            break;     
-        }
-
-    }  
-
-return(0);	
-}
-
-
-
 // Rules menu choice function
 void rules_func()
 {
@@ -295,10 +147,6 @@ void rules_func()
     return;
 }
 
-
-
-
-
 // About menu choice function
 void about_func()
 {
@@ -340,21 +188,11 @@ void about_func()
     return;
 }
 
-
-
-
-
-
-// Scoreboard menu choice fucntion(unsure about func type currently)
+// Scoreboard menu choice fucntion
 int score_func()
 {
     return(0);
 }
-
-
-
-
-
 
 // Exit menu choice function
 int exit_func()
@@ -365,11 +203,6 @@ int exit_func()
     exit(0);
     return(0);
 }
-
-
-
-
-
 
 // Default menu choice function
 void default_func()
@@ -382,13 +215,22 @@ void default_func()
 }
 
 
+// New game menu choice function
+int newg_func(int t_score)
+{	   
+    int score = cat_choice_func(t_score);	
+    printf("Your total score is: %d", score);
+}
 
-
-
+int cat_choice_func()
+{
+    int cat_choice;
+    int counter;
+    int r_num, l_limit = 0, u_limit = 14;
+    int i = 0, t_score = 0;
+    char answer;
 
 // Categories
-char sports_func()
-{
 
 // Sports Category
     char sport_arr[15][200] = 
@@ -473,68 +315,7 @@ char sports_func()
 	"\tc. Stanley cup Trophy\n"
 	"\td. Vince Lombardi Trophy\n"
     };
-	
-    char correct_answers[15] = 
-    {
-/*a1*/	'a', 
-/*a2*/	'b',
-/*a3*/	'c',
-/*a4*/	'd',
-/*a5*/	'a', 
-/*a6*/	'b',
-/*a7*/	'c',
-/*a8*/	'd',
-/*a9*/	'a', 
-/*a10*/	'b',
-/*11*/	'c',
-/*12*/	'd',
-/*13*/	'a', 
-/*14*/	'b',
-/*15*/	'c'
-    };    
-    
-int r_num, t_score = 0;
-int i = 0,l_limit = 0, u_limit = 14;
-char ans_1;  
 
-for (i = 1; i <=5; i++)
-{
-srand(time(0));
-r_num =  l_limit + rand() % (u_limit - l_limit);
-system("clear");
-printf("__________________________________________________________\n");
-printf("__________________________________________________________\n\n");
-printf("\tQuestion:\n\n");
-puts(sport_arr[r_num]);
-printf("_________________________________________________________\n");
-printf("_________________________________________________________\n\n");
-printf("\tAnswer Choices:\n\n");
-puts(sport_ans_arr[r_num]);
-printf("\tPlease input your answer below!\n");
-printf("_________________________________________________________\n");
-printf("_________________________________________________________\n\n");
-scanf(" %c", &ans_1);
-    
-    if (ans_1 == correct_answers[r_num])
-    {
-        t_score = t_score + 1;  
-        printf("\tThat is correct! Your score is: %d\n", t_score);
-	printf("\tPlease wait for your next question!\n");
-    }
-    else
-    {
-        printf("\tThat is incorrect.\n"); 
-	printf("\tPlease wait for your next question!\n");  
-    }
-    sleep(3);
-}
-	
-return 0;
-}
-
-
-char math_func()
-{
 
 // Math Category
     char math_arr[15][200] = 
@@ -619,69 +400,7 @@ char math_func()
 	"\tc. 20\n"
 	"\td. 16\n"
     };
-    
-    char correct_answers[15] = 
-    {
-/*a1*/	'a', 
-/*a2*/	'b',
-/*a3*/	'c',
-/*a4*/	'd',
-/*a5*/	'a', 
-/*a6*/	'b',
-/*a7*/	'c',
-/*a8*/	'd',
-/*a9*/	'a', 
-/*a10*/	'b',
-/*11*/	'c',
-/*12*/	'd',
-/*13*/	'a', 
-/*14*/	'b',
-/*15*/	'c'
-    }; 
-	
-int r_num, t_score = 0;
-int i = 0,l_limit = 0, u_limit = 14;
-char ans_1;  
 
-for (i = 1; i <=5; i++)
-{
-srand(time(0));
-r_num =  l_limit + rand() % (u_limit - l_limit);
-system("clear");
-printf("__________________________________________________________\n");
-printf("__________________________________________________________\n\n");
-printf("\tQuestion:\n\n");
-puts(math_arr[r_num]);
-printf("_________________________________________________________\n");
-printf("_________________________________________________________\n\n");
-printf("\tAnswer Choices:\n\n");
-puts(math_ans_arr[r_num]);
-printf("\tPlease input your answer below!\n");
-printf("_________________________________________________________\n");
-printf("_________________________________________________________\n\n");
-scanf(" %c", &ans_1);
-    
-    if (ans_1 == correct_answers[r_num])
-    {
-        t_score = t_score + 1;  
-        printf("\tThat is correct! Your score is: %d\n", t_score);
-	printf("\tPlease wait for your next question!\n");
-    }
-    else
-    {
-        printf("That is incorrect.\n"); 
-	printf("\tPlease wait for your next question!\n");
-    }
-    sleep(3);
-}
-
-return 0;
-}
-
-
-
-char pop_func()
-{
 
 // Pop Culture Category
     char pop_cult_arr[15][200] = 
@@ -702,9 +421,6 @@ char pop_func()
 /*q14*/	"\tWhen was the Mickey Mouse character first invented?",
 /*q15*/	"\tWhen was the first Grammy Awards held?"
     };
-
-	
-	
 	
     char pop_cult_ans_arr[15][200] = 
     {
@@ -769,69 +485,7 @@ char pop_func()
 	"\tc. 1959\n"
 	"\td. 1949\n"
     };
-    
-    char correct_answers[15] = 
-    {
-/*a1*/	'a', 
-/*a2*/	'b',
-/*a3*/	'c',
-/*a4*/	'd',
-/*a5*/	'a', 
-/*a6*/	'b',
-/*a7*/	'c',
-/*a8*/	'd',
-/*a9*/	'a', 
-/*a10*/	'b',
-/*11*/	'c',
-/*12*/	'd',
-/*13*/	'a', 
-/*14*/	'b',
-/*15*/	'c'
-    }; 
-	
-int r_num, t_score = 0;
-int i = 0,l_limit = 0, u_limit = 14;
-char ans_1;  
 
-for (i = 1; i <=5; i++)
-{
-srand(time(0));
-r_num =  l_limit + rand() % (u_limit - l_limit);
-system("clear");
-printf("__________________________________________________________\n");
-printf("__________________________________________________________\n\n");
-printf("\tQuestion:\n\n");
-puts(pop_cult_arr[r_num]);
-printf("_________________________________________________________\n");
-printf("_________________________________________________________\n\n");
-printf("\tAnswer Choices:\n\n");
-puts(pop_cult_ans_arr[r_num]);
-printf("\tPlease input your answer below!\n");
-printf("_________________________________________________________\n");
-printf("_________________________________________________________\n\n");
-scanf(" %c", &ans_1);
-    
-    if (ans_1 == correct_answers[r_num])
-    {
-        t_score = t_score + 1;  
-        printf("\tThat is correct! Your score is: %d\n", t_score);
-	printf("\tPlease wait for your next question!\n");
-    }
-    else
-    {
-        printf("That is incorrect.\n");  
-	printf("\tPlease wait for your next question!\n");
-    }
-    sleep(3);
-}
-
-return 0;
-}
-
-
-
-char lit_func()
-{
 
 // Literature Category
     char lit_arr[15][200] = 
@@ -916,69 +570,8 @@ char lit_func()
 	"\tc. Wardrobe\n"
 	"\td. Fridge\n"
     };
-    
-    char correct_answers[15] = 
-    {
-/*a1*/	'a', 
-/*a2*/	'b',
-/*a3*/	'c',
-/*a4*/	'd',
-/*a5*/	'a', 
-/*a6*/	'b',
-/*a7*/	'c',
-/*a8*/	'd',
-/*a9*/	'a', 
-/*a10*/	'b',
-/*11*/	'c',
-/*12*/	'd',
-/*13*/	'a', 
-/*14*/	'b',
-/*15*/	'c'
-    }; 
-	
-int r_num, t_score = 0;
-int i = 0,l_limit = 0, u_limit = 14;
-char ans_1;  
-
-for (i = 1; i <=5; i++)
-{
-srand(time(0));
-r_num =  l_limit + rand() % (u_limit - l_limit);
-system("clear");
-printf("__________________________________________________________\n");
-printf("__________________________________________________________\n\n");
-printf("\tQuestion:\n\n");
-puts(lit_arr[r_num]);
-printf("_________________________________________________________\n");
-printf("_________________________________________________________\n\n");
-printf("\tAnswer Choices:\n\n");
-puts(lit_ans_arr[r_num]);
-printf("\tPlease input your answer below!\n");
-printf("_________________________________________________________\n");
-printf("_________________________________________________________\n\n");
-scanf(" %c", &ans_1);
-    
-    if (ans_1 == correct_answers[r_num])
-    {
-        t_score = t_score + 1;  
-        printf("\tThat is correct! Your score is: %d\n", t_score);
-	printf("\tPlease wait for your next question!\n");
-    }
-    else
-    {
-        printf("That is incorrect.\n");
-	printf("\tPlease wait for your next question!\n");
-    }
-    sleep(3);
-}
-
-return 0;
-}
 
 
-
-char gen_func()
-{
 // General Knowledge Category
     char gen_know_arr[15][200] = 
     {
@@ -1062,69 +655,7 @@ char gen_func()
 	"\tc. Frond\n"
 	"\td. Berry\n"
     };
-    
-    char correct_answers[15] = 
-    {
-/*a1*/	'a', 
-/*a2*/	'b',
-/*a3*/	'c',
-/*a4*/	'd',
-/*a5*/	'a', 
-/*a6*/	'b',
-/*a7*/	'c',
-/*a8*/	'd',
-/*a9*/	'a', 
-/*a10*/	'b',
-/*11*/	'c',
-/*12*/	'd',
-/*13*/	'a', 
-/*14*/	'b',
-/*15*/	'c'
-    }; 
-	
-int r_num, t_score = 0;
-int i = 0,l_limit = 0, u_limit = 14;
-char ans_1;  
 
-for (i = 1; i <=5; i++)
-{
-srand(time(0));
-r_num =  l_limit + rand() % (u_limit - l_limit);
-system("clear");
-printf("__________________________________________________________\n");
-printf("__________________________________________________________\n\n");
-printf("\tQuestion:\n\n");
-puts(gen_know_arr[r_num]);
-printf("_________________________________________________________\n");
-printf("_________________________________________________________\n\n");
-printf("\tAnswer Choices:\n\n");
-puts(gen_know_ans_arr[r_num]);
-printf("\tPlease input your answer below!\n");
-printf("_________________________________________________________\n");
-printf("_________________________________________________________\n\n");
-scanf(" %c", &ans_1);
-    
-    if (ans_1 == correct_answers[r_num])
-    {
-        t_score = t_score + 1;  
-        printf("\tThat is correct! Your score is: %d\n", t_score);
-	printf("\tPlease wait for your next question!\n");
-    }
-    else
-    {
-        printf("That is incorrect.\n");
-	printf("\tPlease wait for your next question!\n");
-    }
-    sleep(3);
-}
-
-return 0;
-}
-
-
-
-char sci_func()
-{
 
 // Science Category
     char sci_arr[15][200] = 
@@ -1209,69 +740,7 @@ char sci_func()
 	"\tc. The third law of motion\n"
 	"\td. The fourth law of motion\n"
     };
-    
-    char correct_answers[15] = 
-    {
-/*a1*/	'a', 
-/*a2*/	'b',
-/*a3*/	'c',
-/*a4*/	'd',
-/*a5*/	'a', 
-/*a6*/	'b',
-/*a7*/	'c',
-/*a8*/	'd',
-/*a9*/	'a', 
-/*a10*/	'b',
-/*11*/	'c',
-/*12*/	'd',
-/*13*/	'a', 
-/*14*/	'b',
-/*15*/	'c'
-    }; 
-	
-int r_num, t_score = 0;
-int i = 0,l_limit = 0, u_limit = 14;
-char ans_1;  
 
-for (i = 1; i <=5; i++)
-{
-srand(time(0));
-r_num =  l_limit + rand() % (u_limit - l_limit);
-system("clear");
-printf("__________________________________________________________\n");
-printf("__________________________________________________________\n\n");
-printf("\tQuestion:\n\n");
-puts(sci_arr[r_num]);
-printf("_________________________________________________________\n");
-printf("_________________________________________________________\n\n");
-printf("\tAnswer Choices:\n\n");
-puts(sci_ans_arr[r_num]);
-printf("\tPlease input your answer below!\n");
-printf("_________________________________________________________\n");
-printf("_________________________________________________________\n\n");
-scanf(" %c", &ans_1);
-    
-    if (ans_1 == correct_answers[r_num])
-    {
-        t_score = t_score + 1;  
-        printf("\tThat is correct! Your score is: %d\n", t_score);
-	printf("\tPlease wait for your next question!\n");
-    }
-    else
-    {
-        printf("That is incorrect.\n");
-	printf("\tPlease wait for your next question!\n");
-    }
-    sleep(3);
-}
-
-return 0;
-}
-
-
-
-char geo_func()
-{
 
 // Geography Category
     char geo_arr[15][200] = 
@@ -1356,69 +825,7 @@ char geo_func()
 	"\tc. Tigris\n"
 	"\td. Euphrates\n"
     };
-    
-    char correct_answers[15] = 
-    {
-/*a1*/	'a', 
-/*a2*/	'b',
-/*a3*/	'c',
-/*a4*/	'd',
-/*a5*/	'a', 
-/*a6*/	'b',
-/*a7*/	'c',
-/*a8*/	'd',
-/*a9*/	'a', 
-/*a10*/	'b',
-/*11*/	'c',
-/*12*/	'd',
-/*13*/	'a', 
-/*14*/	'b',
-/*15*/	'c'
-    }; 
-	
-int r_num, t_score = 0;
-int i = 0,l_limit = 0, u_limit = 14;
-char ans_1;  
 
-for (i = 1; i <=5; i++)
-{
-srand(time(0));
-r_num =  l_limit + rand() % (u_limit - l_limit);
-system("clear");
-printf("__________________________________________________________\n");
-printf("__________________________________________________________\n\n");
-printf("\tQuestion:\n\n");
-puts(geo_arr[r_num]);
-printf("_________________________________________________________\n");
-printf("_________________________________________________________\n\n");
-printf("\tAnswer Choices:\n\n");
-puts(geo_ans_arr[r_num]);
-printf("\tPlease input your answer below!\n");
-printf("_________________________________________________________\n");
-printf("_________________________________________________________\n\n");
-scanf(" %c", &ans_1);
-    
-    if (ans_1 == correct_answers[r_num])
-    {
-        t_score = t_score + 1;  
-        printf("\tThat is correct! Your score is: %d\n", t_score);
-	printf("\tPlease wait for your next question!\n");
-    }
-    else
-    {
-        printf("That is incorrect.\n");
-	printf("\tPlease wait for your next question!\n");
-    }
-    sleep(3);
-}
-
-return 0;
-}
-
-
-
-char hist_func()
-{
 
 // History Category
     char hist_arr[15][200] = 
@@ -1503,70 +910,7 @@ char hist_func()
 	"\tc. December 7th, 1941\n"
 	"\td. December 13th, 1943\n"
     };
-    
-    char correct_answers[15] = 
-    {
-/*a1*/	'a', 
-/*a2*/	'b',
-/*a3*/	'c',
-/*a4*/	'd',
-/*a5*/	'a', 
-/*a6*/	'b',
-/*a7*/	'c',
-/*a8*/	'd',
-/*a9*/	'a', 
-/*a10*/	'b',
-/*11*/	'c',
-/*12*/	'd',
-/*13*/	'a', 
-/*14*/	'b',
-/*15*/	'c'
-    }; 
-	
-int r_num, t_score = 0;
-int i = 0,l_limit = 0, u_limit = 14;
-char ans_1;  
 
-for (i = 1; i <=5; i++)
-{
-srand(time(0));
-r_num =  l_limit + rand() % (u_limit - l_limit);
-system("clear");
-printf("__________________________________________________________\n");
-printf("__________________________________________________________\n\n");
-printf("\tQuestion:\n\n");
-puts(hist_arr[r_num]);
-printf("_________________________________________________________\n");
-printf("_________________________________________________________\n\n");
-printf("\tAnswer Choices:\n\n");
-puts(hist_ans_arr[r_num]);
-printf("\tPlease input your answer below!\n");
-printf("_________________________________________________________\n");
-printf("_________________________________________________________\n\n");
-scanf(" %c", &ans_1);
-    
-    if (ans_1 == correct_answers[r_num])
-    {
-        t_score = t_score + 1;  
-        printf("\tThat is correct! Your score is: %d\n", t_score);
-	printf("\tPlease wait for your next question!\n");
-    }
-    else
-    {
-        printf("That is incorrect.\n");
-	printf("\tPlease wait for your next question!\n");
-    }
-    sleep(3);
-}
-
-return 0;
-}
-
-
-
-
-char music_func()
-{
 
 // Music Category
     char music_arr[15][200] = 
@@ -1619,7 +963,7 @@ char music_func()
 	"\tc. Didgeridoo\n"
 	"\td. Tibod\n",
 /*a8*/  "\ta. George Harrison\n"
-	"\tb. Ringo Star\nr"
+	"\tb. Ringo Starr\n"
 	"\tc. Paul McCartney\n"
 	"\td. John Lennon\n",
 /*a9*/  "\ta. Spice\n"
@@ -1651,69 +995,7 @@ char music_func()
 	"\tc. Lana Del Ray\n"
 	"\td. Taylor Swift\n"
     };
-    
-    char correct_answers[15] = 
-    {
-/*a1*/	'a', 
-/*a2*/	'b',
-/*a3*/	'c',
-/*a4*/	'd',
-/*a5*/	'a', 
-/*a6*/	'b',
-/*a7*/	'c',
-/*a8*/	'd',
-/*a9*/	'a', 
-/*a10*/	'b',
-/*11*/	'c',
-/*12*/	'd',
-/*13*/	'a', 
-/*14*/	'b',
-/*15*/	'c'
-    }; 
-	
-int r_num, t_score = 0;
-int i = 0,l_limit = 0, u_limit = 14;
-char ans_1;  
 
-for (i = 1; i <=5; i++)
-{
-srand(time(0));
-r_num =  l_limit + rand() % (u_limit - l_limit);
-system("clear");
-printf("__________________________________________________________\n");
-printf("__________________________________________________________\n\n");
-printf("\tQuestion:\n\n");
-puts(music_arr[r_num]);
-printf("_________________________________________________________\n");
-printf("_________________________________________________________\n\n");
-printf("\tAnswer Choices:\n\n");
-puts(music_ans_arr[r_num]);
-printf("\tPlease input your answer below!\n");
-printf("_________________________________________________________\n");
-printf("_________________________________________________________\n\n");
-scanf(" %c", &ans_1);
-    
-    if (ans_1 == correct_answers[r_num])
-    {
-        t_score = t_score + 1;  
-        printf("\tThat is correct! Your score is: %d\n", t_score);
-	printf("\tPlease wait for your next question!\n");
-    }
-    else
-    {
-        printf("That is incorrect.\n");
-	printf("\tPlease wait for your next question!\n");
-    }
-    sleep(3);
-}
-
-return 0;
-}
-
-
-
-char film_func()
-{
 
 // Film Category
     char film_arr[15][200] = 
@@ -1798,8 +1080,8 @@ char film_func()
 	"\tc. Red Dawn\n"
 	"\td. 2010\n"
     };
-    
-    char correct_answers[15] = 
+
+char correct_answers[15] = 
     {
 /*a1*/	'a', 
 /*a2*/	'b',
@@ -1816,46 +1098,426 @@ char film_func()
 /*13*/	'a', 
 /*14*/	'b',
 /*15*/	'c'
-    }; 
-	
-int r_num, t_score = 0;
-int i = 0,l_limit = 0, u_limit = 14;
-char ans_1;  
+    };
 
-for (i = 1; i <=5; i++)
-{
-srand(time(0));
-r_num =  l_limit + rand() % (u_limit - l_limit);
-system("clear");
-printf("__________________________________________________________\n");
-printf("__________________________________________________________\n\n");
-printf("\tQuestion:\n\n");
-puts(film_arr[r_num]);
-printf("_________________________________________________________\n");
-printf("_________________________________________________________\n\n");
-printf("\tAnswer Choices:\n\n");
-puts(film_ans_arr[r_num]);
-printf("\tPlease input your answer below!\n");
-printf("_________________________________________________________\n");
-printf("_________________________________________________________\n\n");
-scanf(" %c", &ans_1);
+    // Printing category menu
+    do {
+    printf("_____________________________________________\n");
+    printf("_____________________________________________\n\n");
+    printf("\tTo Begin Trivia Night,\n");
+    printf("\tPlease choose a category!\n");
+    printf("_____________________________________________\n");
+    printf("_____________________________________________\n\n");
+    printf("\tCategory Menu Options:\n\n");
+    printf("\t1. Sports\n");
+    printf("\t2. Math\n");
+    printf("\t3. Popular Culture\n");
+    printf("\t4. Literature\n");
+    printf("\t5. General Knowledge\n");
+    printf("\t6. Science\n");
+    printf("\t7. Geography\n");
+    printf("\t8. History\n");
+    printf("\t9. Music\n");
+    printf("\t10. Film\n\n");
+    printf("  Please select one option from the menu\n");
+    printf("_____________________________________________\n");
+    printf("_____________________________________________\n\n");
+
+    // User input for category menu choice
+    scanf("%d", &cat_choice);
+
+    // Switch case for category menu
+    switch(cat_choice)  
+    {  
+        case 1 : 
+        {
+            system("clear");
+	    counter++;
+
+ 	    for (i = 1; i <=5; i++)
+	    {
+	    srand(time(NULL));
+	    r_num =  l_limit + rand() % (u_limit - l_limit);
+	    printf("__________________________________________________________\n");
+	    printf("__________________________________________________________\n\n");
+	    printf("\tQuestion:\n\n");
+	    puts(sport_arr[r_num]);
+	    printf("_________________________________________________________\n");
+	    printf("_________________________________________________________\n\n");
+	    printf("\tAnswer Choices:\n\n");
+	    puts(sport_ans_arr[r_num]);
+	    printf("\tPlease input your answer below!\n");
+	    printf("_________________________________________________________\n");
+	    printf("_________________________________________________________\n\n");
+	    printf("\t");
+	    scanf(" %c", &answer);
+
+    	    if (answer == correct_answers[r_num])
+    	    {
+                t_score = t_score + 1;  
+                printf("\tThat is correct! Your score is: %d\n", t_score);
+	        printf("\tPlease wait for your next question!\n");
+            }
+            else
+            {
+                printf("\tThat is incorrect! Your score is: %d\n", t_score); 
+	        printf("\tPlease wait for your next question!\n");  
+            }
+            sleep(2.5);
+	    system("clear");
+            }
+	    break;
+	}
+        case 2:
+        {
+            system("clear");
+	    counter++;
+	    for (i = 1; i <=5; i++)
+	    {
+	    srand(time(NULL));
+	    r_num =  l_limit + rand() % (u_limit - l_limit);
+	    printf("__________________________________________________________\n");
+	    printf("__________________________________________________________\n\n");
+	    printf("\tQuestion:\n\n");
+	    puts(math_arr[r_num]);
+	    printf("_________________________________________________________\n");
+	    printf("_________________________________________________________\n\n");
+	    printf("\tAnswer Choices:\n\n");
+	    puts(math_ans_arr[r_num]);
+	    printf("\tPlease input your answer below!\n");
+	    printf("_________________________________________________________\n");
+	    printf("_________________________________________________________\n\n");
+	    printf("\t");
+	    scanf(" %c", &answer);
+
+    	    if (answer == correct_answers[r_num])
+    	    {
+                t_score = t_score + 1;  
+                printf("\tThat is correct! Your score is: %d\n", t_score);
+	        printf("\tPlease wait for your next question!\n");
+            }
+            else
+            {
+                printf("\tThat is incorrect! Your score is: %d\n", t_score); 
+	        printf("\tPlease wait for your next question!\n");  
+            }
+            sleep(2.5);
+	    system("clear");
+            }
+	    break;
+	}
+        case 3:
+        {
+            system("clear");
+	    counter++;
+	    for (i = 1; i <=5; i++)
+	    {
+	    srand(time(NULL));
+	    r_num =  l_limit + rand() % (u_limit - l_limit);
+	    printf("__________________________________________________________\n");
+	    printf("__________________________________________________________\n\n");
+	    printf("\tQuestion:\n\n");
+	    puts(pop_cult_arr[r_num]);
+	    printf("_________________________________________________________\n");
+	    printf("_________________________________________________________\n\n");
+	    printf("\tAnswer Choices:\n\n");
+	    puts(pop_cult_ans_arr[r_num]);
+	    printf("\tPlease input your answer below!\n");
+	    printf("_________________________________________________________\n");
+	    printf("_________________________________________________________\n\n");
+	    printf("\t");
+	    scanf(" %c", &answer);
     
-    if (ans_1 == correct_answers[r_num])
-    {
-        t_score = t_score + 1;  
-        printf("\tThat is correct! Your score is: %d\n", t_score);
-	printf("\tPlease wait for your next question!\n");
-    }
-    else
-    {
-        printf("That is incorrect.\n");
-	printf("\tPlease wait for your next question!\n");
-    }
-    sleep(3);
-
+    	    if (answer == correct_answers[r_num])
+    	    {
+                t_score = t_score + 1;  
+                printf("\tThat is correct! Your score is: %d\n", t_score);
+	        printf("\tPlease wait for your next question!\n");
+            }
+            else
+            {
+                printf("\tThat is incorrect! Your score is: %d\n", t_score); 
+	        printf("\tPlease wait for your next question!\n");  
+            }
+            sleep(2.5);
+	    system("clear");
+            }
+	    break;
+	}     
+        case 4:
+        {
+            system("clear");
+	    counter++;
+	    for (i = 1; i <=5; i++)
+	    {
+	    srand(time(NULL));
+	    r_num =  l_limit + rand() % (u_limit - l_limit);
+	    printf("__________________________________________________________\n");
+	    printf("__________________________________________________________\n\n");
+	    printf("\tQuestion:\n\n");
+	    puts(lit_arr[r_num]);
+	    printf("_________________________________________________________\n");
+	    printf("_________________________________________________________\n\n");
+	    printf("\tAnswer Choices:\n\n");
+	    puts(lit_ans_arr[r_num]);
+	    printf("\tPlease input your answer below!\n");
+	    printf("_________________________________________________________\n");
+	    printf("_________________________________________________________\n\n");
+	    printf("\t");
+	    scanf(" %c", &answer);
+    
+    	    if (answer == correct_answers[r_num])
+    	    {
+                t_score = t_score + 1;  
+                printf("\tThat is correct! Your score is: %d\n", t_score);
+	        printf("\tPlease wait for your next question!\n");
+            }
+            else
+            {
+                printf("\tThat is incorrect! Your score is: %d\n", t_score); 
+	        printf("\tPlease wait for your next question!\n");  
+            }
+            sleep(2.5);
+	    system("clear");
+            }
+	    break;
+	} 
+        case 5:
+        {
+            system("clear");
+	    counter++;
+	    for (i = 1; i <=5; i++)
+	    {
+	    srand(time(NULL));
+	    r_num =  l_limit + rand() % (u_limit - l_limit);
+	    printf("__________________________________________________________\n");
+	    printf("__________________________________________________________\n\n");
+	    printf("\tQuestion:\n\n");
+	    puts(gen_know_arr[r_num]);
+	    printf("_________________________________________________________\n");
+	    printf("_________________________________________________________\n\n");
+	    printf("\tAnswer Choices:\n\n");
+	    puts(gen_know_ans_arr[r_num]);
+	    printf("\tPlease input your answer below!\n");
+	    printf("_________________________________________________________\n");
+	    printf("_________________________________________________________\n\n");
+	    printf("\t");
+	    scanf(" %c", &answer);
+    
+    	    if (answer == correct_answers[r_num])
+    	    {
+                t_score = t_score + 1;  
+                printf("\tThat is correct! Your score is: %d\n", t_score);
+	        printf("\tPlease wait for your next question!\n");
+            }
+            else
+            {
+                printf("\tThat is incorrect! Your score is: %d\n", t_score); 
+	        printf("\tPlease wait for your next question!\n");  
+            }
+            sleep(2.5);
+	    system("clear");
+            }
+	    break;
+	} 
+        case 6:
+        {
+            system("clear");
+	    counter++;
+	    for (i = 1; i <=5; i++)
+	    {
+	    srand(time(NULL));
+	    r_num =  l_limit + rand() % (u_limit - l_limit);
+	    printf("__________________________________________________________\n");
+	    printf("__________________________________________________________\n\n");
+	    printf("\tQuestion:\n\n");
+	    puts(sci_arr[r_num]);
+	    printf("_________________________________________________________\n");
+	    printf("_________________________________________________________\n\n");
+	    printf("\tAnswer Choices:\n\n");
+	    puts(sci_ans_arr[r_num]);
+	    printf("\tPlease input your answer below!\n");
+	    printf("_________________________________________________________\n");
+	    printf("_________________________________________________________\n\n");
+	    printf("\t");
+	    scanf(" %c", &answer);
+    
+    	    if (answer == correct_answers[r_num])
+    	    {
+                t_score = t_score + 1;  
+                printf("\tThat is correct! Your score is: %d\n", t_score);
+	        printf("\tPlease wait for your next question!\n");
+            }
+            else
+            {
+                printf("\tThat is incorrect! Your score is: %d\n", t_score); 
+	        printf("\tPlease wait for your next question!\n");  
+            }
+            sleep(2.5);
+	    system("clear");
+            }
+	    break;
+	}  
+        case 7:
+        {
+            system("clear");
+	    counter++;
+	    for (i = 1; i <=5; i++)
+	    {
+	    srand(time(NULL));
+	    r_num =  l_limit + rand() % (u_limit - l_limit);
+	    printf("__________________________________________________________\n");
+	    printf("__________________________________________________________\n\n");
+	    printf("\tQuestion:\n\n");
+	    puts(geo_arr[r_num]);
+	    printf("_________________________________________________________\n");
+	    printf("_________________________________________________________\n\n");
+	    printf("\tAnswer Choices:\n\n");
+	    puts(geo_ans_arr[r_num]);
+	    printf("\tPlease input your answer below!\n");
+	    printf("_________________________________________________________\n");
+	    printf("_________________________________________________________\n\n");
+	    printf("\t");
+	    scanf(" %c", &answer);
+    
+    	    if (answer == correct_answers[r_num])
+    	    {
+                t_score = t_score + 1;  
+                printf("\tThat is correct! Your score is: %d\n", t_score);
+	        printf("\tPlease wait for your next question!\n");
+            }
+            else
+            {
+                printf("\tThat is incorrect! Your score is: %d\n", t_score); 
+	        printf("\tPlease wait for your next question!\n");  
+            }
+            sleep(2.5);
+	    system("clear");
+            }
+	    break;
+	}
+        case 8:
+        {
+            system("clear");
+	    counter++;
+	    for (i = 1; i <=5; i++)
+	    {
+	    srand(time(NULL));
+	    r_num =  l_limit + rand() % (u_limit - l_limit);
+	    printf("__________________________________________________________\n");
+	    printf("__________________________________________________________\n\n");
+	    printf("\tQuestion:\n\n");
+	    puts(hist_arr[r_num]);
+	    printf("_________________________________________________________\n");
+	    printf("_________________________________________________________\n\n");
+	    printf("\tAnswer Choices:\n\n");
+	    puts(hist_ans_arr[r_num]);
+	    printf("\tPlease input your answer below!\n");
+	    printf("_________________________________________________________\n");
+	    printf("_________________________________________________________\n\n");
+	    printf("\t");
+	    scanf(" %c", &answer);
+    
+    	    if (answer == correct_answers[r_num])
+    	    {
+                t_score = t_score + 1;  
+                printf("\tThat is correct! Your score is: %d\n", t_score);
+	        printf("\tPlease wait for your next question!\n");
+            }
+            else
+            {
+                printf("\tThat is incorrect! Your score is: %d\n", t_score); 
+	        printf("\tPlease wait for your next question!\n");  
+            }
+            sleep(2.5);
+	    system("clear");
+            }
+	    break;
+	}
+        case 9:
+        {
+            system("clear");
+	    counter++;
+	    for (i = 1; i <=5; i++)
+	    {
+	    srand(time(NULL));
+	    r_num =  l_limit + rand() % (u_limit - l_limit);
+	    printf("__________________________________________________________\n");
+	    printf("__________________________________________________________\n\n");
+	    printf("\tQuestion:\n\n");
+	    puts(music_arr[r_num]);
+	    printf("_________________________________________________________\n");
+	    printf("_________________________________________________________\n\n");
+	    printf("\tAnswer Choices:\n\n");
+	    puts(music_ans_arr[r_num]);
+	    printf("\tPlease input your answer below!\n");
+	    printf("_________________________________________________________\n");
+	    printf("_________________________________________________________\n\n");
+	    printf("\t");
+	    scanf(" %c", &answer);
+    
+    	    if (answer == correct_answers[r_num])
+    	    {
+                t_score = t_score + 1;  
+                printf("\tThat is correct! Your score is: %d\n", t_score);
+	        printf("\tPlease wait for your next question!\n");
+            }
+            else
+            {
+                printf("\tThat is incorrect! Your score is: %d\n", t_score); 
+	        printf("\tPlease wait for your next question!\n");  
+            }
+            sleep(2.5);
+	    system("clear");
+            }
+	    break;
+	}
+        case 10:
+        {
+            system("clear");
+	    counter++;
+   	    for (i = 1; i <=5; i++)
+	    {
+	    srand(time(NULL));
+	    r_num =  l_limit + rand() % (u_limit - l_limit);
+	    printf("__________________________________________________________\n");
+	    printf("__________________________________________________________\n\n");
+	    printf("\tQuestion:\n\n");
+	    puts(film_arr[r_num]);
+	    printf("_________________________________________________________\n");
+	    printf("_________________________________________________________\n\n");
+	    printf("\tAnswer Choices:\n\n");
+	    puts(film_ans_arr[r_num]);
+	    printf("\tPlease input your answer below!\n");
+	    printf("_________________________________________________________\n");
+	    printf("_________________________________________________________\n\n");
+	    printf("\t");
+	    scanf(" %c", &answer);
+    
+    	    if (answer == correct_answers[r_num])
+    	    {
+                t_score = t_score + 1;  
+                printf("\tThat is correct! Your score is: %d\n", t_score);
+	        printf("\tPlease wait for your next question!\n");
+            }
+            else
+            {
+                printf("\tThat is incorrect! Your score is: %d\n", t_score); 
+	        printf("\tPlease wait for your next question!\n");  
+            }
+            sleep(2.5);
+	    system("clear");
+            }
+	    break;
+	}
+        default: 
+        {
+            system("clear");	
+            printf("\nPlease select a valid option\n");
+            cat_choice_func();
+            break;     
+        }
+      }
+} while ( counter <= 4 );
+return t_score;
 }
-
-return 0;	
-}
-
-
