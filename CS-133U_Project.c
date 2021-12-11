@@ -36,9 +36,6 @@ int cat_choice_func();
 // Main program function
 int main (void)
 {
-    char a;
-    char b;
-    char cat_func(char a, char b);
 		
     menu_func();
 };
