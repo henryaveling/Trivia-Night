@@ -522,7 +522,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");  
     }
 }
-
+cat_choice_func();
 return 0;
 }
 
@@ -665,7 +665,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");  
     }
 }
-
+cat_choice_func();
 return 0;
 }
 
@@ -812,7 +812,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");  
     }
 }
-
+cat_choice_func();
 return 0;
 }
 
@@ -956,7 +956,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");  
     }
 }
-
+cat_choice_func();
 return 0;
 }
 
@@ -1099,7 +1099,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");  
     }
 }
-
+cat_choice_func();
 return 0;
 }
 
@@ -1243,7 +1243,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");  
     }
 }
-
+cat_choice_func();
 return 0;
 }
 
@@ -1387,7 +1387,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");  
     }
 }
-
+cat_choice_func();
 return 0;
 }
 
@@ -1531,7 +1531,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");  
     }
 }
-
+cat_choice_func();
 return 0;
 }
 
@@ -1676,7 +1676,7 @@ scanf(" %c", &ans_1);
         printf("That is incorrect.\n");  
     }
 }
-
+cat_choice_func();
 return 0;
 }
 
@@ -1821,7 +1821,7 @@ scanf(" %c", &ans_1);
     }
 
 }
-
+cat_choice_func();
 return 0;	
 }
 
