@@ -15,7 +15,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
-
+#include <unistd.h>
 
 
 
@@ -519,13 +519,16 @@ scanf(" %c", &ans_1);
     {
         t_score = t_score + 1;  
         printf("\tThat is correct! Your score is: %d\n", t_score);
+	printf("\tPlease wait for your next question!\n");
     }
     else
     {
-        printf("That is incorrect.\n");  
+        printf("\tThat is incorrect.\n"); 
+	printf("\tPlease wait for your next question!\n");  
     }
+    sleep(10);
 }
-
+	
 return 0;
 }
 
@@ -662,11 +665,14 @@ scanf(" %c", &ans_1);
     {
         t_score = t_score + 1;  
         printf("\tThat is correct! Your score is: %d\n", t_score);
+	printf("\tPlease wait for your next question!\n");
     }
     else
     {
-        printf("That is incorrect.\n");  
+        printf("That is incorrect.\n"); 
+	printf("\tPlease wait for your next question!\n");
     }
+    sleep(10);
 }
 
 return 0;
@@ -809,11 +815,14 @@ scanf(" %c", &ans_1);
     {
         t_score = t_score + 1;  
         printf("\tThat is correct! Your score is: %d\n", t_score);
+	printf("\tPlease wait for your next question!\n");
     }
     else
     {
         printf("That is incorrect.\n");  
+	printf("\tPlease wait for your next question!\n");
     }
+    sleep(10);
 }
 
 return 0;
@@ -953,11 +962,14 @@ scanf(" %c", &ans_1);
     {
         t_score = t_score + 1;  
         printf("\tThat is correct! Your score is: %d\n", t_score);
+	printf("\tPlease wait for your next question!\n");
     }
     else
     {
-        printf("That is incorrect.\n");  
+        printf("That is incorrect.\n");
+	printf("\tPlease wait for your next question!\n");
     }
+    sleep(10);
 }
 
 return 0;
@@ -1096,11 +1108,14 @@ scanf(" %c", &ans_1);
     {
         t_score = t_score + 1;  
         printf("\tThat is correct! Your score is: %d\n", t_score);
+	printf("\tPlease wait for your next question!\n");
     }
     else
     {
-        printf("That is incorrect.\n");  
+        printf("That is incorrect.\n");
+	printf("\tPlease wait for your next question!\n");
     }
+    sleep(10);
 }
 
 return 0;
@@ -1240,11 +1255,14 @@ scanf(" %c", &ans_1);
     {
         t_score = t_score + 1;  
         printf("\tThat is correct! Your score is: %d\n", t_score);
+	printf("\tPlease wait for your next question!\n");
     }
     else
     {
-        printf("That is incorrect.\n");  
+        printf("That is incorrect.\n");
+	printf("\tPlease wait for your next question!\n");
     }
+    sleep(10);
 }
 
 return 0;
@@ -1384,11 +1402,14 @@ scanf(" %c", &ans_1);
     {
         t_score = t_score + 1;  
         printf("\tThat is correct! Your score is: %d\n", t_score);
+	printf("\tPlease wait for your next question!\n");
     }
     else
     {
-        printf("That is incorrect.\n");  
+        printf("That is incorrect.\n");
+	printf("\tPlease wait for your next question!\n");
     }
+    sleep(10);
 }
 
 return 0;
@@ -1528,11 +1549,14 @@ scanf(" %c", &ans_1);
     {
         t_score = t_score + 1;  
         printf("\tThat is correct! Your score is: %d\n", t_score);
+	printf("\tPlease wait for your next question!\n");
     }
     else
     {
-        printf("That is incorrect.\n");  
+        printf("That is incorrect.\n");
+	printf("\tPlease wait for your next question!\n");
     }
+    sleep(10);
 }
 
 return 0;
@@ -1673,11 +1697,14 @@ scanf(" %c", &ans_1);
     {
         t_score = t_score + 1;  
         printf("\tThat is correct! Your score is: %d\n", t_score);
+	printf("\tPlease wait for your next question!\n");
     }
     else
     {
-        printf("That is incorrect.\n");  
+        printf("That is incorrect.\n");
+	printf("\tPlease wait for your next question!\n");
     }
+    sleep(10);
 }
 
 return 0;
@@ -1817,11 +1844,14 @@ scanf(" %c", &ans_1);
     {
         t_score = t_score + 1;  
         printf("\tThat is correct! Your score is: %d\n", t_score);
+	printf("\tPlease wait for your next question!\n");
     }
     else
     {
-        printf("That is incorrect.\n");  
+        printf("That is incorrect.\n");
+	printf("\tPlease wait for your next question!\n");
     }
+    sleep(10);
 
 }
 
