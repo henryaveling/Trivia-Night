@@ -61,7 +61,7 @@ int menu_func()
 // Switch case for main menu
     switch(choice_1)  
     {  
-        case 1 : 
+        case 1: 
     	{
 	    system("clear");	    
 	    newg_func();
@@ -221,7 +221,7 @@ int newg_func(int t_score)
     int score = cat_choice_func(t_score);
     int incorrect = 25 - score;
     int percent = (score / 25) * 100;
-    int choice;	
+    int choice_2;	
 
     printf("_____________________________________________\n");
     printf("_____________________________________________\n\n");
@@ -239,15 +239,33 @@ int newg_func(int t_score)
     printf("\tPlease select an option above!.\n");
     printf("_____________________________________________\n");
     printf("_____________________________________________\n\n");
-    scanf("%d", &end_choice)
-    
-    switch(end_choice)  
+    scanf("%d", &choice_2);
+    	
+	
+    switch(choice_2)  
     {  
         case 1: 
     	{
+	    char* b; 
+    	    char* extension = ".txt";
+    	    char fileSpec[strlen(b)+strlen(extension)+1];
+    	    FILE *filep;
 	    system("clear");	    
-	    //open file save score to file
-	    menu_func();
+	    printf("Please enter your username(no spaces):");
+    	    scanf("%s", b);
+    	    snprintf( fileSpec, sizeof( fileSpec ), "%s%s", b, extension );
+
+    	    filep = fopen( fileSpec, "a" );
+    
+    
+    	    fprintf(filep, "%d\n", score);
+    	    fclose(filep);
+    
+    	    fscanf(filep, "%d\n", &score);
+    	    printf("Your score of %d was saved!\n", score);
+    	    fclose(filep);
+
+	    
 	    break;    
 	}
         case 2:
@@ -268,6 +286,8 @@ int newg_func(int t_score)
 	    // repet func
 	    break;     
         }
+    } 
+    
 }
 
 int cat_choice_func()
