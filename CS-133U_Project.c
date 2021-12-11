@@ -452,6 +452,59 @@ char sports_func()
 	"\tc. Stanley cup Trophy\n"
 	"\td. Vince Lombardi Trophy\n"
     };
+	
+    char correct_answers[15] = 
+    {
+/*a1*/	'a', 
+/*a2*/	'b',
+/*a3*/	'c',
+/*a4*/	'd',
+/*a5*/	'a', 
+/*a6*/	'b',
+/*a7*/	'c',
+/*a8*/	'd',
+/*a9*/	'a', 
+/*a10*/	'b',
+/*11*/	'c',
+/*12*/	'd',
+/*13*/	'a', 
+/*14*/	'b',
+/*15*/	'c'
+    };    
+    
+int r_num, t_score = 0;
+int i = 0,l_limit = 0, u_limit = 14;
+char ans_1, ans_2;  
+
+for (i = 1; i <=5; i++)
+{
+srand(time(0));
+r_num =  l_limit + rand() % (u_limit - l_limit);
+printf("__________________________________________________________\n");
+printf("__________________________________________________________\n\n");
+printf("\tQuestion:\n\n");
+puts(sport_arr[r_num]);
+printf("_________________________________________________________\n");
+printf("_________________________________________________________\n\n");
+printf("\tAnswer Choices:\n\n");
+puts(sport_ans_arr[r_num]);
+printf("\tPlease input your answer below!\n");
+printf("_________________________________________________________\n");
+printf("_________________________________________________________\n\n");
+scanf(" %c", &ans_1);
+    
+    if (ans_1 == correct_answers[r_num])
+    {
+        t_score = t_score + 1;  
+        printf("\tThat is correct! Your score is: %d\n", t_score);
+    }
+    else
+    {
+        printf("That is incorrect.\n");  
+    }
+}
+
+return 0;
 }
 
 
@@ -541,6 +594,59 @@ char math_func()
 	"\tc. 20\n"
 	"\td. 16\n"
     };
+    
+    char correct_answers[15] = 
+    {
+/*a1*/	'a', 
+/*a2*/	'b',
+/*a3*/	'c',
+/*a4*/	'd',
+/*a5*/	'a', 
+/*a6*/	'b',
+/*a7*/	'c',
+/*a8*/	'd',
+/*a9*/	'a', 
+/*a10*/	'b',
+/*11*/	'c',
+/*12*/	'd',
+/*13*/	'a', 
+/*14*/	'b',
+/*15*/	'c'
+    }; 
+	
+int r_num, t_score = 0;
+int i = 0,l_limit = 0, u_limit = 14;
+char ans_1, ans_2;  
+
+for (i = 1; i <=5; i++)
+{
+srand(time(0));
+r_num =  l_limit + rand() % (u_limit - l_limit);
+printf("__________________________________________________________\n");
+printf("__________________________________________________________\n\n");
+printf("\tQuestion:\n\n");
+puts(math_arr[r_num]);
+printf("_________________________________________________________\n");
+printf("_________________________________________________________\n\n");
+printf("\tAnswer Choices:\n\n");
+puts(math_ans_arr[r_num]);
+printf("\tPlease input your answer below!\n");
+printf("_________________________________________________________\n");
+printf("_________________________________________________________\n\n");
+scanf(" %c", &ans_1);
+    
+    if (ans_1 == correct_answers[r_num])
+    {
+        t_score = t_score + 1;  
+        printf("\tThat is correct! Your score is: %d\n", t_score);
+    }
+    else
+    {
+        printf("That is incorrect.\n");  
+    }
+}
+
+return 0;
 }
 
 
@@ -634,6 +740,59 @@ char pop_func()
 	"\tc. 1959\n"
 	"\td. 1949\n"
     };
+    
+    char correct_answers[15] = 
+    {
+/*a1*/	'a', 
+/*a2*/	'b',
+/*a3*/	'c',
+/*a4*/	'd',
+/*a5*/	'a', 
+/*a6*/	'b',
+/*a7*/	'c',
+/*a8*/	'd',
+/*a9*/	'a', 
+/*a10*/	'b',
+/*11*/	'c',
+/*12*/	'd',
+/*13*/	'a', 
+/*14*/	'b',
+/*15*/	'c'
+    }; 
+	
+int r_num, t_score = 0;
+int i = 0,l_limit = 0, u_limit = 14;
+char ans_1, ans_2;  
+
+for (i = 1; i <=5; i++)
+{
+srand(time(0));
+r_num =  l_limit + rand() % (u_limit - l_limit);
+printf("__________________________________________________________\n");
+printf("__________________________________________________________\n\n");
+printf("\tQuestion:\n\n");
+puts(pop_cult_arr[r_num]);
+printf("_________________________________________________________\n");
+printf("_________________________________________________________\n\n");
+printf("\tAnswer Choices:\n\n");
+puts(pop_cult_ans_arr[r_num]);
+printf("\tPlease input your answer below!\n");
+printf("_________________________________________________________\n");
+printf("_________________________________________________________\n\n");
+scanf(" %c", &ans_1);
+    
+    if (ans_1 == correct_answers[r_num])
+    {
+        t_score = t_score + 1;  
+        printf("\tThat is correct! Your score is: %d\n", t_score);
+    }
+    else
+    {
+        printf("That is incorrect.\n");  
+    }
+}
+
+return 0;
 }
 
 
@@ -724,6 +883,59 @@ char lit_func()
 	"\tc. Wardrobe\n"
 	"\td. Fridge\n"
     };
+    
+    char correct_answers[15] = 
+    {
+/*a1*/	'a', 
+/*a2*/	'b',
+/*a3*/	'c',
+/*a4*/	'd',
+/*a5*/	'a', 
+/*a6*/	'b',
+/*a7*/	'c',
+/*a8*/	'd',
+/*a9*/	'a', 
+/*a10*/	'b',
+/*11*/	'c',
+/*12*/	'd',
+/*13*/	'a', 
+/*14*/	'b',
+/*15*/	'c'
+    }; 
+	
+int r_num, t_score = 0;
+int i = 0,l_limit = 0, u_limit = 14;
+char ans_1, ans_2;  
+
+for (i = 1; i <=5; i++)
+{
+srand(time(0));
+r_num =  l_limit + rand() % (u_limit - l_limit);
+printf("__________________________________________________________\n");
+printf("__________________________________________________________\n\n");
+printf("\tQuestion:\n\n");
+puts(lit_arr[r_num]);
+printf("_________________________________________________________\n");
+printf("_________________________________________________________\n\n");
+printf("\tAnswer Choices:\n\n");
+puts(lit_ans_arr[r_num]);
+printf("\tPlease input your answer below!\n");
+printf("_________________________________________________________\n");
+printf("_________________________________________________________\n\n");
+scanf(" %c", &ans_1);
+    
+    if (ans_1 == correct_answers[r_num])
+    {
+        t_score = t_score + 1;  
+        printf("\tThat is correct! Your score is: %d\n", t_score);
+    }
+    else
+    {
+        printf("That is incorrect.\n");  
+    }
+}
+
+return 0;
 }
 
 
@@ -813,6 +1025,59 @@ char gen_func()
 	"\tc. Frond\n"
 	"\td. Berry\n"
     };
+    
+    char correct_answers[15] = 
+    {
+/*a1*/	'a', 
+/*a2*/	'b',
+/*a3*/	'c',
+/*a4*/	'd',
+/*a5*/	'a', 
+/*a6*/	'b',
+/*a7*/	'c',
+/*a8*/	'd',
+/*a9*/	'a', 
+/*a10*/	'b',
+/*11*/	'c',
+/*12*/	'd',
+/*13*/	'a', 
+/*14*/	'b',
+/*15*/	'c'
+    }; 
+	
+int r_num, t_score = 0;
+int i = 0,l_limit = 0, u_limit = 14;
+char ans_1, ans_2;  
+
+for (i = 1; i <=5; i++)
+{
+srand(time(0));
+r_num =  l_limit + rand() % (u_limit - l_limit);
+printf("__________________________________________________________\n");
+printf("__________________________________________________________\n\n");
+printf("\tQuestion:\n\n");
+puts(gen_know_arr[r_num]);
+printf("_________________________________________________________\n");
+printf("_________________________________________________________\n\n");
+printf("\tAnswer Choices:\n\n");
+puts(gen_know_ans_arr[r_num]);
+printf("\tPlease input your answer below!\n");
+printf("_________________________________________________________\n");
+printf("_________________________________________________________\n\n");
+scanf(" %c", &ans_1);
+    
+    if (ans_1 == correct_answers[r_num])
+    {
+        t_score = t_score + 1;  
+        printf("\tThat is correct! Your score is: %d\n", t_score);
+    }
+    else
+    {
+        printf("That is incorrect.\n");  
+    }
+}
+
+return 0;
 }
 
 
@@ -903,6 +1168,59 @@ char sci_func()
 	"\tc. The third law of motion\n"
 	"\td. The fourth law of motion\n"
     };
+    
+    char correct_answers[15] = 
+    {
+/*a1*/	'a', 
+/*a2*/	'b',
+/*a3*/	'c',
+/*a4*/	'd',
+/*a5*/	'a', 
+/*a6*/	'b',
+/*a7*/	'c',
+/*a8*/	'd',
+/*a9*/	'a', 
+/*a10*/	'b',
+/*11*/	'c',
+/*12*/	'd',
+/*13*/	'a', 
+/*14*/	'b',
+/*15*/	'c'
+    }; 
+	
+int r_num, t_score = 0;
+int i = 0,l_limit = 0, u_limit = 14;
+char ans_1, ans_2;  
+
+for (i = 1; i <=5; i++)
+{
+srand(time(0));
+r_num =  l_limit + rand() % (u_limit - l_limit);
+printf("__________________________________________________________\n");
+printf("__________________________________________________________\n\n");
+printf("\tQuestion:\n\n");
+puts(sci_arr[r_num]);
+printf("_________________________________________________________\n");
+printf("_________________________________________________________\n\n");
+printf("\tAnswer Choices:\n\n");
+puts(sci_ans_arr[r_num]);
+printf("\tPlease input your answer below!\n");
+printf("_________________________________________________________\n");
+printf("_________________________________________________________\n\n");
+scanf(" %c", &ans_1);
+    
+    if (ans_1 == correct_answers[r_num])
+    {
+        t_score = t_score + 1;  
+        printf("\tThat is correct! Your score is: %d\n", t_score);
+    }
+    else
+    {
+        printf("That is incorrect.\n");  
+    }
+}
+
+return 0;
 }
 
 
@@ -993,6 +1311,59 @@ char geo_func()
 	"\tc. Tigris\n"
 	"\td. Euphrates\n"
     };
+    
+    char correct_answers[15] = 
+    {
+/*a1*/	'a', 
+/*a2*/	'b',
+/*a3*/	'c',
+/*a4*/	'd',
+/*a5*/	'a', 
+/*a6*/	'b',
+/*a7*/	'c',
+/*a8*/	'd',
+/*a9*/	'a', 
+/*a10*/	'b',
+/*11*/	'c',
+/*12*/	'd',
+/*13*/	'a', 
+/*14*/	'b',
+/*15*/	'c'
+    }; 
+	
+int r_num, t_score = 0;
+int i = 0,l_limit = 0, u_limit = 14;
+char ans_1, ans_2;  
+
+for (i = 1; i <=5; i++)
+{
+srand(time(0));
+r_num =  l_limit + rand() % (u_limit - l_limit);
+printf("__________________________________________________________\n");
+printf("__________________________________________________________\n\n");
+printf("\tQuestion:\n\n");
+puts(geo_arr[r_num]);
+printf("_________________________________________________________\n");
+printf("_________________________________________________________\n\n");
+printf("\tAnswer Choices:\n\n");
+puts(geo_ans_arr[r_num]);
+printf("\tPlease input your answer below!\n");
+printf("_________________________________________________________\n");
+printf("_________________________________________________________\n\n");
+scanf(" %c", &ans_1);
+    
+    if (ans_1 == correct_answers[r_num])
+    {
+        t_score = t_score + 1;  
+        printf("\tThat is correct! Your score is: %d\n", t_score);
+    }
+    else
+    {
+        printf("That is incorrect.\n");  
+    }
+}
+
+return 0;
 }
 
 
@@ -1083,6 +1454,59 @@ char hist_func()
 	"\tc. December 7th, 1941\n"
 	"\td. December 13th, 1943\n"
     };
+    
+    char correct_answers[15] = 
+    {
+/*a1*/	'a', 
+/*a2*/	'b',
+/*a3*/	'c',
+/*a4*/	'd',
+/*a5*/	'a', 
+/*a6*/	'b',
+/*a7*/	'c',
+/*a8*/	'd',
+/*a9*/	'a', 
+/*a10*/	'b',
+/*11*/	'c',
+/*12*/	'd',
+/*13*/	'a', 
+/*14*/	'b',
+/*15*/	'c'
+    }; 
+	
+int r_num, t_score = 0;
+int i = 0,l_limit = 0, u_limit = 14;
+char ans_1, ans_2;  
+
+for (i = 1; i <=5; i++)
+{
+srand(time(0));
+r_num =  l_limit + rand() % (u_limit - l_limit);
+printf("__________________________________________________________\n");
+printf("__________________________________________________________\n\n");
+printf("\tQuestion:\n\n");
+puts(hist_arr[r_num]);
+printf("_________________________________________________________\n");
+printf("_________________________________________________________\n\n");
+printf("\tAnswer Choices:\n\n");
+puts(hist_ans_arr[r_num]);
+printf("\tPlease input your answer below!\n");
+printf("_________________________________________________________\n");
+printf("_________________________________________________________\n\n");
+scanf(" %c", &ans_1);
+    
+    if (ans_1 == correct_answers[r_num])
+    {
+        t_score = t_score + 1;  
+        printf("\tThat is correct! Your score is: %d\n", t_score);
+    }
+    else
+    {
+        printf("That is incorrect.\n");  
+    }
+}
+
+return 0;
 }
 
 
@@ -1174,6 +1598,59 @@ char music_func()
 	"\tc. Lana Del Ray\n"
 	"\td. Taylor Swift\n"
     };
+    
+    char correct_answers[15] = 
+    {
+/*a1*/	'a', 
+/*a2*/	'b',
+/*a3*/	'c',
+/*a4*/	'd',
+/*a5*/	'a', 
+/*a6*/	'b',
+/*a7*/	'c',
+/*a8*/	'd',
+/*a9*/	'a', 
+/*a10*/	'b',
+/*11*/	'c',
+/*12*/	'd',
+/*13*/	'a', 
+/*14*/	'b',
+/*15*/	'c'
+    }; 
+	
+int r_num, t_score = 0;
+int i = 0,l_limit = 0, u_limit = 14;
+char ans_1, ans_2;  
+
+for (i = 1; i <=5; i++)
+{
+srand(time(0));
+r_num =  l_limit + rand() % (u_limit - l_limit);
+printf("__________________________________________________________\n");
+printf("__________________________________________________________\n\n");
+printf("\tQuestion:\n\n");
+puts(music_arr[r_num]);
+printf("_________________________________________________________\n");
+printf("_________________________________________________________\n\n");
+printf("\tAnswer Choices:\n\n");
+puts(music_ans_arr[r_num]);
+printf("\tPlease input your answer below!\n");
+printf("_________________________________________________________\n");
+printf("_________________________________________________________\n\n");
+scanf(" %c", &ans_1);
+    
+    if (ans_1 == correct_answers[r_num])
+    {
+        t_score = t_score + 1;  
+        printf("\tThat is correct! Your score is: %d\n", t_score);
+    }
+    else
+    {
+        printf("That is incorrect.\n");  
+    }
+}
+
+return 0;
 }
 
 
@@ -1264,6 +1741,59 @@ char film_func()
 	"\tc. Red Dawn\n"
 	"\td. 2010\n"
     };
+    
+    char correct_answers[15] = 
+    {
+/*a1*/	'a', 
+/*a2*/	'b',
+/*a3*/	'c',
+/*a4*/	'd',
+/*a5*/	'a', 
+/*a6*/	'b',
+/*a7*/	'c',
+/*a8*/	'd',
+/*a9*/	'a', 
+/*a10*/	'b',
+/*11*/	'c',
+/*12*/	'd',
+/*13*/	'a', 
+/*14*/	'b',
+/*15*/	'c'
+    }; 
+	
+int r_num, t_score = 0;
+int i = 0,l_limit = 0, u_limit = 14;
+char ans_1, ans_2;  
+
+for (i = 1; i <=5; i++)
+{
+srand(time(0));
+r_num =  l_limit + rand() % (u_limit - l_limit);
+printf("__________________________________________________________\n");
+printf("__________________________________________________________\n\n");
+printf("\tQuestion:\n\n");
+puts(film_arr[r_num]);
+printf("_________________________________________________________\n");
+printf("_________________________________________________________\n\n");
+printf("\tAnswer Choices:\n\n");
+puts(film_ans_arr[r_num]);
+printf("\tPlease input your answer below!\n");
+printf("_________________________________________________________\n");
+printf("_________________________________________________________\n\n");
+scanf(" %c", &ans_1);
+    
+    if (ans_1 == correct_answers[r_num])
+    {
+        t_score = t_score + 1;  
+        printf("\tThat is correct! Your score is: %d\n", t_score);
+    }
+    else
+    {
+        printf("That is incorrect.\n");  
+    }
 }
 
+return 0;	
 }
+
+
