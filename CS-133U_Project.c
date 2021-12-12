@@ -231,9 +231,8 @@ int newg_func(int t_score)
     printf("\tYou answered %d correct.\n", score);
     printf("\tYou answered %d incorrect.\n", incorrect);
     printf("\tGood Game!\n\n");
-    printf("\t1. Play again.\n");
-    printf("\t2. Return to the main menu.\n");
-    printf("\t3. Exit the program.\n");
+    printf("\t1. Return to the main menu.\n");
+    printf("\t2. Exit the program.\n\n");
     printf("\tPlease select an option above!.\n");
     printf("_____________________________________________\n");
     printf("_____________________________________________\n\n");
@@ -244,28 +243,22 @@ int newg_func(int t_score)
     {  
         case 1: 
 	{
-    	    system("clear");
-	    newg_func();
+            system("clear");
+	    menu_func();
 	    break;    
 	}
         case 2:
 	{
-            system("clear");
-	    menu_func();
-	    break;
-	}
-        case 3:
-	{
 	    system("clear");	    
 	    exit_func();
 	    break;
-        }
+	}
         default: 
         {
             system("clear");
 	    printf("\tYou entered an invalid input.\n");
-	    printf("\tWe will take you back to the main menu.");
-	    printf("\tHave a good day!");
+	    printf("\tWe will take you back to the main menu.\n");
+	    printf("\tHave a good day!\n");
 	    menu_func();
 	    break;     
         }
