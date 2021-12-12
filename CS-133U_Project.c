@@ -256,7 +256,7 @@ int newg_func(int t_score)
         default: 
         {
             system("clear");
-	    printf("\tYou entered an invalid input.\n");
+	    printf("\t\nYou entered an invalid input.\n");
 	    printf("\tWe will take you back to the main menu.\n");
 	    printf("\tHave a good day!\n");
 	    menu_func();
