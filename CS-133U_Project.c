@@ -220,7 +220,6 @@ int newg_func(int t_score)
 {	   
     int score = cat_choice_func(t_score);
     int incorrect = 25 - score;
-    int percent = (score / 25) * 100;
     int choice_2;	
 
     printf("_____________________________________________\n");
@@ -231,9 +230,8 @@ int newg_func(int t_score)
     printf("\tYour total score is: %d.\n", score);
     printf("\tYou answered %d correct.\n", score);
     printf("\tYou answered %d incorrect.\n", incorrect);
-    printf("\tYou answerd %d correct.\n", percent);// needs fixed
     printf("\tGood Game!\n\n");
-    printf("\t1. Save your score and return to the main menu.\n");
+    printf("\t1. Play again.\n");
     printf("\t2. Return to the main menu.\n");
     printf("\t3. Exit the program.\n");
     printf("\tPlease select an option above!.\n");
@@ -245,27 +243,9 @@ int newg_func(int t_score)
     switch(choice_2)  
     {  
         case 1: 
-    	{
-	    char* b; 
-    	    char* extension = ".txt";
-    	    char fileSpec[strlen(b)+strlen(extension)+1];
-    	    FILE *filep;
-	    system("clear");	    
-	    printf("Please enter your username(no spaces):");
-    	    scanf("%s", b);
-    	    snprintf( fileSpec, sizeof( fileSpec ), "%s%s", b, extension );
-
-    	    filep = fopen( fileSpec, "a" );
-    
-    
-    	    fprintf(filep, "%d\n", score);
-    	    fclose(filep);
-    
-    	    fscanf(filep, "%d\n", &score);
-    	    printf("Your score of %d was saved!\n", score);
-    	    fclose(filep);
-
-	    
+	{
+    	    system("clear");
+	    newg_func();
 	    break;    
 	}
         case 2:
@@ -283,7 +263,10 @@ int newg_func(int t_score)
         default: 
         {
             system("clear");
-	    // repet func
+	    printf("\tYou entered an invalid input.\n");
+	    printf("\tWe will take you back to the main menu.");
+	    printf("\tHave a good day!");
+	    menu_func();
 	    break;     
         }
     } 
