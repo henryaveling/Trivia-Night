@@ -258,11 +258,13 @@ int newg_func(int t_score)
 int cat_choice_func()
 {
     int cat_choice;
-    int counter;
-    int r_num, l_limit = 0, u_limit = 14;
-    int i = 0, t_score = 0;
+    #define N1 0
+    #define N2 4
+    int len = N2-N1+1,i , r , temp;
+    int num[len];
+    int t_score = 0;
     char answer;
-
+    int counter;
 // Categories
 
 // Sports Category
@@ -1166,26 +1168,39 @@ char correct_answers[15] =
         {
             system("clear");
 	    counter++;
+	    for( temp=0,i=N1; temp<len; i++,temp++ )
+            {
+        	num[temp] = i;
+            }
+            
+	    srand( time(NULL) );  
+           
+	    for( i=len-1; i>0; i-- )
+            {
+        	r = rand()%i; 
+        	temp = num[i];
+        	num[i] = num[r];
+        	num[r] = temp;
+            }
+    
 
- 	    for (i = 1; i <=5; i++)
+ 	    for( i=0; i<len; i++ )
 	    {
-	    srand(time(NULL));
-	    r_num =  l_limit + rand() % (u_limit - l_limit);
 	    printf("__________________________________________________________\n");
 	    printf("__________________________________________________________\n\n");
 	    printf("\tQuestion:\n\n");
-	    puts(sport_arr[r_num]);
+	    puts(sport_arr[num[i]]);
 	    printf("_________________________________________________________\n");
 	    printf("_________________________________________________________\n\n");
 	    printf("\tAnswer Choices:\n\n");
-	    puts(sport_ans_arr[r_num]);
+	    puts(sport_ans_arr[num[i]]);
 	    printf("\tPlease input your answer below!\n");
 	    printf("_________________________________________________________\n");
 	    printf("_________________________________________________________\n\n");
 	    printf("\t");
 	    scanf(" %c", &answer);
 
-    	    if (answer == correct_answers[r_num])
+    	    if (answer == correct_answers[num[i]])
     	    {
                 t_score = t_score + 1;  
                 printf("\tThat is correct! Your score is: %d\n", t_score);
@@ -1205,25 +1220,39 @@ char correct_answers[15] =
         {
             system("clear");
 	    counter++;
-	    for (i = 1; i <=5; i++)
+	    for( temp=0,i=N1; temp<len; i++,temp++ )
+            {
+        	num[temp] = i;
+            }
+            
+	    srand( time(NULL) );  
+           
+	    for( i=len-1; i>0; i-- )
+            {
+        	r = rand()%i; 
+        	temp = num[i];
+        	num[i] = num[r];
+        	num[r] = temp;
+            }
+    
+
+ 	    for( i=0; i<len; i++ )
 	    {
-	    srand(time(NULL));
-	    r_num =  l_limit + rand() % (u_limit - l_limit);
 	    printf("__________________________________________________________\n");
 	    printf("__________________________________________________________\n\n");
 	    printf("\tQuestion:\n\n");
-	    puts(math_arr[r_num]);
+	    puts(math_arr[num[i]]);
 	    printf("_________________________________________________________\n");
 	    printf("_________________________________________________________\n\n");
 	    printf("\tAnswer Choices:\n\n");
-	    puts(math_ans_arr[r_num]);
+	    puts(math_ans_arr[num[i]]);
 	    printf("\tPlease input your answer below!\n");
 	    printf("_________________________________________________________\n");
 	    printf("_________________________________________________________\n\n");
 	    printf("\t");
 	    scanf(" %c", &answer);
 
-    	    if (answer == correct_answers[r_num])
+    	    if (answer == correct_answers[num[i]])
     	    {
                 t_score = t_score + 1;  
                 printf("\tThat is correct! Your score is: %d\n", t_score);
@@ -1243,25 +1272,39 @@ char correct_answers[15] =
         {
             system("clear");
 	    counter++;
-	    for (i = 1; i <=5; i++)
+	    for( temp=0,i=N1; temp<len; i++,temp++ )
+            {
+        	num[temp] = i;
+            }
+            
+	    srand( time(NULL) );  
+           
+	    for( i=len-1; i>0; i-- )
+            {
+        	r = rand()%i; 
+        	temp = num[i];
+        	num[i] = num[r];
+        	num[r] = temp;
+            }
+    
+
+ 	    for( i=0; i<len; i++ )
 	    {
-	    srand(time(NULL));
-	    r_num =  l_limit + rand() % (u_limit - l_limit);
 	    printf("__________________________________________________________\n");
 	    printf("__________________________________________________________\n\n");
 	    printf("\tQuestion:\n\n");
-	    puts(pop_cult_arr[r_num]);
+	    puts(pop_cult_arr[num[i]]);
 	    printf("_________________________________________________________\n");
 	    printf("_________________________________________________________\n\n");
 	    printf("\tAnswer Choices:\n\n");
-	    puts(pop_cult_ans_arr[r_num]);
+	    puts(pop_cult_ans_arr[num[i]]);
 	    printf("\tPlease input your answer below!\n");
 	    printf("_________________________________________________________\n");
 	    printf("_________________________________________________________\n\n");
 	    printf("\t");
 	    scanf(" %c", &answer);
-    
-    	    if (answer == correct_answers[r_num])
+
+    	    if (answer == correct_answers[num[i]])
     	    {
                 t_score = t_score + 1;  
                 printf("\tThat is correct! Your score is: %d\n", t_score);
@@ -1281,25 +1324,39 @@ char correct_answers[15] =
         {
             system("clear");
 	    counter++;
-	    for (i = 1; i <=5; i++)
+	    for( temp=0,i=N1; temp<len; i++,temp++ )
+            {
+        	num[temp] = i;
+            }
+            
+	    srand( time(NULL) );  
+           
+	    for( i=len-1; i>0; i-- )
+            {
+        	r = rand()%i; 
+        	temp = num[i];
+        	num[i] = num[r];
+        	num[r] = temp;
+            }
+    
+
+ 	    for( i=0; i<len; i++ )
 	    {
-	    srand(time(NULL));
-	    r_num =  l_limit + rand() % (u_limit - l_limit);
 	    printf("__________________________________________________________\n");
 	    printf("__________________________________________________________\n\n");
 	    printf("\tQuestion:\n\n");
-	    puts(lit_arr[r_num]);
+	    puts(lit_arr[num[i]]);
 	    printf("_________________________________________________________\n");
 	    printf("_________________________________________________________\n\n");
 	    printf("\tAnswer Choices:\n\n");
-	    puts(lit_ans_arr[r_num]);
+	    puts(lit_ans_arr[num[i]]);
 	    printf("\tPlease input your answer below!\n");
 	    printf("_________________________________________________________\n");
 	    printf("_________________________________________________________\n\n");
 	    printf("\t");
 	    scanf(" %c", &answer);
-    
-    	    if (answer == correct_answers[r_num])
+
+    	    if (answer == correct_answers[num[i]])
     	    {
                 t_score = t_score + 1;  
                 printf("\tThat is correct! Your score is: %d\n", t_score);
@@ -1319,25 +1376,39 @@ char correct_answers[15] =
         {
             system("clear");
 	    counter++;
-	    for (i = 1; i <=5; i++)
+	    for( temp=0,i=N1; temp<len; i++,temp++ )
+            {
+        	num[temp] = i;
+            }
+            
+	    srand( time(NULL) );  
+           
+	    for( i=len-1; i>0; i-- )
+            {
+        	r = rand()%i; 
+        	temp = num[i];
+        	num[i] = num[r];
+        	num[r] = temp;
+            }
+    
+
+ 	    for( i=0; i<len; i++ )
 	    {
-	    srand(time(NULL));
-	    r_num =  l_limit + rand() % (u_limit - l_limit);
 	    printf("__________________________________________________________\n");
 	    printf("__________________________________________________________\n\n");
 	    printf("\tQuestion:\n\n");
-	    puts(gen_know_arr[r_num]);
+	    puts(gen_know_arr[num[i]]);
 	    printf("_________________________________________________________\n");
 	    printf("_________________________________________________________\n\n");
 	    printf("\tAnswer Choices:\n\n");
-	    puts(gen_know_ans_arr[r_num]);
+	    puts(gen_know_ans_arr[num[i]]);
 	    printf("\tPlease input your answer below!\n");
 	    printf("_________________________________________________________\n");
 	    printf("_________________________________________________________\n\n");
 	    printf("\t");
 	    scanf(" %c", &answer);
-    
-    	    if (answer == correct_answers[r_num])
+
+    	    if (answer == correct_answers[num[i]])
     	    {
                 t_score = t_score + 1;  
                 printf("\tThat is correct! Your score is: %d\n", t_score);
@@ -1357,25 +1428,39 @@ char correct_answers[15] =
         {
             system("clear");
 	    counter++;
-	    for (i = 1; i <=5; i++)
+	    for( temp=0,i=N1; temp<len; i++,temp++ )
+            {
+        	num[temp] = i;
+            }
+            
+	    srand( time(NULL) );  
+           
+	    for( i=len-1; i>0; i-- )
+            {
+        	r = rand()%i; 
+        	temp = num[i];
+        	num[i] = num[r];
+        	num[r] = temp;
+            }
+    
+
+ 	    for( i=0; i<len; i++ )
 	    {
-	    srand(time(NULL));
-	    r_num =  l_limit + rand() % (u_limit - l_limit);
 	    printf("__________________________________________________________\n");
 	    printf("__________________________________________________________\n\n");
 	    printf("\tQuestion:\n\n");
-	    puts(sci_arr[r_num]);
+	    puts(sci_arr[num[i]]);
 	    printf("_________________________________________________________\n");
 	    printf("_________________________________________________________\n\n");
 	    printf("\tAnswer Choices:\n\n");
-	    puts(sci_ans_arr[r_num]);
+	    puts(sci_ans_arr[num[i]]);
 	    printf("\tPlease input your answer below!\n");
 	    printf("_________________________________________________________\n");
 	    printf("_________________________________________________________\n\n");
 	    printf("\t");
 	    scanf(" %c", &answer);
-    
-    	    if (answer == correct_answers[r_num])
+
+    	    if (answer == correct_answers[num[i]])
     	    {
                 t_score = t_score + 1;  
                 printf("\tThat is correct! Your score is: %d\n", t_score);
@@ -1395,25 +1480,39 @@ char correct_answers[15] =
         {
             system("clear");
 	    counter++;
-	    for (i = 1; i <=5; i++)
+	    for( temp=0,i=N1; temp<len; i++,temp++ )
+            {
+        	num[temp] = i;
+            }
+            
+	    srand( time(NULL) );  
+           
+	    for( i=len-1; i>0; i-- )
+            {
+        	r = rand()%i; 
+        	temp = num[i];
+        	num[i] = num[r];
+        	num[r] = temp;
+            }
+    
+
+ 	    for( i=0; i<len; i++ )
 	    {
-	    srand(time(NULL));
-	    r_num =  l_limit + rand() % (u_limit - l_limit);
 	    printf("__________________________________________________________\n");
 	    printf("__________________________________________________________\n\n");
 	    printf("\tQuestion:\n\n");
-	    puts(geo_arr[r_num]);
+	    puts(geo_arr[num[i]]);
 	    printf("_________________________________________________________\n");
 	    printf("_________________________________________________________\n\n");
 	    printf("\tAnswer Choices:\n\n");
-	    puts(geo_ans_arr[r_num]);
+	    puts(geo_ans_arr[num[i]]);
 	    printf("\tPlease input your answer below!\n");
 	    printf("_________________________________________________________\n");
 	    printf("_________________________________________________________\n\n");
 	    printf("\t");
 	    scanf(" %c", &answer);
-    
-    	    if (answer == correct_answers[r_num])
+
+    	    if (answer == correct_answers[num[i]])
     	    {
                 t_score = t_score + 1;  
                 printf("\tThat is correct! Your score is: %d\n", t_score);
@@ -1433,25 +1532,39 @@ char correct_answers[15] =
         {
             system("clear");
 	    counter++;
-	    for (i = 1; i <=5; i++)
+	    for( temp=0,i=N1; temp<len; i++,temp++ )
+            {
+        	num[temp] = i;
+            }
+            
+	    srand( time(NULL) );  
+           
+	    for( i=len-1; i>0; i-- )
+            {
+        	r = rand()%i; 
+        	temp = num[i];
+        	num[i] = num[r];
+        	num[r] = temp;
+            }
+    
+
+ 	    for( i=0; i<len; i++ )
 	    {
-	    srand(time(NULL));
-	    r_num =  l_limit + rand() % (u_limit - l_limit);
 	    printf("__________________________________________________________\n");
 	    printf("__________________________________________________________\n\n");
 	    printf("\tQuestion:\n\n");
-	    puts(hist_arr[r_num]);
+	    puts(hist_arr[num[i]]);
 	    printf("_________________________________________________________\n");
 	    printf("_________________________________________________________\n\n");
 	    printf("\tAnswer Choices:\n\n");
-	    puts(hist_ans_arr[r_num]);
+	    puts(hist_ans_arr[num[i]]);
 	    printf("\tPlease input your answer below!\n");
 	    printf("_________________________________________________________\n");
 	    printf("_________________________________________________________\n\n");
 	    printf("\t");
 	    scanf(" %c", &answer);
-    
-    	    if (answer == correct_answers[r_num])
+
+    	    if (answer == correct_answers[num[i]])
     	    {
                 t_score = t_score + 1;  
                 printf("\tThat is correct! Your score is: %d\n", t_score);
@@ -1471,25 +1584,39 @@ char correct_answers[15] =
         {
             system("clear");
 	    counter++;
-	    for (i = 1; i <=5; i++)
+	    for( temp=0,i=N1; temp<len; i++,temp++ )
+            {
+        	num[temp] = i;
+            }
+            
+	    srand( time(NULL) );  
+           
+	    for( i=len-1; i>0; i-- )
+            {
+        	r = rand()%i; 
+        	temp = num[i];
+        	num[i] = num[r];
+        	num[r] = temp;
+            }
+    
+
+ 	    for( i=0; i<len; i++ )
 	    {
-	    srand(time(NULL));
-	    r_num =  l_limit + rand() % (u_limit - l_limit);
 	    printf("__________________________________________________________\n");
 	    printf("__________________________________________________________\n\n");
 	    printf("\tQuestion:\n\n");
-	    puts(music_arr[r_num]);
+	    puts(music_arr[num[i]]);
 	    printf("_________________________________________________________\n");
 	    printf("_________________________________________________________\n\n");
 	    printf("\tAnswer Choices:\n\n");
-	    puts(music_ans_arr[r_num]);
+	    puts(music_ans_arr[num[i]]);
 	    printf("\tPlease input your answer below!\n");
 	    printf("_________________________________________________________\n");
 	    printf("_________________________________________________________\n\n");
 	    printf("\t");
 	    scanf(" %c", &answer);
-    
-    	    if (answer == correct_answers[r_num])
+
+    	    if (answer == correct_answers[num[i]])
     	    {
                 t_score = t_score + 1;  
                 printf("\tThat is correct! Your score is: %d\n", t_score);
@@ -1509,25 +1636,39 @@ char correct_answers[15] =
         {
             system("clear");
 	    counter++;
-   	    for (i = 1; i <=5; i++)
+	    for( temp=0,i=N1; temp<len; i++,temp++ )
+            {
+        	num[temp] = i;
+            }
+            
+	    srand( time(NULL) );  
+           
+	    for( i=len-1; i>0; i-- )
+            {
+        	r = rand()%i; 
+        	temp = num[i];
+        	num[i] = num[r];
+        	num[r] = temp;
+            }
+    
+
+ 	    for( i=0; i<len; i++ )
 	    {
-	    srand(time(NULL));
-	    r_num =  l_limit + rand() % (u_limit - l_limit);
 	    printf("__________________________________________________________\n");
 	    printf("__________________________________________________________\n\n");
 	    printf("\tQuestion:\n\n");
-	    puts(film_arr[r_num]);
+	    puts(film_arr[num[i]]);
 	    printf("_________________________________________________________\n");
 	    printf("_________________________________________________________\n\n");
 	    printf("\tAnswer Choices:\n\n");
-	    puts(film_ans_arr[r_num]);
+	    puts(film_ans_arr[num[i]]);
 	    printf("\tPlease input your answer below!\n");
 	    printf("_________________________________________________________\n");
 	    printf("_________________________________________________________\n\n");
 	    printf("\t");
 	    scanf(" %c", &answer);
-    
-    	    if (answer == correct_answers[r_num])
+
+    	    if (answer == correct_answers[num[i]])
     	    {
                 t_score = t_score + 1;  
                 printf("\tThat is correct! Your score is: %d\n", t_score);
