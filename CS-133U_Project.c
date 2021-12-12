@@ -260,11 +260,12 @@ int cat_choice_func()
     int cat_choice;
     #define N1 0
     #define N2 9
-    int len = N2-N1+1,i , r , temp;
+    int len = N2 - N1 + 1, i , r , temp;
     int num[len];
     int t_score = 0;
     char answer;
     int counter;
+
 // Categories
 
 // Sports Category
@@ -1168,14 +1169,14 @@ char correct_answers[15] =
         {
             system("clear");
 	    counter++;
-	    for( temp=0,i=N1; temp<len; i++,temp++ )
+	    for( temp = 0, i = N1; temp < len; i++, temp++ )
             {
         	num[temp] = i;
             }
             
 	    srand( time(NULL) );  
            
-	    for( i=len-1; i>0; i-- )
+	    for( i = len - 1; i > 0; i-- )
             {
         	r = rand()%i; 
         	temp = num[i];
@@ -1184,7 +1185,7 @@ char correct_answers[15] =
             }
     
 
- 	    for( i=0; i<len; i++ )
+ 	    for( i = 0; i < len; i++ )
 	    {
 	    printf("__________________________________________________________\n");
 	    printf("__________________________________________________________\n\n");
@@ -1220,14 +1221,14 @@ char correct_answers[15] =
         {
             system("clear");
 	    counter++;
-	    for( temp=0,i=N1; temp<len; i++,temp++ )
+	    for( temp = 0, i = N1; temp < len; i++ , temp++ )
             {
         	num[temp] = i;
             }
             
 	    srand( time(NULL) );  
            
-	    for( i=len-1; i>0; i-- )
+	    for( i = len - 1; i > 0; i-- )
             {
         	r = rand()%i; 
         	temp = num[i];
@@ -1236,7 +1237,7 @@ char correct_answers[15] =
             }
     
 
- 	    for( i=0; i<len; i++ )
+ 	    for( i = 0; i < len; i++ )
 	    {
 	    printf("__________________________________________________________\n");
 	    printf("__________________________________________________________\n\n");
@@ -1272,14 +1273,14 @@ char correct_answers[15] =
         {
             system("clear");
 	    counter++;
-	    for( temp=0,i=N1; temp<len; i++,temp++ )
+	    for( temp = 0, i = N1; temp < len; i++, temp++ )
             {
         	num[temp] = i;
             }
             
 	    srand( time(NULL) );  
            
-	    for( i=len-1; i>0; i-- )
+	    for( i = len - 1; i > 0; i-- )
             {
         	r = rand()%i; 
         	temp = num[i];
@@ -1288,7 +1289,7 @@ char correct_answers[15] =
             }
     
 
- 	    for( i=0; i<len; i++ )
+ 	    for( i = 0; i < len; i++ )
 	    {
 	    printf("__________________________________________________________\n");
 	    printf("__________________________________________________________\n\n");
@@ -1324,14 +1325,14 @@ char correct_answers[15] =
         {
             system("clear");
 	    counter++;
-	    for( temp=0,i=N1; temp<len; i++,temp++ )
+	    for( temp = 0, i = N1; temp < len; i++, temp++ )
             {
         	num[temp] = i;
             }
             
 	    srand( time(NULL) );  
            
-	    for( i=len-1; i>0; i-- )
+	    for( i = len - 1; i > 0; i-- )
             {
         	r = rand()%i; 
         	temp = num[i];
@@ -1340,7 +1341,7 @@ char correct_answers[15] =
             }
     
 
- 	    for( i=0; i<len; i++ )
+ 	    for( i = 0; i < len; i++ )
 	    {
 	    printf("__________________________________________________________\n");
 	    printf("__________________________________________________________\n\n");
@@ -1376,14 +1377,14 @@ char correct_answers[15] =
         {
             system("clear");
 	    counter++;
-	    for( temp=0,i=N1; temp<len; i++,temp++ )
+	    for( temp = 0, i = N1; temp < len; i++, temp++ )
             {
         	num[temp] = i;
             }
             
 	    srand( time(NULL) );  
            
-	    for( i=len-1; i>0; i-- )
+	    for( i = len - 1; i > 0; i-- )
             {
         	r = rand()%i; 
         	temp = num[i];
@@ -1392,7 +1393,7 @@ char correct_answers[15] =
             }
     
 
- 	    for( i=0; i<len; i++ )
+ 	    for( i = 0; i < len; i++ )
 	    {
 	    printf("__________________________________________________________\n");
 	    printf("__________________________________________________________\n\n");
@@ -1428,14 +1429,14 @@ char correct_answers[15] =
         {
             system("clear");
 	    counter++;
-	    for( temp=0,i=N1; temp<len; i++,temp++ )
+	    for( temp = 0, i = N1; temp < len; i++, temp++ )
             {
         	num[temp] = i;
             }
             
 	    srand( time(NULL) );  
            
-	    for( i=len-1; i>0; i-- )
+	    for( i = len - 1; i > 0; i-- )
             {
         	r = rand()%i; 
         	temp = num[i];
@@ -1444,7 +1445,7 @@ char correct_answers[15] =
             }
     
 
- 	    for( i=0; i<len; i++ )
+ 	    for( i = 0; i < len; i++ )
 	    {
 	    printf("__________________________________________________________\n");
 	    printf("__________________________________________________________\n\n");
@@ -1480,14 +1481,14 @@ char correct_answers[15] =
         {
             system("clear");
 	    counter++;
-	    for( temp=0,i=N1; temp<len; i++,temp++ )
+	    for( temp = 0, i = N1; temp < len; i++, temp++ )
             {
         	num[temp] = i;
             }
             
 	    srand( time(NULL) );  
            
-	    for( i=len-1; i>0; i-- )
+	    for( i = len - 1; i > 0; i-- )
             {
         	r = rand()%i; 
         	temp = num[i];
@@ -1496,7 +1497,7 @@ char correct_answers[15] =
             }
     
 
- 	    for( i=0; i<len; i++ )
+ 	    for( i = 0; i < len; i++ )
 	    {
 	    printf("__________________________________________________________\n");
 	    printf("__________________________________________________________\n\n");
@@ -1532,14 +1533,14 @@ char correct_answers[15] =
         {
             system("clear");
 	    counter++;
-	    for( temp=0,i=N1; temp<len; i++,temp++ )
+	    for( temp = 0, i = N1; temp < len; i++, temp++ )
             {
         	num[temp] = i;
             }
             
 	    srand( time(NULL) );  
            
-	    for( i=len-1; i>0; i-- )
+	    for( i = len - 1; i > 0; i-- )
             {
         	r = rand()%i; 
         	temp = num[i];
@@ -1548,7 +1549,7 @@ char correct_answers[15] =
             }
     
 
- 	    for( i=0; i<len; i++ )
+ 	    for( i = 0; i < len; i++ )
 	    {
 	    printf("__________________________________________________________\n");
 	    printf("__________________________________________________________\n\n");
@@ -1584,14 +1585,14 @@ char correct_answers[15] =
         {
             system("clear");
 	    counter++;
-	    for( temp=0,i=N1; temp<len; i++,temp++ )
+	    for( temp = 0, i = N1; temp < len; i++, temp++ )
             {
         	num[temp] = i;
             }
             
 	    srand( time(NULL) );  
            
-	    for( i=len-1; i>0; i-- )
+	    for( i = len - 1; i > 0; i-- )
             {
         	r = rand()%i; 
         	temp = num[i];
@@ -1600,7 +1601,7 @@ char correct_answers[15] =
             }
     
 
- 	    for( i=0; i<len; i++ )
+ 	    for( i = 0; i < len; i++ )
 	    {
 	    printf("__________________________________________________________\n");
 	    printf("__________________________________________________________\n\n");
@@ -1636,14 +1637,14 @@ char correct_answers[15] =
         {
             system("clear");
 	    counter++;
-	    for( temp=0,i=N1; temp<len; i++,temp++ )
+	    for( temp = 0, i = N1; temp < len; i++, temp++ )
             {
         	num[temp] = i;
             }
             
 	    srand( time(NULL) );  
            
-	    for( i=len-1; i>0; i-- )
+	    for( i = len - 1; i > 0; i-- )
             {
         	r = rand()%i; 
         	temp = num[i];
@@ -1652,7 +1653,7 @@ char correct_answers[15] =
             }
     
 
- 	    for( i=0; i<len; i++ )
+ 	    for( i = 0; i < len; i++ )
 	    {
 	    printf("__________________________________________________________\n");
 	    printf("__________________________________________________________\n\n");
