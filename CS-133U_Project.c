@@ -209,7 +209,7 @@ int newg_func(int t_score)
     int score = cat_choice_func(t_score);
     int incorrect = 50 - score;
     int choice_2;	
-
+// Printing results of game
     printf("_____________________________________________\n");
     printf("_____________________________________________\n\n");
     printf("\tGame Over! Your Score is Below\n");
@@ -226,7 +226,7 @@ int newg_func(int t_score)
     printf("_____________________________________________\n\n");
     scanf("%d", &choice_2);
     	
-	
+// Switch case for results menu	
     switch(choice_2)  
     {  
         case 1: 
@@ -254,8 +254,10 @@ int newg_func(int t_score)
     
 }
 
+// Gameplay and category function
 int cat_choice_func()
 {
+//Local variables for category function
     int cat_choice;
     #define N1 0
     #define N2 9
@@ -1136,33 +1138,31 @@ char correct_answers[15] =
 /*15*/	'c'
     };
 
-    // Printing category menu
+// Printing category menu
     do {
-    printf("_____________________________________________\n");
-    printf("_____________________________________________\n\n");
-    printf("\tTo Begin Trivia Night,\n");
-    printf("\tPlease choose a category!\n");
-    printf("_____________________________________________\n");
-    printf("_____________________________________________\n\n");
-    printf("\tCategory Menu Options:\n\n");
-    printf("\t1. Sports\n");
-    printf("\t2. Math\n");
-    printf("\t3. Popular Culture\n");
-    printf("\t4. Literature\n");
-    printf("\t5. General Knowledge\n");
-    printf("\t6. Science\n");
-    printf("\t7. Geography\n");
-    printf("\t8. History\n");
-    printf("\t9. Music\n");
-    printf("\t10. Film\n\n");
-    printf("  Please select one option from the menu\n");
-    printf("_____________________________________________\n");
-    printf("_____________________________________________\n\n");
+        printf("_____________________________________________\n");
+        printf("_____________________________________________\n\n");
+        printf("\tTo Begin Trivia Night,\n");
+        printf("\tPlease choose a category!\n");
+        printf("_____________________________________________\n");
+        printf("_____________________________________________\n\n");
+        printf("\tCategory Menu Options:\n\n");
+        printf("\t1. Sports\n");
+        printf("\t2. Math\n");
+        printf("\t3. Popular Culture\n");
+        printf("\t4. Literature\n");
+        printf("\t5. General Knowledge\n");
+        printf("\t6. Science\n");
+        printf("\t7. Geography\n");
+        printf("\t8. History\n");
+        printf("\t9. Music\n");
+        printf("\t10. Film\n\n");
+        printf("  Please select one option from the menu\n");
+        printf("_____________________________________________\n");
+        printf("_____________________________________________\n\n");
 
-    // User input for category menu choice
-
-    // Error checking for type char inputs
-
+// User input for category menu choice
+// Error checking for type char inputs
     if(scanf("%d", &cat_choice) != 1);
     {
        while (( ch = getchar()) != '\n' && ch != EOF)
@@ -1174,20 +1174,22 @@ char correct_answers[15] =
        }
     }
 
-    // Switch case for category menu
+// Switch case for category menu
     switch(cat_choice)  
     {  
         case 1 : 
         {
             system("clear");
-	    counter++;
+// Counter for rounds
+	    counter++;	
+// For loop for array random number generation
 	    for( temp = 0, i = N1; temp < len; i++, temp++ )
             {
         	num[temp] = i;
             }
             
 	    srand( time(NULL) );  
-           
+// Fisher–Yates shuffle algorithm to randomize without repitition
 	    for( i = len - 1; i > 0; i-- )
             {
         	r = rand()%i; 
@@ -1196,23 +1198,23 @@ char correct_answers[15] =
         	num[r] = temp;
             }
     
-
+// For loop for asking questions and printing answers
  	    for( i = 0; i < len; i++ )
 	    {
-	    printf("__________________________________________________________\n");
-	    printf("__________________________________________________________\n\n");
-	    printf("\tQuestion:\n\n");
-	    puts(sport_arr[num[i]]);
-	    printf("_________________________________________________________\n");
-	    printf("_________________________________________________________\n\n");
-	    printf("\tAnswer Choices:\n\n");
-	    puts(sport_ans_arr[num[i]]);
-	    printf("\tPlease input your answer below!\n");
-	    printf("_________________________________________________________\n");
-	    printf("_________________________________________________________\n\n");
-	    printf("\t");
-	    scanf(" %c", &answer);
-
+	        printf("__________________________________________________________\n");
+	        printf("__________________________________________________________\n\n");
+	        printf("\tQuestion:\n\n");
+	        puts(sport_arr[num[i]]);
+	        printf("_________________________________________________________\n");
+	        printf("_________________________________________________________\n\n");
+	        printf("\tAnswer Choices:\n\n");
+	        puts(sport_ans_arr[num[i]]);
+	        printf("\tPlease input your answer below!\n");
+	        printf("_________________________________________________________\n");
+	        printf("_________________________________________________________\n\n");
+	        printf("\t");
+	        scanf(" %c", &answer);
+// If Else statement for answer checking
     	    if (answer == correct_answers[num[i]])
     	    {
                 t_score = t_score + 1;  
@@ -1224,6 +1226,7 @@ char correct_answers[15] =
                 printf("\tThat is incorrect! Your score is: %d\n", t_score); 
 	        printf("\tPlease wait for your next question!\n");  
             }
+//Delay for user to see scoreboard update
             sleep(2.5);
 	    system("clear");
             }
@@ -1232,14 +1235,16 @@ char correct_answers[15] =
         case 2:
         {
             system("clear");
+// Counter for rounds
 	    counter++;
+// For loop for array random number generation		
 	    for( temp = 0, i = N1; temp < len; i++ , temp++ )
             {
         	num[temp] = i;
             }
             
 	    srand( time(NULL) );  
-           
+// Fisher–Yates shuffle algorithm to randomize without repitition
 	    for( i = len - 1; i > 0; i-- )
             {
         	r = rand()%i; 
@@ -1248,23 +1253,23 @@ char correct_answers[15] =
         	num[r] = temp;
             }
     
-
+// For loop for asking questions and printing answers
  	    for( i = 0; i < len; i++ )
 	    {
-	    printf("__________________________________________________________\n");
-	    printf("__________________________________________________________\n\n");
-	    printf("\tQuestion:\n\n");
-	    puts(math_arr[num[i]]);
-	    printf("_________________________________________________________\n");
-	    printf("_________________________________________________________\n\n");
-	    printf("\tAnswer Choices:\n\n");
-	    puts(math_ans_arr[num[i]]);
-	    printf("\tPlease input your answer below!\n");
-	    printf("_________________________________________________________\n");
-	    printf("_________________________________________________________\n\n");
-	    printf("\t");
-	    scanf(" %c", &answer);
-
+	        printf("__________________________________________________________\n");
+	        printf("__________________________________________________________\n\n");
+	        printf("\tQuestion:\n\n");
+	        puts(math_arr[num[i]]);
+	        printf("_________________________________________________________\n");
+	        printf("_________________________________________________________\n\n");
+	        printf("\tAnswer Choices:\n\n");
+	        puts(math_ans_arr[num[i]]);
+	        printf("\tPlease input your answer below!\n");
+	        printf("_________________________________________________________\n");
+	        printf("_________________________________________________________\n\n");
+	        printf("\t");
+	        scanf(" %c", &answer);
+// If Else statement for answer checking
     	    if (answer == correct_answers[num[i]])
     	    {
                 t_score = t_score + 1;  
@@ -1276,6 +1281,7 @@ char correct_answers[15] =
                 printf("\tThat is incorrect! Your score is: %d\n", t_score); 
 	        printf("\tPlease wait for your next question!\n");  
             }
+//Delay for user to see scoreboard update 
             sleep(2.5);
 	    system("clear");
             }
@@ -1284,14 +1290,16 @@ char correct_answers[15] =
         case 3:
         {
             system("clear");
+// Counter for rounds
 	    counter++;
+// For loop for array random number generation
 	    for( temp = 0, i = N1; temp < len; i++, temp++ )
             {
         	num[temp] = i;
             }
             
 	    srand( time(NULL) );  
-           
+ // Fisher–Yates shuffle algorithm to randomize without repitition          
 	    for( i = len - 1; i > 0; i-- )
             {
         	r = rand()%i; 
@@ -1300,23 +1308,23 @@ char correct_answers[15] =
         	num[r] = temp;
             }
     
-
+// For loop for asking questions and printing answers
  	    for( i = 0; i < len; i++ )
 	    {
-	    printf("__________________________________________________________\n");
-	    printf("__________________________________________________________\n\n");
-	    printf("\tQuestion:\n\n");
-	    puts(pop_cult_arr[num[i]]);
-	    printf("_________________________________________________________\n");
-	    printf("_________________________________________________________\n\n");
-	    printf("\tAnswer Choices:\n\n");
-	    puts(pop_cult_ans_arr[num[i]]);
-	    printf("\tPlease input your answer below!\n");
-	    printf("_________________________________________________________\n");
-	    printf("_________________________________________________________\n\n");
-	    printf("\t");
-	    scanf(" %c", &answer);
-
+	        printf("__________________________________________________________\n");
+	        printf("__________________________________________________________\n\n");
+	        printf("\tQuestion:\n\n");
+	        puts(pop_cult_arr[num[i]]);
+	        printf("_________________________________________________________\n");
+	        printf("_________________________________________________________\n\n");
+	        printf("\tAnswer Choices:\n\n");
+	        puts(pop_cult_ans_arr[num[i]]);
+	        printf("\tPlease input your answer below!\n");
+	        printf("_________________________________________________________\n");
+	        printf("_________________________________________________________\n\n");
+	        printf("\t");
+	        scanf(" %c", &answer);
+// If Else statement for answer checking
     	    if (answer == correct_answers[num[i]])
     	    {
                 t_score = t_score + 1;  
@@ -1328,6 +1336,7 @@ char correct_answers[15] =
                 printf("\tThat is incorrect! Your score is: %d\n", t_score); 
 	        printf("\tPlease wait for your next question!\n");  
             }
+//Delay for user to see scoreboard update
             sleep(2.5);
 	    system("clear");
             }
@@ -1336,14 +1345,16 @@ char correct_answers[15] =
         case 4:
         {
             system("clear");
+// Counter for rounds
 	    counter++;
+// For loop for array random number generation
 	    for( temp = 0, i = N1; temp < len; i++, temp++ )
             {
         	num[temp] = i;
             }
             
 	    srand( time(NULL) );  
-           
+// Fisher–Yates shuffle algorithm to randomize without repitition           
 	    for( i = len - 1; i > 0; i-- )
             {
         	r = rand()%i; 
@@ -1352,23 +1363,23 @@ char correct_answers[15] =
         	num[r] = temp;
             }
     
-
+// For loop for asking questions and printing answers
  	    for( i = 0; i < len; i++ )
 	    {
-	    printf("__________________________________________________________\n");
-	    printf("__________________________________________________________\n\n");
-	    printf("\tQuestion:\n\n");
-	    puts(lit_arr[num[i]]);
-	    printf("_________________________________________________________\n");
-	    printf("_________________________________________________________\n\n");
-	    printf("\tAnswer Choices:\n\n");
-	    puts(lit_ans_arr[num[i]]);
-	    printf("\tPlease input your answer below!\n");
-	    printf("_________________________________________________________\n");
-	    printf("_________________________________________________________\n\n");
-	    printf("\t");
-	    scanf(" %c", &answer);
-
+	        printf("__________________________________________________________\n");
+	        printf("__________________________________________________________\n\n");
+	        printf("\tQuestion:\n\n");
+	        puts(lit_arr[num[i]]);
+	        printf("_________________________________________________________\n");
+	        printf("_________________________________________________________\n\n");
+	        printf("\tAnswer Choices:\n\n");
+	        puts(lit_ans_arr[num[i]]);
+	        printf("\tPlease input your answer below!\n");
+	        printf("_________________________________________________________\n");
+	        printf("_________________________________________________________\n\n");
+	        printf("\t");
+	        scanf(" %c", &answer);
+// If Else statement for answer checking
     	    if (answer == correct_answers[num[i]])
     	    {
                 t_score = t_score + 1;  
@@ -1380,6 +1391,7 @@ char correct_answers[15] =
                 printf("\tThat is incorrect! Your score is: %d\n", t_score); 
 	        printf("\tPlease wait for your next question!\n");  
             }
+//Delay for user to see scoreboard update
             sleep(2.5);
 	    system("clear");
             }
@@ -1388,14 +1400,16 @@ char correct_answers[15] =
         case 5:
         {
             system("clear");
+// Counter for rounds
 	    counter++;
+// For loop for array random number generation
 	    for( temp = 0, i = N1; temp < len; i++, temp++ )
             {
         	num[temp] = i;
             }
             
 	    srand( time(NULL) );  
-           
+// Fisher–Yates shuffle algorithm to randomize without repitition           
 	    for( i = len - 1; i > 0; i-- )
             {
         	r = rand()%i; 
@@ -1404,23 +1418,23 @@ char correct_answers[15] =
         	num[r] = temp;
             }
     
-
+// For loop for asking questions and printing answers
  	    for( i = 0; i < len; i++ )
 	    {
-	    printf("__________________________________________________________\n");
-	    printf("__________________________________________________________\n\n");
-	    printf("\tQuestion:\n\n");
-	    puts(gen_know_arr[num[i]]);
-	    printf("_________________________________________________________\n");
-	    printf("_________________________________________________________\n\n");
-	    printf("\tAnswer Choices:\n\n");
-	    puts(gen_know_ans_arr[num[i]]);
-	    printf("\tPlease input your answer below!\n");
-	    printf("_________________________________________________________\n");
-	    printf("_________________________________________________________\n\n");
-	    printf("\t");
-	    scanf(" %c", &answer);
-
+	        printf("__________________________________________________________\n");
+	        printf("__________________________________________________________\n\n");
+	        printf("\tQuestion:\n\n");
+	        puts(gen_know_arr[num[i]]);
+	        printf("_________________________________________________________\n");
+	        printf("_________________________________________________________\n\n");
+	        printf("\tAnswer Choices:\n\n");
+	        puts(gen_know_ans_arr[num[i]]);
+	        printf("\tPlease input your answer below!\n");
+	        printf("_________________________________________________________\n");
+	        printf("_________________________________________________________\n\n");
+	        printf("\t");
+	        scanf(" %c", &answer);
+// If Else statement for answer checking
     	    if (answer == correct_answers[num[i]])
     	    {
                 t_score = t_score + 1;  
@@ -1432,6 +1446,7 @@ char correct_answers[15] =
                 printf("\tThat is incorrect! Your score is: %d\n", t_score); 
 	        printf("\tPlease wait for your next question!\n");  
             }
+//Delay for user to see scoreboard update
             sleep(2.5);
 	    system("clear");
             }
@@ -1440,14 +1455,16 @@ char correct_answers[15] =
         case 6:
         {
             system("clear");
+// Counter for rounds
 	    counter++;
+// For loop for array random number generation
 	    for( temp = 0, i = N1; temp < len; i++, temp++ )
             {
         	num[temp] = i;
             }
             
 	    srand( time(NULL) );  
-           
+// Fisher–Yates shuffle algorithm to randomize without repitition           
 	    for( i = len - 1; i > 0; i-- )
             {
         	r = rand()%i; 
@@ -1456,23 +1473,23 @@ char correct_answers[15] =
         	num[r] = temp;
             }
     
-
+// For loop for asking questions and printing answers
  	    for( i = 0; i < len; i++ )
 	    {
-	    printf("__________________________________________________________\n");
-	    printf("__________________________________________________________\n\n");
-	    printf("\tQuestion:\n\n");
-	    puts(sci_arr[num[i]]);
-	    printf("_________________________________________________________\n");
-	    printf("_________________________________________________________\n\n");
-	    printf("\tAnswer Choices:\n\n");
-	    puts(sci_ans_arr[num[i]]);
-	    printf("\tPlease input your answer below!\n");
-	    printf("_________________________________________________________\n");
-	    printf("_________________________________________________________\n\n");
-	    printf("\t");
-	    scanf(" %c", &answer);
-
+	        printf("__________________________________________________________\n");
+	        printf("__________________________________________________________\n\n");
+	        printf("\tQuestion:\n\n");
+	        puts(sci_arr[num[i]]);
+	        printf("_________________________________________________________\n");
+	        printf("_________________________________________________________\n\n");
+	        printf("\tAnswer Choices:\n\n");
+	        puts(sci_ans_arr[num[i]]);
+	        printf("\tPlease input your answer below!\n");
+	        printf("_________________________________________________________\n");
+	        printf("_________________________________________________________\n\n");
+	        printf("\t");
+	        scanf(" %c", &answer);
+// If Else statement for answer checking
     	    if (answer == correct_answers[num[i]])
     	    {
                 t_score = t_score + 1;  
@@ -1484,6 +1501,7 @@ char correct_answers[15] =
                 printf("\tThat is incorrect! Your score is: %d\n", t_score); 
 	        printf("\tPlease wait for your next question!\n");  
             }
+//Delay for user to see scoreboard update
             sleep(2.5);
 	    system("clear");
             }
@@ -1492,14 +1510,16 @@ char correct_answers[15] =
         case 7:
         {
             system("clear");
+// Counter for rounds
 	    counter++;
+// For loop for array random number generation
 	    for( temp = 0, i = N1; temp < len; i++, temp++ )
             {
         	num[temp] = i;
             }
             
 	    srand( time(NULL) );  
-           
+// Fisher–Yates shuffle algorithm to randomize without repitition           
 	    for( i = len - 1; i > 0; i-- )
             {
         	r = rand()%i; 
@@ -1508,23 +1528,23 @@ char correct_answers[15] =
         	num[r] = temp;
             }
     
-
+// For loop for asking questions and printing answers
  	    for( i = 0; i < len; i++ )
 	    {
-	    printf("__________________________________________________________\n");
-	    printf("__________________________________________________________\n\n");
-	    printf("\tQuestion:\n\n");
-	    puts(geo_arr[num[i]]);
-	    printf("_________________________________________________________\n");
-	    printf("_________________________________________________________\n\n");
-	    printf("\tAnswer Choices:\n\n");
-	    puts(geo_ans_arr[num[i]]);
-	    printf("\tPlease input your answer below!\n");
-	    printf("_________________________________________________________\n");
-	    printf("_________________________________________________________\n\n");
-	    printf("\t");
-	    scanf(" %c", &answer);
-
+	        printf("__________________________________________________________\n");
+	        printf("__________________________________________________________\n\n");
+	        printf("\tQuestion:\n\n");
+	        puts(geo_arr[num[i]]);
+	        printf("_________________________________________________________\n");
+	        printf("_________________________________________________________\n\n");
+	        printf("\tAnswer Choices:\n\n");
+	        puts(geo_ans_arr[num[i]]);
+	        printf("\tPlease input your answer below!\n");
+	        printf("_________________________________________________________\n");
+	        printf("_________________________________________________________\n\n");
+	        printf("\t");
+	        scanf(" %c", &answer);
+// If Else statement for answer checking
     	    if (answer == correct_answers[num[i]])
     	    {
                 t_score = t_score + 1;  
@@ -1536,6 +1556,7 @@ char correct_answers[15] =
                 printf("\tThat is incorrect! Your score is: %d\n", t_score); 
 	        printf("\tPlease wait for your next question!\n");  
             }
+//Delay for user to see scoreboard update
             sleep(2.5);
 	    system("clear");
             }
@@ -1544,14 +1565,16 @@ char correct_answers[15] =
         case 8:
         {
             system("clear");
+// Counter for rounds
 	    counter++;
+// For loop for array random number generation
 	    for( temp = 0, i = N1; temp < len; i++, temp++ )
             {
         	num[temp] = i;
             }
             
 	    srand( time(NULL) );  
-           
+// Fisher–Yates shuffle algorithm to randomize without repitition           
 	    for( i = len - 1; i > 0; i-- )
             {
         	r = rand()%i; 
@@ -1560,23 +1583,23 @@ char correct_answers[15] =
         	num[r] = temp;
             }
     
-
+// For loop for asking questions and printing answers
  	    for( i = 0; i < len; i++ )
 	    {
-	    printf("__________________________________________________________\n");
-	    printf("__________________________________________________________\n\n");
-	    printf("\tQuestion:\n\n");
-	    puts(hist_arr[num[i]]);
-	    printf("_________________________________________________________\n");
-	    printf("_________________________________________________________\n\n");
-	    printf("\tAnswer Choices:\n\n");
-	    puts(hist_ans_arr[num[i]]);
-	    printf("\tPlease input your answer below!\n");
-	    printf("_________________________________________________________\n");
-	    printf("_________________________________________________________\n\n");
-	    printf("\t");
-	    scanf(" %c", &answer);
-
+	        printf("__________________________________________________________\n");
+	        printf("__________________________________________________________\n\n");
+	        printf("\tQuestion:\n\n");
+	        puts(hist_arr[num[i]]);
+	        printf("_________________________________________________________\n");
+	        printf("_________________________________________________________\n\n");
+	        printf("\tAnswer Choices:\n\n");
+	        puts(hist_ans_arr[num[i]]);
+	        printf("\tPlease input your answer below!\n");
+	        printf("_________________________________________________________\n");
+	        printf("_________________________________________________________\n\n");
+	        printf("\t");
+	        scanf(" %c", &answer);
+// If Else statement for answer checking
     	    if (answer == correct_answers[num[i]])
     	    {
                 t_score = t_score + 1;  
@@ -1588,6 +1611,7 @@ char correct_answers[15] =
                 printf("\tThat is incorrect! Your score is: %d\n", t_score); 
 	        printf("\tPlease wait for your next question!\n");  
             }
+//Delay for user to see scoreboard update 
             sleep(2.5);
 	    system("clear");
             }
@@ -1596,14 +1620,16 @@ char correct_answers[15] =
         case 9:
         {
             system("clear");
+// Counter for rounds
 	    counter++;
+// For loop for array random number generation
 	    for( temp = 0, i = N1; temp < len; i++, temp++ )
             {
         	num[temp] = i;
             }
             
 	    srand( time(NULL) );  
-           
+// Fisher–Yates shuffle algorithm to randomize without repitition           
 	    for( i = len - 1; i > 0; i-- )
             {
         	r = rand()%i; 
@@ -1612,23 +1638,23 @@ char correct_answers[15] =
         	num[r] = temp;
             }
     
-
+// For loop for asking questions and printing answers
  	    for( i = 0; i < len; i++ )
 	    {
-	    printf("__________________________________________________________\n");
-	    printf("__________________________________________________________\n\n");
-	    printf("\tQuestion:\n\n");
-	    puts(music_arr[num[i]]);
-	    printf("_________________________________________________________\n");
-	    printf("_________________________________________________________\n\n");
-	    printf("\tAnswer Choices:\n\n");
-	    puts(music_ans_arr[num[i]]);
-	    printf("\tPlease input your answer below!\n");
-	    printf("_________________________________________________________\n");
-	    printf("_________________________________________________________\n\n");
-	    printf("\t");
-	    scanf(" %c", &answer);
-
+	        printf("__________________________________________________________\n");
+	        printf("__________________________________________________________\n\n");
+	        printf("\tQuestion:\n\n");
+	        puts(music_arr[num[i]]);
+	        printf("_________________________________________________________\n");
+	        printf("_________________________________________________________\n\n");
+	        printf("\tAnswer Choices:\n\n");
+	        puts(music_ans_arr[num[i]]);
+	        printf("\tPlease input your answer below!\n");
+	        printf("_________________________________________________________\n");
+	        printf("_________________________________________________________\n\n");
+	        printf("\t");
+	        scanf(" %c", &answer);
+// If Else statement for answer checking
     	    if (answer == correct_answers[num[i]])
     	    {
                 t_score = t_score + 1;  
@@ -1640,6 +1666,7 @@ char correct_answers[15] =
                 printf("\tThat is incorrect! Your score is: %d\n", t_score); 
 	        printf("\tPlease wait for your next question!\n");  
             }
+//Delay for user to see scoreboard update
             sleep(2.5);
 	    system("clear");
             }
@@ -1648,14 +1675,16 @@ char correct_answers[15] =
         case 10:
         {
             system("clear");
+// Counter for rounds
 	    counter++;
+// For loop for array random number generation
 	    for( temp = 0, i = N1; temp < len; i++, temp++ )
             {
         	num[temp] = i;
             }
             
 	    srand( time(NULL) );  
-           
+// Fisher–Yates shuffle algorithm to randomize without repitition           
 	    for( i = len - 1; i > 0; i-- )
             {
         	r = rand()%i; 
@@ -1664,23 +1693,23 @@ char correct_answers[15] =
         	num[r] = temp;
             }
     
-
+// For loop for asking questions and printing answers
  	    for( i = 0; i < len; i++ )
 	    {
-	    printf("__________________________________________________________\n");
-	    printf("__________________________________________________________\n\n");
-	    printf("\tQuestion:\n\n");
-	    puts(film_arr[num[i]]);
-	    printf("_________________________________________________________\n");
-	    printf("_________________________________________________________\n\n");
-	    printf("\tAnswer Choices:\n\n");
-	    puts(film_ans_arr[num[i]]);
-	    printf("\tPlease input your answer below!\n");
-	    printf("_________________________________________________________\n");
-	    printf("_________________________________________________________\n\n");
-	    printf("\t");
-	    scanf(" %c", &answer);
-
+	        printf("__________________________________________________________\n");
+	        printf("__________________________________________________________\n\n");
+	        printf("\tQuestion:\n\n");
+	        puts(film_arr[num[i]]);
+	        printf("_________________________________________________________\n");
+	        printf("_________________________________________________________\n\n");
+	        printf("\tAnswer Choices:\n\n");
+	        puts(film_ans_arr[num[i]]);
+	        printf("\tPlease input your answer below!\n");
+	        printf("_________________________________________________________\n");
+	        printf("_________________________________________________________\n\n");
+	        printf("\t");
+	        scanf(" %c", &answer);
+// If Else statement for answer checking
     	    if (answer == correct_answers[num[i]])
     	    {
                 t_score = t_score + 1;  
@@ -1692,11 +1721,12 @@ char correct_answers[15] =
                 printf("\tThat is incorrect! Your score is: %d\n", t_score); 
 	        printf("\tPlease wait for your next question!\n");  
             }
+//Delay for user to see scoreboard update
             sleep(2.5);
 	    system("clear");
             }
 	    break;
-	}
+//Error checking for switch case
         default: 
         {
             system("clear");	
@@ -1705,6 +1735,8 @@ char correct_answers[15] =
             break;     
         }
       }
+//Do while loop for rounds		    
 } while ( counter <= 4 );
-return t_score;
+
+    return t_score;
 }
