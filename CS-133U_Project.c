@@ -36,6 +36,7 @@ int menu_func()
 
 // Initializing variables for main menu function
     int choice_1;
+    char ch = 0;
 
 // Printing main menu
     printf("_____________________________________________\n");
@@ -53,8 +54,17 @@ int menu_func()
     printf("_____________________________________________\n");
     printf("_____________________________________________\n\n");
 
-// User input for main menu choice
-    scanf("%d", &choice_1);
+// User input for main menu choice with error checking for type char inputs
+    if(scanf("%d", &choice_1) != 1);
+    {
+       while ((ch = getchar()) != '\n' && ch != EOF)
+       {
+       }
+       if (ch == EOF)
+       {
+       menu_func();
+       }
+    }
 
 // Switch case for main menu
     switch(choice_1)  
@@ -100,6 +110,7 @@ void rules_func()
 
 // Initializing variables for rules function
     int rules_r;
+    char ch = 0;
 
 // Printing rules
     printf("_______________________________________________\n");
@@ -112,7 +123,7 @@ void rules_func()
     printf("\t3. There will be five rounds.\n");
     printf("\t4. Each round choose a new category.\n");
     printf("\t5. Each round has ten random questions.\n");
-    printf("\t7. Enter a,b,c, or d and press enter.\n");
+    printf("\t7. Enter a, b, c, or d and press enter.\n");
     printf("\t8. Each correct answer is worth one point.\n");
     printf("\t10. After the game score will be displayed.\n");
     printf("\t11. Enjoy Trivia Night!\n\n");
@@ -120,7 +131,7 @@ void rules_func()
     printf("_______________________________________________\n");
     printf("_______________________________________________\n\n");
 
-// User input to return to main menu
+// User input to return to main menu and error checking for type char input
     scanf("%d", &rules_r);
     if (rules_r == 1)
     {
@@ -129,11 +140,12 @@ void rules_func()
     }
     else
     {
-        system("clear");	
-        printf("\nPlease select a valid option\n");
-        rules_func();
+    if(rules_r != 1);
+    {
+       system("clear");
+       rules_func();
     }
-    return;
+    }
 }
 
 // About menu choice function
@@ -142,6 +154,7 @@ void about_func()
 
 // Initializing variables for about function
     int about_r;
+    char ch = 0;
 
 // Printing about section
     printf("___________________________________________\n");
@@ -169,15 +182,20 @@ void about_func()
     }
     else
     {
-        system("clear");	
-        printf("\nPlease select a valid option\n");
-        about_func();
+    if(about_r != 1);
+    {
+       while (( ch = getchar()) != '\n' && ch != EOF)
+       {
+       }
+       if ( ch == EOF)
+       {
+       about_func();
+       }
     }
-	
-    return;
+    }
 }
 
-// Scoreboard menu choice fucntion
+// Scoreboard menu choice function
 int score_func()
 {
     return(0);
@@ -264,6 +282,7 @@ int cat_choice_func()
     int num[len];
     int t_score = 0;
     char answer;
+    char ch = 0;
     int counter;
 
 // Categories
@@ -361,7 +380,7 @@ int cat_choice_func()
 /*q3*/	"\tWhat is the only number that does not have \n\tits Roman numeral?",
 /*q4*/	"\tWhen counting what comes after a trillion?",
 /*q5*/	"\tHow many digits does the value of Pi have?",
-/*q6*/	"\tHow many sides does an “enneadecagon” have?",
+/*q6*/	"\tHow many sides does an 'enneadecagon' have?",
 /*q7*/	"\tWhat geometric form does not have any vertices?",
 /*q8*/	"\tWhat is the square root of a quarter?",
 /*q9*/	"\tWhat is the name of the longest side of \n\ta right-angled triangle?",
@@ -1160,7 +1179,19 @@ char correct_answers[15] =
     printf("_____________________________________________\n\n");
 
     // User input for category menu choice
-    scanf("%d", &cat_choice);
+
+    // Error checking for type char inputs
+
+    if(scanf("%d", &cat_choice) != 1);
+    {
+       while (( ch = getchar()) != '\n' && ch != EOF)
+       {
+       }
+       if ( ch == EOF)
+       {
+       cat_choice_func();
+       }
+    }
 
     // Switch case for category menu
     switch(cat_choice)  
