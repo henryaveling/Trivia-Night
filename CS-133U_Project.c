@@ -19,7 +19,6 @@ int menu_func();
 int newg_func();
 void rules_func();
 void about_func();
-int score_func();
 int exit_func();
 void default_func();
 int cat_choice_func();
@@ -49,8 +48,7 @@ int menu_func()
     printf("\t1. New Game\n");
     printf("\t2. Rules\n");
     printf("\t3. About\n");
-    printf("\t4. Scoreboard\n");
-    printf("\t5. Exit Game\n\n");
+    printf("\t4. Exit Game\n\n");
     printf("   Please select one option from the menu\n");
     printf("_____________________________________________\n");
     printf("_____________________________________________\n\n");
@@ -82,14 +80,8 @@ int menu_func()
         case 4:
 	{
 	    system("clear");
-	    score_func();
-	    break;
-	} 
-        case 5:
-	{
-            system("clear");
 	    exit_func();
-	    break; 
+	    break;
 	} 
         default: 
         {
@@ -119,14 +111,11 @@ void rules_func()
     printf("\t2. There are ten categories of questions.\n");
     printf("\t3. There will be five rounds.\n");
     printf("\t4. Each round choose a new category.\n");
-    printf("\t5. Each round has ten random questions.\n");
-    printf("\t6. You have 15 seconds to answer.\n");
+    printf("\t5. Each round has five random questions.\n");
     printf("\t7. Enter a,b,c, or d and press enter.\n");
     printf("\t8. Each correct answer is worth one point.\n");
-    printf("\t9. Final round will be worth two points.\n");
     printf("\t10. After the game score will be displayed.\n");
-    printf("\t11. Score will be saved to your user name.\n");
-    printf("\t12. Enjoy Trivia Night!\n\n");
+    printf("\t11. Enjoy Trivia Night!\n\n");
     printf("  Enter 1 to return to the main menu\n");
     printf("_______________________________________________\n");
     printf("_______________________________________________\n\n");
