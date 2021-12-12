@@ -111,7 +111,7 @@ void rules_func()
     printf("\t2. There are ten categories of questions.\n");
     printf("\t3. There will be five rounds.\n");
     printf("\t4. Each round choose a new category.\n");
-    printf("\t5. Each round has five random questions.\n");
+    printf("\t5. Each round has ten random questions.\n");
     printf("\t7. Enter a,b,c, or d and press enter.\n");
     printf("\t8. Each correct answer is worth one point.\n");
     printf("\t10. After the game score will be displayed.\n");
@@ -259,7 +259,7 @@ int cat_choice_func()
 {
     int cat_choice;
     #define N1 0
-    #define N2 4
+    #define N2 9
     int len = N2-N1+1,i , r , temp;
     int num[len];
     int t_score = 0;
