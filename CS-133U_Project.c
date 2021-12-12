@@ -1,11 +1,3 @@
-/****************************************************************/
-/*Author(s): Henry Sanders, Kenneth Sutter		        */
-/*Date: 12/01/21					        */
-/*Assignment: Group Project				        */
-/*Description: This program is to be an interactive trivia game */
-/* with a scorekeeping system, and user profiles.               */
-/****************************************************************/
-
 // Program directives
 #include <stdio.h>
 #include <stdlib.h>
@@ -13,6 +5,7 @@
 #include <time.h>
 #include <string.h>
 #include <unistd.h>
+#include "trivia_night.h"
 
 // Function declarations
 int menu_func();
@@ -22,13 +15,6 @@ void about_func();
 int exit_func();
 void default_func();
 int cat_choice_func();
-
-// Main program function
-int main (void)
-{	
-    menu_func();
-    return(0);
-};
 
 // Main menu function
 int menu_func()
@@ -143,7 +129,7 @@ void rules_func()
     if(rules_r != 1);
     {
        system("clear");
-       rules_func();
+       menu_func();
     }
     }
 }
@@ -184,13 +170,8 @@ void about_func()
     {
     if(about_r != 1);
     {
-       while (( ch = getchar()) != '\n' && ch != EOF)
-       {
-       }
-       if ( ch == EOF)
-       {
-       about_func();
-       }
+       system("clear");
+       menu_func();
     }
     }
 }
@@ -380,7 +361,7 @@ int cat_choice_func()
 /*q3*/	"\tWhat is the only number that does not have \n\tits Roman numeral?",
 /*q4*/	"\tWhen counting what comes after a trillion?",
 /*q5*/	"\tHow many digits does the value of Pi have?",
-/*q6*/	"\tHow many sides does an 'enneadecagon' have?",
+/*q6*/	"\tHow many sides does an “enneadecagon” have?",
 /*q7*/	"\tWhat geometric form does not have any vertices?",
 /*q8*/	"\tWhat is the square root of a quarter?",
 /*q9*/	"\tWhat is the name of the longest side of \n\ta right-angled triangle?",
