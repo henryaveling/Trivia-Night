@@ -207,7 +207,7 @@ void default_func()
 int newg_func(int t_score)
 {	   
     int score = cat_choice_func(t_score);
-    int incorrect = 25 - score;
+    int incorrect = 50 - score;
     int choice_2;	
 
     printf("_____________________________________________\n");
